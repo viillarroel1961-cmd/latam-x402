@@ -1,0 +1,28 @@
+{
+  "name": "latam-x402",
+  "version": "1.0.0",
+  "description": "Unified LatAm & Global Market Data API (BCV, Bolsa de Caracas, Crypto & NYSE) monetized via x402 micropayments (Base USDC via PayAI)",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "sync": "node scripts/sync-data.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.1",
+    "@x402/core": "latest",
+    "@x402/evm": "latest",
+    "@x402/hono": "latest",
+    "hono": "^4.7.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

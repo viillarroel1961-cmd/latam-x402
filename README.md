@@ -1,0 +1,45 @@
+# latam-x402
+
+Unified **LatAm & Global Market Data API** monetized natively with the **[x402](https://x402.org) v2** HTTP micropayment protocol (**USDC on Base** via **PayAI** facilitator — zero API keys, zero account sign-up, instant autonomous settlement for AI agents and apps).
+
+## Why latam-x402?
+Financial data across Venezuela, LatAm equities, Crypto, and Wall Street normally lives fragmented across incompatible portals. **latam-x402** unifies and cross-values all four in clean JSON:
+
+- **BCV & Venezuela FX (`/api/v1/bcv`)** — Official BCV USD & EUR rates, Binance P2P USDT/VES mid-price, real-time spread %, and rolling daily history.
+- **Bolsa de Valores de Caracas (`/api/v1/bvc`, `/api/v1/bvc/:ticker`)** — 38 BVC issuers normalized in **VES**, **USD (BCV)**, and **USD (USDT P2P)**.
+- **Global Crypto (`/api/v1/crypto`)** — Spot 24h prices, volume, and perpetual funding rates across major assets (`BTC`, `ETH`, `SOL`, `BNB`, `PAXG`, etc.).
+- **NYSE & LatAm ADRs (`/api/v1/nyse`)** — Delayed / end-of-day quotes for US benchmarks (`SPY`, `QQQ`, `GLD`, `AAPL`, `NVDA`...) and LatAm leaders (`ILF`, `MELI`, `NU`, `PBR`, `VALE`, `EC`, `YPF`).
+- **Unified Ecosystem (`/api/v1/ecosystem`)** — All four markets + cross-market ratios (`BTC/VES`, `BTC/SPY`, `PAXG/GLD`, Venezuela FX spread) in a single agent-ready payload.
+
+## Pricing (Base USDC via x402)
+
+| Endpoint | Price | Description |
+|---|---|---|
+| `GET /` | Free | Service overview & pricing |
+| `GET /api/health` | Free | Live status & last sync UTC per feed |
+| `GET /api/docs` / `/api/openapi.json` | Free | OpenAPI 3.1 + x402 discovery manifest |
+| `GET /api/v1/bcv` | `$0.002` | BCV USD/EUR + USDT P2P + spread + history (`?days=30`) |
+| `GET /api/v1/crypto` | `$0.002` | Global crypto spot 24h + funding (`?symbol=BTC`) |
+| `GET /api/v1/nyse` | `$0.003` | NYSE/NASDAQ US & LatAm ADRs (`?symbol=MELI&category=latam_adr`) |
+| `GET /api/v1/bvc` | `$0.005` | Bolsa de Caracas in VES, USD BCV & USD P2P (`?onlyPriced=true`) |
+| `GET /api/v1/bvc/:ticker` | `$0.005` | Single BVC issuer (e.g. `BVCC`, `BNC`, `MVZ.A`, `RST`) |
+| `GET /api/v1/ecosystem` | `$0.01` | Full unified cross-market snapshot + ratios |
+
+## Local Development
+
+```bash
+npm install
+npm run sync      # Fetches fresh snapshots into data/*.json
+npm run typecheck # Verifies TypeScript types
+npm run dev       # Starts server on http://localhost:3000
+```
+
+## Deploy to Vercel ($0)
+
+1. Push repo to GitHub (`viillarroel1961-cmd/latam-x402`).
+2. Import in Vercel and set Environment Variables:
+   - `PAY_TO_ADDRESS` = your MetaMask EVM address (`0x...`)
+   - `X402_NETWORK` = `eip155:84532` (Base Sepolia testnet first) → switch to `eip155:8453` (Base Mainnet) after testing
+   - `X402_FACILITATOR_URL` = `https://facilitator.payai.network`
+   - `DATA_REMOTE_BASE_URL` = `https://raw.githubusercontent.com/viillarroel1961-cmd/latam-x402/main/data`
+3. Enable GitHub Actions workflow (`Sync Market Data`) so `data/*.json` refreshes every 2 hours automatically.
