@@ -1,132 +1,132 @@
 {
   "market": "CRYPTO_GLOBAL",
-  "updated_at_utc": "2026-11-22T17:20:39.722Z",
+  "updated_at_utc": "2026-11-22T23:08:26.478Z",
   "sources": [
     "https://data-api.binance.vision/api/v3/ticker/24hr",
-    "fapi.binance.com/premiumIndex"
+    "okx.com/public/funding-rate"
   ],
   "count": 12,
   "assets": [
     {
       "symbol": "BTCUSDT",
       "base": "BTC",
-      "price_usd": 60812.63,
-      "change_24h_pct": 0.98,
+      "price_usd": 60911.73,
+      "change_24h_pct": 1.21,
       "high_24h": 61669.99,
       "low_24h": 58768.51,
-      "quote_volume_24h_usd": 1213904246.24,
-      "funding_rate": -0.000017,
-      "funding_rate_pct": -0.0017
+      "quote_volume_24h_usd": 1202510550.84,
+      "funding_rate": 0.000022,
+      "funding_rate_pct": 0.0022
     },
     {
       "symbol": "ETHUSDT",
       "base": "ETH",
-      "price_usd": 1712.2,
-      "change_24h_pct": 1.59,
+      "price_usd": 1718.52,
+      "change_24h_pct": 2.09,
       "high_24h": 1732.52,
       "low_24h": 1648.35,
-      "quote_volume_24h_usd": 398134564.32,
-      "funding_rate": 0.000026,
-      "funding_rate_pct": 0.0026
+      "quote_volume_24h_usd": 393833778.43,
+      "funding_rate": -0.000037,
+      "funding_rate_pct": -0.0037
     },
     {
       "symbol": "BNBUSDT",
       "base": "BNB",
-      "price_usd": 557.72,
-      "change_24h_pct": 1.71,
+      "price_usd": 557.07,
+      "change_24h_pct": 1.49,
       "high_24h": 560.57,
       "low_24h": 536.85,
-      "quote_volume_24h_usd": 49449724.86,
-      "funding_rate": 0,
-      "funding_rate_pct": 0
+      "quote_volume_24h_usd": 51188217.43,
+      "funding_rate": 0.00002,
+      "funding_rate_pct": 0.002
     },
     {
       "symbol": "ADAUSDT",
       "base": "ADA",
-      "price_usd": 0.1446,
-      "change_24h_pct": -0.62,
+      "price_usd": 0.1442,
+      "change_24h_pct": -0.21,
       "high_24h": 0.1475,
       "low_24h": 0.1409,
-      "quote_volume_24h_usd": 14112750.04,
-      "funding_rate": -0.000021,
-      "funding_rate_pct": -0.0021
+      "quote_volume_24h_usd": 12825622.73,
+      "funding_rate": null,
+      "funding_rate_pct": null
     },
     {
       "symbol": "XRPUSDT",
       "base": "XRP",
-      "price_usd": 0.9266,
-      "change_24h_pct": -0.63,
-      "high_24h": 0.9389,
+      "price_usd": 0.9254,
+      "change_24h_pct": -0.48,
+      "high_24h": 0.9388,
       "low_24h": 0.9118,
-      "quote_volume_24h_usd": 76295131.98,
-      "funding_rate": -0.000009,
-      "funding_rate_pct": -0.0009
+      "quote_volume_24h_usd": 72166176.46,
+      "funding_rate": 0.000016,
+      "funding_rate_pct": 0.0016
     },
     {
       "symbol": "TRXUSDT",
       "base": "TRX",
-      "price_usd": 0.3051,
-      "change_24h_pct": -0.13,
+      "price_usd": 0.3056,
+      "change_24h_pct": 0.07,
       "high_24h": 0.3067,
       "low_24h": 0.3036,
-      "quote_volume_24h_usd": 16646015.15,
-      "funding_rate": 0.000018,
-      "funding_rate_pct": 0.0018
+      "quote_volume_24h_usd": 17012698,
+      "funding_rate": null,
+      "funding_rate_pct": null
     },
     {
       "symbol": "LINKUSDT",
       "base": "LINK",
-      "price_usd": 8.804,
-      "change_24h_pct": 2.47,
+      "price_usd": 8.787,
+      "change_24h_pct": 2.19,
       "high_24h": 8.91,
       "low_24h": 8.494,
-      "quote_volume_24h_usd": 11997521.28,
-      "funding_rate": 0.00003,
-      "funding_rate_pct": 0.003
+      "quote_volume_24h_usd": 11356448.73,
+      "funding_rate": null,
+      "funding_rate_pct": null
     },
     {
       "symbol": "DOGEUSDT",
       "base": "DOGE",
-      "price_usd": 0.05518,
-      "change_24h_pct": -0.18,
+      "price_usd": 0.05514,
+      "change_24h_pct": -0.05,
       "high_24h": 0.056,
       "low_24h": 0.05376,
-      "quote_volume_24h_usd": 21426086.55,
-      "funding_rate": 0.000035,
-      "funding_rate_pct": 0.0035
+      "quote_volume_24h_usd": 21736317.33,
+      "funding_rate": -0.000023,
+      "funding_rate_pct": -0.0023
     },
     {
       "symbol": "SOLUSDT",
       "base": "SOL",
       "price_usd": 70.35,
-      "change_24h_pct": -0.68,
+      "change_24h_pct": 0.09,
       "high_24h": 71.43,
       "low_24h": 68.74,
-      "quote_volume_24h_usd": 133540282.69,
-      "funding_rate": 0.000008,
-      "funding_rate_pct": 0.0008
+      "quote_volume_24h_usd": 134647802.62,
+      "funding_rate": 0.000029,
+      "funding_rate_pct": 0.0029
     },
     {
       "symbol": "PAXGUSDT",
       "base": "PAXG",
-      "price_usd": 3562.47,
-      "change_24h_pct": 0.16,
-      "high_24h": 3567.79,
+      "price_usd": 3558.83,
+      "change_24h_pct": 0.2,
+      "high_24h": 3577.25,
       "low_24h": 3528.01,
-      "quote_volume_24h_usd": 9234381.45,
-      "funding_rate": -0.00004,
-      "funding_rate_pct": -0.004
+      "quote_volume_24h_usd": 12752200.81,
+      "funding_rate": null,
+      "funding_rate_pct": null
     },
     {
       "symbol": "AVAXUSDT",
       "base": "AVAX",
-      "price_usd": 6.669,
-      "change_24h_pct": 0.54,
+      "price_usd": 6.657,
+      "change_24h_pct": 1.34,
       "high_24h": 6.778,
       "low_24h": 6.478,
-      "quote_volume_24h_usd": 6521605.44,
-      "funding_rate": -0.000127,
-      "funding_rate_pct": -0.0127
+      "quote_volume_24h_usd": 5658166.36,
+      "funding_rate": null,
+      "funding_rate_pct": null
     },
     {
       "symbol": "TONUSDT",
@@ -136,8 +136,8 @@
       "high_24h": 1.614,
       "low_24h": 1.585,
       "quote_volume_24h_usd": 434305.61,
-      "funding_rate": 0,
-      "funding_rate_pct": 0
+      "funding_rate": null,
+      "funding_rate_pct": null
     }
   ]
 }
