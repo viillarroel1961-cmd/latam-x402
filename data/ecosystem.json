@@ -1,16 +1,16 @@
 {
   "ecosystem": "latam-x402",
   "version": "1.0.0",
-  "updated_at_utc": "2026-11-23T07:34:09.152Z",
+  "updated_at_utc": "2026-11-23T20:12:29.195Z",
   "fx_venezuela": {
     "date": "2026-11-23",
     "usd_bcv": 918.7662,
     "eur_bcv": 1009.0717,
-    "usd_paralelo": 1089.6489,
-    "usdt_p2p_buy": 1091,
-    "usdt_p2p_sell": 1089,
-    "usdt_p2p_mid": 1090,
-    "spread_vs_bcv_pct": 18.64,
+    "usd_paralelo": 1107.3262,
+    "usdt_p2p_buy": 1109,
+    "usdt_p2p_sell": 1109,
+    "usdt_p2p_mid": 1109,
+    "spread_vs_bcv_pct": 20.71,
     "eur_usd_implied": 1.0983
   },
   "bvc_caracas": {
@@ -31,7 +31,7 @@
         "turnover_ves": 2191963.32,
         "turnover_usd_bcv": 2385.77,
         "price_usd_bcv": 16.302287,
-        "price_usd_p2p": 13.741275,
+        "price_usd_p2p": 13.505852,
         "last_trade_time": "12:40:16",
         "status": "live"
       },
@@ -45,7 +45,7 @@
         "turnover_ves": 1587200.55,
         "turnover_usd_bcv": 1727.53,
         "price_usd_bcv": 1.741466,
-        "price_usd_p2p": 1.46789,
+        "price_usd_p2p": 1.442741,
         "last_trade_time": "12:52:31",
         "status": "live"
       },
@@ -59,7 +59,7 @@
         "turnover_ves": 3926319.9,
         "turnover_usd_bcv": 4273.47,
         "price_usd_bcv": 2.960492,
-        "price_usd_p2p": 2.495413,
+        "price_usd_p2p": 2.45266,
         "last_trade_time": "12:49:28",
         "status": "live"
       },
@@ -73,7 +73,7 @@
         "turnover_ves": 574129.92,
         "turnover_usd_bcv": 624.89,
         "price_usd_bcv": 0.011744,
-        "price_usd_p2p": 0.009899,
+        "price_usd_p2p": 0.009729,
         "last_trade_time": "12:52:33",
         "status": "live"
       },
@@ -87,7 +87,7 @@
         "turnover_ves": 6728318,
         "turnover_usd_bcv": 7323.21,
         "price_usd_bcv": 10.176691,
-        "price_usd_p2p": 8.577982,
+        "price_usd_p2p": 8.431019,
         "last_trade_time": "12:41:58",
         "status": "live"
       },
@@ -101,7 +101,7 @@
         "turnover_ves": 546038,
         "turnover_usd_bcv": 594.32,
         "price_usd_bcv": 1.278889,
-        "price_usd_p2p": 1.077982,
+        "price_usd_p2p": 1.059513,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -115,7 +115,7 @@
         "turnover_ves": 614710.89,
         "turnover_usd_bcv": 669.06,
         "price_usd_bcv": 0.206788,
-        "price_usd_p2p": 0.174303,
+        "price_usd_p2p": 0.171317,
         "last_trade_time": "12:53:02",
         "status": "live"
       },
@@ -129,7 +129,7 @@
         "turnover_ves": 17088715.42,
         "turnover_usd_bcv": 18599.63,
         "price_usd_bcv": 0.267478,
-        "price_usd_p2p": 0.225459,
+        "price_usd_p2p": 0.221596,
         "last_trade_time": "13:00:00",
         "status": "live"
       }
@@ -145,7 +145,7 @@
         "turnover_ves": 3926319.9,
         "turnover_usd_bcv": 4273.47,
         "price_usd_bcv": 2.960492,
-        "price_usd_p2p": 2.495413,
+        "price_usd_p2p": 2.45266,
         "last_trade_time": "12:49:28",
         "status": "live"
       },
@@ -159,7 +159,7 @@
         "turnover_ves": 17088715.42,
         "turnover_usd_bcv": 18599.63,
         "price_usd_bcv": 0.267478,
-        "price_usd_p2p": 0.225459,
+        "price_usd_p2p": 0.221596,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -173,7 +173,7 @@
         "turnover_ves": 7171347.96,
         "turnover_usd_bcv": 7805.41,
         "price_usd_bcv": 3.526468,
-        "price_usd_p2p": 2.972477,
+        "price_usd_p2p": 2.921551,
         "last_trade_time": "12:46:47",
         "status": "live"
       },
@@ -187,7 +187,7 @@
         "turnover_ves": 18600101.79,
         "turnover_usd_bcv": 20244.65,
         "price_usd_bcv": 1.012227,
-        "price_usd_p2p": 0.853211,
+        "price_usd_p2p": 0.838593,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -201,7 +201,7 @@
         "turnover_ves": 1310739.87,
         "turnover_usd_bcv": 1426.63,
         "price_usd_bcv": 2.28132,
-        "price_usd_p2p": 1.922936,
+        "price_usd_p2p": 1.889991,
         "last_trade_time": "12:54:26",
         "status": "live"
       },
@@ -215,7 +215,7 @@
         "turnover_ves": 997220.01,
         "turnover_usd_bcv": 1085.39,
         "price_usd_bcv": 0.929507,
-        "price_usd_p2p": 0.783486,
+        "price_usd_p2p": 0.770063,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -229,7 +229,7 @@
         "turnover_ves": 82706.3,
         "turnover_usd_bcv": 90.02,
         "price_usd_bcv": 9.749662,
-        "price_usd_p2p": 8.218037,
+        "price_usd_p2p": 8.077241,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -243,7 +243,7 @@
         "turnover_ves": 282780.89,
         "turnover_usd_bcv": 307.78,
         "price_usd_bcv": 2.471793,
-        "price_usd_p2p": 2.083486,
+        "price_usd_p2p": 2.047791,
         "last_trade_time": "12:44:19",
         "status": "live"
       },
@@ -257,7 +257,7 @@
         "turnover_ves": 414830.1,
         "turnover_usd_bcv": 451.51,
         "price_usd_bcv": 0.868556,
-        "price_usd_p2p": 0.73211,
+        "price_usd_p2p": 0.719567,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -271,7 +271,7 @@
         "turnover_ves": 136080.5,
         "turnover_usd_bcv": 148.11,
         "price_usd_bcv": 1.180932,
-        "price_usd_p2p": 0.995413,
+        "price_usd_p2p": 0.978359,
         "last_trade_time": "13:00:00",
         "status": "live"
       }
@@ -281,48 +281,48 @@
     "btc": {
       "symbol": "BTCUSDT",
       "base": "BTC",
-      "price_usd": 61511.8,
-      "change_24h_pct": 3.96,
-      "high_24h": 61959.93,
-      "low_24h": 59032.96,
-      "quote_volume_24h_usd": 1270015913.44,
-      "funding_rate": 0.000002,
-      "funding_rate_pct": 0.0002
+      "price_usd": 61257.8,
+      "change_24h_pct": 0.85,
+      "high_24h": 64603.12,
+      "low_24h": 60386,
+      "quote_volume_24h_usd": 1729181347.3,
+      "funding_rate": 0.000053,
+      "funding_rate_pct": 0.0053
     },
     "eth": {
       "symbol": "ETHUSDT",
       "base": "ETH",
-      "price_usd": 1724.59,
-      "change_24h_pct": 3.52,
-      "high_24h": 1752.38,
-      "low_24h": 1662.62,
-      "quote_volume_24h_usd": 427461698.62,
-      "funding_rate": -0.000042,
-      "funding_rate_pct": -0.0042
+      "price_usd": 1730.9,
+      "change_24h_pct": 0.97,
+      "high_24h": 1845.07,
+      "low_24h": 1696.5,
+      "quote_volume_24h_usd": 726817776.47,
+      "funding_rate": -0.000049,
+      "funding_rate_pct": -0.0049
     },
     "sol": {
       "symbol": "SOLUSDT",
       "base": "SOL",
-      "price_usd": 72.08,
-      "change_24h_pct": 4,
-      "high_24h": 72.38,
-      "low_24h": 69.15,
-      "quote_volume_24h_usd": 143572668.69,
-      "funding_rate": -0.000059,
-      "funding_rate_pct": -0.0059
+      "price_usd": 73.08,
+      "change_24h_pct": 4.24,
+      "high_24h": 78.48,
+      "low_24h": 69.89,
+      "quote_volume_24h_usd": 278288469.48,
+      "funding_rate": 0,
+      "funding_rate_pct": 0
     },
     "paxg": {
       "symbol": "PAXGUSDT",
       "base": "PAXG",
-      "price_usd": 3619.54,
-      "change_24h_pct": 2.33,
-      "high_24h": 3630,
-      "low_24h": 3537.01,
-      "quote_volume_24h_usd": 15702982.63,
+      "price_usd": 3634.03,
+      "change_24h_pct": 2.4,
+      "high_24h": 3681.55,
+      "low_24h": 3540,
+      "quote_volume_24h_usd": 23951968.42,
       "funding_rate": null,
       "funding_rate_pct": null
     },
-    "avg_funding_rate_pct": 0.0001
+    "avg_funding_rate_pct": 0.0004
   },
   "nyse_benchmarks": {
     "us_indices": [
@@ -332,10 +332,10 @@
         "category": "etf",
         "exchange": "NYSEArca",
         "currency": "USD",
-        "price_usd": 689.81,
-        "prev_close_usd": 754.37,
-        "change_pct": -8.56,
-        "volume": 151049800,
+        "price_usd": 722.7,
+        "prev_close_usd": 739.95,
+        "change_pct": -2.33,
+        "volume": 58838374,
         "source": "yahoo-finance"
       },
       {
@@ -344,10 +344,10 @@
         "category": "etf",
         "exchange": "NasdaqGM",
         "currency": "USD",
-        "price_usd": 608.45,
-        "prev_close_usd": 679.89,
-        "change_pct": -10.51,
-        "volume": 134360600,
+        "price_usd": 650.255,
+        "prev_close_usd": 661.75,
+        "change_pct": -1.74,
+        "volume": 66070119,
         "source": "yahoo-finance"
       },
       {
@@ -356,10 +356,10 @@
         "category": "etf",
         "exchange": "NYSEArca",
         "currency": "USD",
-        "price_usd": 322.87,
-        "prev_close_usd": 355.45,
-        "change_pct": -9.17,
-        "volume": 23183400,
+        "price_usd": 333.58,
+        "prev_close_usd": 352.93,
+        "change_pct": -5.48,
+        "volume": 9613764,
         "source": "yahoo-finance"
       }
     ],
@@ -370,10 +370,10 @@
         "category": "latam_etf",
         "exchange": "NYSEArca",
         "currency": "USD",
-        "price_usd": 28.98,
-        "prev_close_usd": 32.32,
-        "change_pct": -10.33,
-        "volume": 1742700,
+        "price_usd": 29.68,
+        "prev_close_usd": 31.28,
+        "change_pct": -5.12,
+        "volume": 2291646,
         "source": "yahoo-finance"
       },
       {
@@ -382,10 +382,10 @@
         "category": "latam_adr",
         "exchange": "NasdaqGS",
         "currency": "USD",
-        "price_usd": 1355,
-        "prev_close_usd": 1491.49,
-        "change_pct": -9.15,
-        "volume": 1253600,
+        "price_usd": 1421.59,
+        "prev_close_usd": 1462.12,
+        "change_pct": -2.77,
+        "volume": 461684,
         "source": "yahoo-finance"
       },
       {
@@ -394,10 +394,10 @@
         "category": "latam_adr",
         "exchange": "NYSE",
         "currency": "USD",
-        "price_usd": 11.27,
-        "prev_close_usd": 13.22,
-        "change_pct": -14.75,
-        "volume": 68649700,
+        "price_usd": 11.779,
+        "prev_close_usd": 12.68,
+        "change_pct": -7.11,
+        "volume": 39984538,
         "source": "yahoo-finance"
       },
       {
@@ -406,43 +406,43 @@
         "category": "latam_adr",
         "exchange": "NYSE",
         "currency": "USD",
-        "price_usd": 16.01,
-        "prev_close_usd": 18.34,
-        "change_pct": -12.7,
-        "volume": 22940500,
+        "price_usd": 15.925,
+        "prev_close_usd": 17.3,
+        "change_pct": -7.95,
+        "volume": 12009055,
         "source": "yahoo-finance"
       }
     ]
   },
   "cross_market_metrics": {
-    "venezuela_fx_spread_pct": 18.64,
-    "btc_price_ves_bcv": 56514962.74,
-    "btc_price_ves_p2p": 67047862,
-    "spy_price_ves_bcv": 633774.11,
-    "btc_per_spy_ratio": 89.17,
-    "paxg_vs_gld_10x_spread_pct": 12.11
+    "venezuela_fx_spread_pct": 20.71,
+    "btc_price_ves_bcv": 56281596.13,
+    "btc_price_ves_p2p": 67934900.2,
+    "spy_price_ves_bcv": 663992.33,
+    "btc_per_spy_ratio": 84.76,
+    "paxg_vs_gld_10x_spread_pct": 8.94
   },
   "latam_fx_spreads": [
     {
       "code": "VE",
       "currency": "VES",
       "official_usd": 918.7662,
-      "usdt_p2p_mid": 1090,
-      "spread_vs_official_pct": 18.64
+      "usdt_p2p_mid": 1109,
+      "spread_vs_official_pct": 20.71
     },
     {
       "code": "AR",
       "currency": "ARS",
       "official_usd": 1600,
-      "usdt_p2p_mid": 1768.56,
-      "spread_vs_official_pct": 10.53
+      "usdt_p2p_mid": 1761.485,
+      "spread_vs_official_pct": 10.09
     },
     {
       "code": "CO",
       "currency": "COP",
       "official_usd": 3437.4171,
-      "usdt_p2p_mid": 3429.5,
-      "spread_vs_official_pct": -0.23
+      "usdt_p2p_mid": 3483,
+      "spread_vs_official_pct": 1.33
     },
     {
       "code": "BR",
@@ -455,65 +455,65 @@
       "code": "MX",
       "currency": "MXN",
       "official_usd": 19.1134,
-      "usdt_p2p_mid": 19.19,
-      "spread_vs_official_pct": 0.4
+      "usdt_p2p_mid": 19.2,
+      "spread_vs_official_pct": 0.45
     },
     {
       "code": "CL",
       "currency": "CLP",
       "official_usd": 1016.5896,
-      "usdt_p2p_mid": 1035.025,
-      "spread_vs_official_pct": 1.81
+      "usdt_p2p_mid": 1019.225,
+      "spread_vs_official_pct": 0.26
     },
     {
       "code": "PE",
       "currency": "PEN",
       "official_usd": 3.4426,
-      "usdt_p2p_mid": 3.5155,
-      "spread_vs_official_pct": 2.12
+      "usdt_p2p_mid": 3.488,
+      "spread_vs_official_pct": 1.32
     },
     {
       "code": "BO",
       "currency": "BOB",
       "official_usd": 11.75,
-      "usdt_p2p_mid": 12,
-      "spread_vs_official_pct": 2.13
+      "usdt_p2p_mid": 11.945,
+      "spread_vs_official_pct": 1.66
     }
   ],
   "crypto_signals_highlights": [
     {
       "base": "BTC",
-      "rsi_14_1d": 27.58,
+      "rsi_14_1d": 26.59,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "ETH",
-      "rsi_14_1d": 29.82,
+      "rsi_14_1d": 30.45,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "SOL",
-      "rsi_14_1d": 31.51,
+      "rsi_14_1d": 33.77,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "BNB",
-      "rsi_14_1d": 27.66,
+      "rsi_14_1d": 27.96,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "XRP",
-      "rsi_14_1d": 31.07,
+      "rsi_14_1d": 31.7,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "ADA",
-      "rsi_14_1d": 29.06,
+      "rsi_14_1d": 31.2,
       "trend": "bearish",
       "funding_status": "unknown"
     }
@@ -524,11 +524,11 @@
       "chain": "Base",
       "project": "veranta",
       "symbol": "USDC",
-      "tvl_usd": 9424952,
-      "apy_total": 30.22,
-      "apy_base": 30.22,
+      "tvl_usd": 9420180,
+      "apy_total": 30.24,
+      "apy_base": 30.24,
       "apy_reward": null,
-      "apy_mean_30d": 28.82,
+      "apy_mean_30d": 28.87,
       "il_risk": "no"
     },
     {
@@ -536,74 +536,29 @@
       "chain": "Base",
       "project": "harvest-finance",
       "symbol": "USDC",
-      "tvl_usd": 1709372,
-      "apy_total": 27.55,
-      "apy_base": 27.55,
+      "tvl_usd": 1710271,
+      "apy_total": 27.54,
+      "apy_base": 27.54,
       "apy_reward": null,
-      "apy_mean_30d": 25.47,
+      "apy_mean_30d": 25.44,
       "il_risk": "no"
     }
   ],
   "top_predictions": [
-    {
-      "question": "Israel x Iran ceasefire continues through November 22?",
-      "topic": "politics",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 99.75
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 0.25
-        }
-      ],
-      "volume_24h_usd": 430632.02
-    },
     {
       "question": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
       "topic": "other",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 17.85
+          "probability_pct": 99.95
         },
         {
           "outcome": "No",
-          "probability_pct": 82.15
+          "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 429004.66
-    },
-    {
-      "question": "Will Shakhtar Donetsk win the 2026-27 UEFA Champions League Championship?",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 0.15
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 99.85
-        }
-      ],
-      "volume_24h_usd": 428998.63
-    },
-    {
-      "question": "Will Jensen Huang rejoin NVIDIA by November 30, 2026?",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 2.9
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 97.1
-        }
-      ],
-      "volume_24h_usd": 374707.52
+      "volume_24h_usd": 3963869.02
     },
     {
       "question": "Yokohama: Ryo Ono vs Lennon Roark Jones",
@@ -611,14 +566,59 @@
       "probabilities": [
         {
           "outcome": "Ryo Ono",
-          "probability_pct": 29.5
+          "probability_pct": 47.5
         },
         {
           "outcome": "Lennon Roark Jones",
-          "probability_pct": 70.5
+          "probability_pct": 52.5
         }
       ],
-      "volume_24h_usd": 349237.51
+      "volume_24h_usd": 3187776.71
+    },
+    {
+      "question": "Will Everton FC win on 2026-11-23?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 26.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 73.5
+        }
+      ],
+      "volume_24h_usd": 3084071.83
+    },
+    {
+      "question": "New NVIDIA CEO named by December 31, 2026?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 99.85
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 0.15
+        }
+      ],
+      "volume_24h_usd": 1810255.8
+    },
+    {
+      "question": "Will Brentford FC win on 2026-11-23?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 45.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 54.5
+        }
+      ],
+      "volume_24h_usd": 1681084.9
     }
   ]
 }

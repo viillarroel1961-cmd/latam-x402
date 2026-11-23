@@ -1,20 +1,20 @@
 {
   "market": "BVC_CARACAS",
-  "updated_at_utc": "2026-11-23T07:34:09.152Z",
+  "updated_at_utc": "2026-11-23T20:12:29.195Z",
   "sources": [
     "https://www.bolsadecaracas.com/resumen-mercado/"
   ],
   "fx_reference": {
     "usd_bcv": 918.7662,
-    "usdt_p2p_mid": 1090
+    "usdt_p2p_mid": 1109
   },
   "market_summary": {
     "trades_count": 2815,
     "shares_traded": 228402,
     "turnover_ves": 85194346.61,
-    "as_of_time": "03:34:11",
+    "as_of_time": "16:12:30",
     "turnover_usd_bcv": 92726.91,
-    "turnover_usd_p2p": 78159.95
+    "turnover_usd_p2p": 76820.87
   },
   "index": null,
   "coverage": {
@@ -33,7 +33,7 @@
       "turnover_ves": 3926319.9,
       "turnover_usd_bcv": 4273.47,
       "price_usd_bcv": 2.960492,
-      "price_usd_p2p": 2.495413,
+      "price_usd_p2p": 2.45266,
       "last_trade_time": "12:49:28",
       "status": "live"
     },
@@ -89,7 +89,7 @@
       "turnover_ves": 17088715.42,
       "turnover_usd_bcv": 18599.63,
       "price_usd_bcv": 0.267478,
-      "price_usd_p2p": 0.225459,
+      "price_usd_p2p": 0.221596,
       "last_trade_time": "13:00:00",
       "status": "live"
     },
@@ -103,7 +103,7 @@
       "turnover_ves": 7171347.96,
       "turnover_usd_bcv": 7805.41,
       "price_usd_bcv": 3.526468,
-      "price_usd_p2p": 2.972477,
+      "price_usd_p2p": 2.921551,
       "last_trade_time": "12:46:47",
       "status": "live"
     },
@@ -117,7 +117,7 @@
       "turnover_ves": 18600101.79,
       "turnover_usd_bcv": 20244.65,
       "price_usd_bcv": 1.012227,
-      "price_usd_p2p": 0.853211,
+      "price_usd_p2p": 0.838593,
       "last_trade_time": "13:00:00",
       "status": "live"
     },
@@ -131,7 +131,7 @@
       "turnover_ves": 1310739.87,
       "turnover_usd_bcv": 1426.63,
       "price_usd_bcv": 2.28132,
-      "price_usd_p2p": 1.922936,
+      "price_usd_p2p": 1.889991,
       "last_trade_time": "12:54:26",
       "status": "live"
     },
@@ -145,7 +145,7 @@
       "turnover_ves": 997220.01,
       "turnover_usd_bcv": 1085.39,
       "price_usd_bcv": 0.929507,
-      "price_usd_p2p": 0.783486,
+      "price_usd_p2p": 0.770063,
       "last_trade_time": "13:00:00",
       "status": "live"
     },
@@ -159,7 +159,7 @@
       "turnover_ves": 82706.3,
       "turnover_usd_bcv": 90.02,
       "price_usd_bcv": 9.749662,
-      "price_usd_p2p": 8.218037,
+      "price_usd_p2p": 8.077241,
       "last_trade_time": "13:00:00",
       "status": "live"
     },
@@ -173,7 +173,7 @@
       "turnover_ves": 282780.89,
       "turnover_usd_bcv": 307.78,
       "price_usd_bcv": 2.471793,
-      "price_usd_p2p": 2.083486,
+      "price_usd_p2p": 2.047791,
       "last_trade_time": "12:44:19",
       "status": "live"
     },
@@ -187,7 +187,7 @@
       "turnover_ves": 414830.1,
       "turnover_usd_bcv": 451.51,
       "price_usd_bcv": 0.868556,
-      "price_usd_p2p": 0.73211,
+      "price_usd_p2p": 0.719567,
       "last_trade_time": "13:00:00",
       "status": "live"
     },
@@ -201,7 +201,7 @@
       "turnover_ves": 136080.5,
       "turnover_usd_bcv": 148.11,
       "price_usd_bcv": 1.180932,
-      "price_usd_p2p": 0.995413,
+      "price_usd_p2p": 0.978359,
       "last_trade_time": "13:00:00",
       "status": "live"
     },
@@ -215,7 +215,7 @@
       "turnover_ves": 614710.89,
       "turnover_usd_bcv": 669.06,
       "price_usd_bcv": 0.206788,
-      "price_usd_p2p": 0.174303,
+      "price_usd_p2p": 0.171317,
       "last_trade_time": "12:53:02",
       "status": "live"
     },
@@ -229,7 +229,7 @@
       "turnover_ves": 546038,
       "turnover_usd_bcv": 594.32,
       "price_usd_bcv": 1.278889,
-      "price_usd_p2p": 1.077982,
+      "price_usd_p2p": 1.059513,
       "last_trade_time": "13:00:00",
       "status": "live"
     },
@@ -271,7 +271,7 @@
       "turnover_ves": 487680,
       "turnover_usd_bcv": 530.8,
       "price_usd_bcv": 3.24348,
-      "price_usd_p2p": 2.733945,
+      "price_usd_p2p": 2.687106,
       "last_trade_time": "12:28:04",
       "status": "live"
     },
@@ -285,7 +285,7 @@
       "turnover_ves": 995145.16,
       "turnover_usd_bcv": 1083.13,
       "price_usd_bcv": 0.08925,
-      "price_usd_p2p": 0.075229,
+      "price_usd_p2p": 0.07394,
       "last_trade_time": "13:00:01",
       "status": "live"
     },
@@ -299,7 +299,7 @@
       "turnover_ves": 1642500,
       "turnover_usd_bcv": 1787.72,
       "price_usd_bcv": 8.707329,
-      "price_usd_p2p": 7.33945,
+      "price_usd_p2p": 7.213706,
       "last_trade_time": "12:31:11",
       "status": "live"
     },
@@ -313,7 +313,7 @@
       "turnover_ves": 3932607.55,
       "turnover_usd_bcv": 4280.31,
       "price_usd_bcv": 1.431267,
-      "price_usd_p2p": 1.206422,
+      "price_usd_p2p": 1.185753,
       "last_trade_time": "12:46:22",
       "status": "live"
     },
@@ -327,7 +327,7 @@
       "turnover_ves": 112312.2,
       "turnover_usd_bcv": 122.24,
       "price_usd_bcv": 0.125494,
-      "price_usd_p2p": 0.10578,
+      "price_usd_p2p": 0.103968,
       "last_trade_time": "12:18:20",
       "status": "live"
     },
@@ -355,7 +355,7 @@
       "turnover_ves": 142318.92,
       "turnover_usd_bcv": 154.9,
       "price_usd_bcv": 1.741466,
-      "price_usd_p2p": 1.46789,
+      "price_usd_p2p": 1.442741,
       "last_trade_time": "12:50:10",
       "status": "live"
     },
@@ -369,7 +369,7 @@
       "turnover_ves": 477640,
       "turnover_usd_bcv": 519.87,
       "price_usd_bcv": 0.91427,
-      "price_usd_p2p": 0.770642,
+      "price_usd_p2p": 0.757439,
       "last_trade_time": "12:52:36",
       "status": "live"
     },
@@ -383,7 +383,7 @@
       "turnover_ves": 339430.96,
       "turnover_usd_bcv": 369.44,
       "price_usd_bcv": 0.217357,
-      "price_usd_p2p": 0.183211,
+      "price_usd_p2p": 0.180072,
       "last_trade_time": "12:51:57",
       "status": "live"
     },
@@ -397,7 +397,7 @@
       "turnover_ves": 41120,
       "turnover_usd_bcv": 44.76,
       "price_usd_bcv": 0.145848,
-      "price_usd_p2p": 0.122936,
+      "price_usd_p2p": 0.12083,
       "last_trade_time": "11:57:16",
       "status": "live"
     },
@@ -411,7 +411,7 @@
       "turnover_ves": 2191963.32,
       "turnover_usd_bcv": 2385.77,
       "price_usd_bcv": 16.302287,
-      "price_usd_p2p": 13.741275,
+      "price_usd_p2p": 13.505852,
       "last_trade_time": "12:40:16",
       "status": "live"
     },
@@ -425,7 +425,7 @@
       "turnover_ves": 6728318,
       "turnover_usd_bcv": 7323.21,
       "price_usd_bcv": 10.176691,
-      "price_usd_p2p": 8.577982,
+      "price_usd_p2p": 8.431019,
       "last_trade_time": "12:41:58",
       "status": "live"
     },
@@ -439,7 +439,7 @@
       "turnover_ves": 1774885.37,
       "turnover_usd_bcv": 1931.81,
       "price_usd_bcv": 0.184922,
-      "price_usd_p2p": 0.155872,
+      "price_usd_p2p": 0.153201,
       "last_trade_time": "13:00:01",
       "status": "live"
     },
@@ -453,7 +453,7 @@
       "turnover_ves": 1329291.34,
       "turnover_usd_bcv": 1446.82,
       "price_usd_bcv": 0.191561,
-      "price_usd_p2p": 0.161468,
+      "price_usd_p2p": 0.158702,
       "last_trade_time": "12:54:09",
       "status": "live"
     },
@@ -467,7 +467,7 @@
       "turnover_ves": 1587200.55,
       "turnover_usd_bcv": 1727.53,
       "price_usd_bcv": 1.741466,
-      "price_usd_p2p": 1.46789,
+      "price_usd_p2p": 1.442741,
       "last_trade_time": "12:52:31",
       "status": "live"
     },
@@ -495,7 +495,7 @@
       "turnover_ves": 2587522.74,
       "turnover_usd_bcv": 2816.3,
       "price_usd_bcv": 0.876175,
-      "price_usd_p2p": 0.738532,
+      "price_usd_p2p": 0.725879,
       "last_trade_time": "13:00:01",
       "status": "live"
     },
@@ -509,7 +509,7 @@
       "turnover_ves": 2597174.81,
       "turnover_usd_bcv": 2826.81,
       "price_usd_bcv": 0.634547,
-      "price_usd_p2p": 0.534862,
+      "price_usd_p2p": 0.525699,
       "last_trade_time": "12:48:04",
       "status": "live"
     },
@@ -523,7 +523,7 @@
       "turnover_ves": 4256495.68,
       "turnover_usd_bcv": 4632.84,
       "price_usd_bcv": 1.654393,
-      "price_usd_p2p": 1.394495,
+      "price_usd_p2p": 1.370604,
       "last_trade_time": "12:23:41",
       "status": "live"
     },
@@ -537,7 +537,7 @@
       "turnover_ves": 740291.53,
       "turnover_usd_bcv": 805.75,
       "price_usd_bcv": 1.519429,
-      "price_usd_p2p": 1.280734,
+      "price_usd_p2p": 1.258792,
       "last_trade_time": "13:00:01",
       "status": "live"
     },
@@ -551,7 +551,7 @@
       "turnover_ves": 574129.92,
       "turnover_usd_bcv": 624.89,
       "price_usd_bcv": 0.011744,
-      "price_usd_p2p": 0.009899,
+      "price_usd_p2p": 0.009729,
       "last_trade_time": "12:52:33",
       "status": "live"
     }
