@@ -3,6 +3,7 @@ import { cors } from "hono/cors";
 import { paymentMiddleware, x402ResourceServer } from "@x402/hono";
 import { ExactEvmScheme } from "@x402/evm/exact/server";
 import { HTTPFacilitatorClient } from "@x402/core/server";
+import { declareDiscoveryExtension } from "@x402/extensions/bazaar";
 import { loadMarketData } from "./data.js";
 import {
   buildLlmsTxt,
@@ -76,51 +77,187 @@ export function createApp() {
           accepts: { scheme: "exact", price: cfg.prices.bcv, network: cfg.network, payTo: cfg.payTo },
           description: "Venezuela BCV official USD/EUR FX, Binance P2P USDT/VES & spread history",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { days: "30" },
+              inputSchema: {
+                properties: {
+                  days: { type: "string", description: "Number of historical days to return (1-365)" },
+                },
+              },
+              output: {
+                example: { market: "BCV_FX_VE", latest: { usd_bcv: 918.77, usdt_p2p_mid: 1090.5, spread_vs_bcv_pct: 18.7 } },
+              },
+            }),
+          },
         },
         "GET /api/v1/latam-fx": {
           accepts: { scheme: "exact", price: cfg.prices.latamFx, network: cfg.network, payTo: cfg.payTo },
           description: "LatAm FX official vs parallel vs Binance USDT P2P across 8 countries",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { country: "AR" },
+              inputSchema: {
+                properties: {
+                  country: { type: "string", description: "Optional ISO country code (VE, AR, CO, BR, MX, CL, PE, BO)" },
+                },
+              },
+              output: {
+                example: { market: "LATAM_FX_P2P", count: 8, countries: [{ code: "AR", official_usd: 1600, usdt_p2p_mid: 1767.7, spread_vs_official_pct: 10.48 }] },
+              },
+            }),
+          },
         },
         "GET /api/v1/bvc": {
           accepts: { scheme: "exact", price: cfg.prices.bvc, network: cfg.network, payTo: cfg.payTo },
           description: "Bolsa de Valores de Caracas (BVC) equities in VES, USD BCV & USD P2P",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { onlyPriced: "true" },
+              inputSchema: {
+                properties: {
+                  onlyPriced: { type: "string", description: "Set 'true' to return only tickers with active quotes" },
+                },
+              },
+              output: {
+                example: { market: "BVC_CARACAS", coverage: { catalog_total: 38, live_quotes: 31 } },
+              },
+            }),
+          },
         },
         "GET /api/v1/bvc/[ticker]": {
           accepts: { scheme: "exact", price: cfg.prices.bvc, network: cfg.network, payTo: cfg.payTo },
           description: "Single Bolsa de Valores de Caracas ticker in VES, USD BCV & USD P2P",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              pathParams: { ticker: "BVCC" },
+              pathParamsSchema: {
+                properties: {
+                  ticker: { type: "string", description: "BVC ticker symbol (e.g. BVCC, BNC, BPV, RST)" },
+                },
+                required: ["ticker"],
+              },
+              output: {
+                example: { market: "BVC_CARACAS", stock: { ticker: "BVCC", price_ves: 930, price_usd_bcv: 1.0122, price_usd_p2p: 0.854 } },
+              },
+            }),
+          },
         },
         "GET /api/v1/crypto": {
           accepts: { scheme: "exact", price: cfg.prices.crypto, network: cfg.network, payTo: cfg.payTo },
           description: "Global crypto spot prices, 24h volume & perpetual funding rates",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { symbol: "BTC" },
+              inputSchema: {
+                properties: {
+                  symbol: { type: "string", description: "Optional base symbol filter (e.g. BTC, ETH, SOL)" },
+                },
+              },
+              output: {
+                example: { market: "CRYPTO_GLOBAL", count: 12, assets: [{ symbol: "BTCUSDT", price_usd: 60559.67, funding_rate_pct: -0.001 }] },
+              },
+            }),
+          },
         },
         "GET /api/v1/crypto/signals": {
           accepts: { scheme: "exact", price: cfg.prices.cryptoSignals, network: cfg.network, payTo: cfg.payTo },
           description: "Pre-computed crypto technical signals (RSI 14, EMA 20/50/200, ATR%, S/R, funding)",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { symbol: "BTC", trend: "bearish" },
+              inputSchema: {
+                properties: {
+                  symbol: { type: "string", description: "Optional base symbol filter (e.g. BTC, ETH, SOL)" },
+                  trend: { type: "string", description: "Optional trend filter (bullish, bearish, neutral)" },
+                },
+              },
+              output: {
+                example: { market: "CRYPTO_TECHNICAL_SIGNALS", signals: [{ base: "BTC", rsi_14_1d: 25.63, trend: "bearish" }] },
+              },
+            }),
+          },
         },
         "GET /api/v1/nyse": {
           accepts: { scheme: "exact", price: cfg.prices.nyse, network: cfg.network, payTo: cfg.payTo },
           description: "NYSE/NASDAQ US benchmarks & LatAm ADRs/ETFs quotes",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { category: "latam_adr" },
+              inputSchema: {
+                properties: {
+                  symbol: { type: "string", description: "Optional ticker symbol (e.g. SPY, NVDA, MELI, NU)" },
+                  category: { type: "string", description: "Optional category (etf, latam_etf, us_equity, latam_adr)" },
+                },
+              },
+              output: {
+                example: { market: "NYSE_US_LATAM", equities: [{ symbol: "MELI", price_usd: 1355, change_pct: -9.15 }] },
+              },
+            }),
+          },
         },
         "GET /api/v1/defi/yields": {
           accepts: { scheme: "exact", price: cfg.prices.defiYields, network: cfg.network, payTo: cfg.payTo },
           description: "Top DeFi stablecoin yields (TVL >= $1M) on Base, Solana, Arbitrum & Ethereum",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { chain: "Base", symbol: "USDC" },
+              inputSchema: {
+                properties: {
+                  chain: { type: "string", description: "Optional chain filter (Base, Solana, Arbitrum, Ethereum)" },
+                  symbol: { type: "string", description: "Optional stablecoin filter (USDC, USDT)" },
+                  minTvl: { type: "string", description: "Optional minimum TVL in USD" },
+                },
+              },
+              output: {
+                example: { market: "DEFI_STABLECOIN_YIELDS", count: 60 },
+              },
+            }),
+          },
         },
         "GET /api/v1/predictions": {
           accepts: { scheme: "exact", price: cfg.prices.predictions, network: cfg.network, payTo: cfg.payTo },
           description: "Most liquid Polymarket prediction markets with live probabilities & 24h volume",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { topic: "crypto", limit: "15" },
+              inputSchema: {
+                properties: {
+                  topic: { type: "string", description: "Topic filter (all, crypto, macro, latam, politics, sports)" },
+                  limit: { type: "string", description: "Max markets to return (1-40)" },
+                },
+              },
+              output: {
+                example: { market: "PREDICTION_MARKETS_POLYMARKET", count: 40 },
+              },
+            }),
+          },
         },
         "GET /api/v1/ecosystem": {
           accepts: { scheme: "exact", price: cfg.prices.ecosystem, network: cfg.network, payTo: cfg.payTo },
           description: "Unified cross-market snapshot (BCV + LatAm FX + BVC + Crypto + Signals + NYSE + DeFi + Polymarket)",
           mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { sections: "all" },
+              inputSchema: {
+                properties: {
+                  sections: { type: "string", description: "Section filter (all, fx, latam, bvc, crypto, signals, nyse, defi, predictions, ratios)" },
+                },
+              },
+              output: {
+                example: { ecosystem: "latam-x402", cross_market_metrics: { venezuela_fx_spread_pct: 18.7, btc_per_spy_ratio: 88.3 } },
+              },
+            }),
+          },
         },
       },
       resourceServer
