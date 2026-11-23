@@ -139,6 +139,8 @@ export function buildLlmsTxt(baseUrl: string, cfg: X402RuntimeConfig) {
 - Health & freshness: ${baseUrl}/api/health
 - OpenAPI 3.1: ${baseUrl}/openapi.json
 - x402 manifest: ${baseUrl}/.well-known/x402.json
+- Remote MCP (Streamable HTTP): ${baseUrl}/api/mcp
+- Glama MCP Directory: https://glama.ai/mcp/servers/viillarroel1961-cmd/latam-x402
 
 ## Paid Endpoints (x402 v2, USDC, payTo: ${cfg.payTo})
 - GET ${baseUrl}/api/v1/bcv (${cfg.prices.bcv} USDC): Venezuela BCV official USD/EUR rates, Binance P2P USDT/VES mid-price, spread %, and daily history (?days=30).

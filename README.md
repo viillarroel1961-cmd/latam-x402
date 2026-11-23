@@ -1,5 +1,7 @@
 # latam-x402
 
+[![Glama MCP Server](https://glama.ai/mcp/servers/viillarroel1961-cmd/latam-x402/badge)](https://glama.ai/mcp/servers/viillarroel1961-cmd/latam-x402)
+
 Unified **LatAm & Global Market Data API** monetized natively with the **[x402](https://x402.org) v2** HTTP micropayment protocol (**USDC on Base** via **PayAI** facilitator — zero API keys, zero account sign-up, instant autonomous settlement for AI agents and apps).
 
 ## Why latam-x402?
@@ -31,7 +33,8 @@ Financial data across Venezuela, LatAm equities, Crypto, and Wall Street normall
 
 ## Documentation & Examples
 - Full API reference & real JSON response examples (ES): [`DOCS.md`](./DOCS.md)
-- MCP Server installation (Claude Desktop, Cursor, Cline, Glama, Smithery): [`llms-install.md`](./llms-install.md)
+- MCP Server installation (Claude Desktop, Cursor, Cline, Glama): [`llms-install.md`](./llms-install.md)
+- Glama MCP Directory: `https://glama.ai/mcp/servers/viillarroel1961-cmd/latam-x402`
 - Remote MCP endpoint (Streamable HTTP): `https://latam-x402.vercel.app/api/mcp`
 - Machine-readable OpenAPI 3.1: `https://latam-x402.vercel.app/openapi.json`
 - x402 discovery manifest: `https://latam-x402.vercel.app/.well-known/x402.json`

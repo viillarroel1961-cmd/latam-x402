@@ -2,6 +2,8 @@
 
 **Base URL:** `https://latam-x402.vercel.app`  
 **Página de comercio (x402scan / Poncho):** `https://tryponcho.com/m/latam-x402.vercel.app`  
+**Directorio MCP (Glama):** `https://glama.ai/mcp/servers/viillarroel1961-cmd/latam-x402`  
+**Endpoint MCP remoto (Streamable HTTP):** `https://latam-x402.vercel.app/api/mcp`  
 **Protocolo de cobro:** `x402 v2` (HTTP `402 Payment Required`)  
 **Red y moneda:** Base Mainnet (`eip155:8453`) · **USDC** (`0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`)  
 **Facilitador:** PayAI (`https://facilitator.payai.network`)  
