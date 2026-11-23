@@ -58,4 +58,5 @@ npm run dev       # Starts server on http://localhost:3000
    - `X402_NETWORK` = `eip155:84532` (Base Sepolia testnet first) → switch to `eip155:8453` (Base Mainnet) after testing
    - `X402_FACILITATOR_URL` = `https://facilitator.payai.network`
    - `DATA_REMOTE_BASE_URL` = `https://raw.githubusercontent.com/viillarroel1961-cmd/latam-x402/main/data`
+   - *(Optional sales tracking hook)* `SALES_SHEET_WEBHOOK_URL`, `SALES_SHEET_KEY`, `SALES_SHEET_ID` (Google Sheets via Apps Script) and/or `SALES_WEBHOOK_URL` (Discord or JSON webhook)
 3. Enable GitHub Actions workflow (`Sync Market Data`) so `data/*.json` refreshes every 2 hours automatically.

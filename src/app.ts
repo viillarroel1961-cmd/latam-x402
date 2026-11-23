@@ -12,6 +12,7 @@ import {
   buildWellKnownX402,
   type X402RuntimeConfig,
 } from "./openapi.js";
+import { createSalesTrackingMiddleware, isSalesHookConfigured } from "./sales-hook.js";
 
 try {
   process.loadEnvFile?.();
@@ -68,6 +69,10 @@ export function createApp() {
     cfg.network,
     new ExactEvmScheme()
   );
+
+  // Hook de registro de ventas (se ejecuta antes de paymentMiddleware para capturar
+  // ruta exacta + query + tx_hash + buyer una vez liquidado el pago con HTTP 2xx)
+  app.use("/api/v1/*", createSalesTrackingMiddleware(cfg));
 
   // Middleware x402 v2 solo para rutas pagas /api/v1/*
   app.use(
@@ -310,6 +315,7 @@ export function createApp() {
         network: cfg.network,
         facilitator: cfg.facilitatorUrl,
         wallet_configured: cfg.payTo !== "0x000000000000000000000000000000000000dEaD",
+        sales_hook: isSalesHookConfigured(),
       },
       feeds: {
         bcv: { source: bcv.source, updated_at_utc: bcv.data?.updated_at_utc ?? null },
