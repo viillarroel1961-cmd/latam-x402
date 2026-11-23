@@ -685,9 +685,470 @@ async function syncNyse(nowIso) {
 }
 
 // ---------------------------------------------------------------------------
-// 5. Ecosistema Unificado (cross-market)
+// 5. LatAm FX & USDT P2P Spreads (VE, AR, CO, BR, MX, CL, PE, BO)
 // ---------------------------------------------------------------------------
-function buildEcosystem(nowIso, bcv, bvc, crypto, nyse) {
+const LATAM_COUNTRIES = [
+  { code: "VE", name: "Venezuela", currency: "VES" },
+  { code: "AR", name: "Argentina", currency: "ARS" },
+  { code: "CO", name: "Colombia", currency: "COP" },
+  { code: "BR", name: "Brazil", currency: "BRL" },
+  { code: "MX", name: "Mexico", currency: "MXN" },
+  { code: "CL", name: "Chile", currency: "CLP" },
+  { code: "PE", name: "Peru", currency: "PEN" },
+  { code: "BO", name: "Bolivia", currency: "BOB" },
+];
+
+async function fetchBinanceP2pMid(fiat) {
+  let buy = null;
+  let sell = null;
+  for (const tradeType of ["BUY", "SELL"]) {
+    try {
+      const p2p = await fetchJson(
+        "https://p2p.binance.com/bapi/c2c/v2/friendly/c2c/adv/search",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            asset: "USDT",
+            fiat,
+            tradeType,
+            page: 1,
+            rows: 10,
+            payTypes: [],
+            publisherType: null,
+          }),
+        },
+        12000
+      );
+      const prices = (p2p?.data || [])
+        .map((item) => Number(item?.adv?.price))
+        .filter((p) => Number.isFinite(p) && p > 0)
+        .slice(0, 5);
+      if (prices.length > 0) {
+        prices.sort((a, b) => a - b);
+        const median = prices[Math.floor(prices.length / 2)];
+        if (tradeType === "BUY") buy = round(median, 4);
+        else sell = round(median, 4);
+      }
+    } catch {
+      // continuar
+    }
+  }
+  const mid = buy && sell ? round((buy + sell) / 2, 4) : buy ?? sell;
+  return { buy, sell, mid };
+}
+
+async function syncLatamFx(nowIso, bcvData) {
+  const prev = readJsonSafe("latam-fx.json", { countries: [] });
+  const prevMap = new Map((prev.countries || []).map((c) => [c.code, c]));
+
+  let officialRates = {};
+  let arDolares = [];
+  let boDolares = [];
+  const sources = [];
+
+  try {
+    const er = await fetchJson("https://open.er-api.com/v6/latest/USD", {}, 12000);
+    if (er?.rates) {
+      officialRates = er.rates;
+      sources.push("open.er-api.com");
+    }
+  } catch (err) {
+    console.warn("[LATAM-FX] open.er-api error:", err.message);
+  }
+
+  try {
+    const ar = await fetchJson("https://dolarapi.com/v1/dolares", {}, 10000);
+    if (Array.isArray(ar)) {
+      arDolares = ar;
+      sources.push("dolarapi.com/ar");
+    }
+  } catch {
+    // opcional
+  }
+
+  try {
+    const bo = await fetchJson("https://bo.dolarapi.com/v1/dolares", {}, 10000);
+    if (Array.isArray(bo)) {
+      boDolares = bo;
+      sources.push("bo.dolarapi.com");
+    }
+  } catch {
+    // opcional
+  }
+
+  const p2pResults = await Promise.all(
+    LATAM_COUNTRIES.map((c) =>
+      c.code === "VE"
+        ? Promise.resolve({
+            buy: bcvData?.latest?.usdt_p2p_buy ?? null,
+            sell: bcvData?.latest?.usdt_p2p_sell ?? null,
+            mid: bcvData?.latest?.usdt_p2p_mid ?? null,
+          })
+        : fetchBinanceP2pMid(c.currency)
+    )
+  );
+  sources.push("binance-p2p");
+
+  const countries = LATAM_COUNTRIES.map((c, idx) => {
+    const old = prevMap.get(c.code) || {};
+    const p2p = p2pResults[idx];
+
+    let official =
+      c.code === "VE"
+        ? bcvData?.latest?.usd_bcv ?? null
+        : Number.isFinite(Number(officialRates[c.currency]))
+        ? round(Number(officialRates[c.currency]), 4)
+        : old.official_usd ?? null;
+
+    let parallel = null;
+    const extras = {};
+
+    if (c.code === "VE") {
+      parallel = bcvData?.latest?.usd_paralelo ?? null;
+    } else if (c.code === "AR" && arDolares.length) {
+      const of = arDolares.find((d) => d.casa === "oficial");
+      const blue = arDolares.find((d) => d.casa === "blue");
+      const mep = arDolares.find((d) => d.casa === "bolsa");
+      const ccl = arDolares.find((d) => d.casa === "contadoconliqui");
+      const cripto = arDolares.find((d) => d.casa === "cripto");
+      if (of?.venta) official = round(Number(of.venta), 2);
+      if (blue?.venta) parallel = round(Number(blue.venta), 2);
+      if (mep?.venta) extras.mep_usd = round(Number(mep.venta), 2);
+      if (ccl?.venta) extras.ccl_usd = round(Number(ccl.venta), 2);
+      if (cripto?.venta) extras.cripto_usd = round(Number(cripto.venta), 2);
+    } else if (c.code === "BO" && boDolares.length) {
+      const of = boDolares.find((d) => d.casa === "oficial");
+      const bin = boDolares.find((d) => d.casa === "binance");
+      if (of?.venta) official = round(Number(of.venta), 4);
+      if (bin?.venta) parallel = round(Number(bin.venta), 4);
+    }
+
+    const p2pMid = p2p.mid ?? old.usdt_p2p_mid ?? null;
+    const spreadPct =
+      official && p2pMid ? round(((p2pMid - official) / official) * 100, 2) : null;
+
+    return {
+      code: c.code,
+      country: c.name,
+      currency: c.currency,
+      official_usd: official,
+      parallel_usd: parallel ?? old.parallel_usd ?? null,
+      usdt_p2p_buy: p2p.buy ?? old.usdt_p2p_buy ?? null,
+      usdt_p2p_sell: p2p.sell ?? old.usdt_p2p_sell ?? null,
+      usdt_p2p_mid: p2pMid,
+      spread_vs_official_pct: spreadPct,
+      ...extras,
+    };
+  });
+
+  const out = {
+    market: "LATAM_FX_P2P",
+    updated_at_utc: nowIso,
+    sources: [...new Set(sources)],
+    count: countries.length,
+    countries,
+  };
+  writeJson("latam-fx.json", out);
+  console.log(`[LATAM-FX] OK countries=${countries.length}`);
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// 6. Crypto Technical Signals (RSI 14, EMA 20/50/200, ATR%, S/R, Funding)
+// ---------------------------------------------------------------------------
+function calcEma(values, period) {
+  if (!values || values.length < period) return null;
+  const k = 2 / (period + 1);
+  let ema = values.slice(0, period).reduce((a, b) => a + b, 0) / period;
+  for (let i = period; i < values.length; i++) {
+    ema = values[i] * k + ema * (1 - k);
+  }
+  return ema;
+}
+
+function calcRsi(closes, period = 14) {
+  if (!closes || closes.length <= period) return null;
+  let gains = 0;
+  let losses = 0;
+  for (let i = 1; i <= period; i++) {
+    const diff = closes[i] - closes[i - 1];
+    if (diff >= 0) gains += diff;
+    else losses -= diff;
+  }
+  let avgGain = gains / period;
+  let avgLoss = losses / period;
+  for (let i = period + 1; i < closes.length; i++) {
+    const diff = closes[i] - closes[i - 1];
+    const g = diff > 0 ? diff : 0;
+    const l = diff < 0 ? -diff : 0;
+    avgGain = (avgGain * (period - 1) + g) / period;
+    avgLoss = (avgLoss * (period - 1) + l) / period;
+  }
+  if (avgLoss === 0) return 100;
+  const rs = avgGain / avgLoss;
+  return 100 - 100 / (1 + rs);
+}
+
+function calcAtrPct(klines, period = 14) {
+  if (!klines || klines.length <= period) return null;
+  const trs = [];
+  for (let i = 1; i < klines.length; i++) {
+    const high = Number(klines[i][2]);
+    const low = Number(klines[i][3]);
+    const prevClose = Number(klines[i - 1][4]);
+    trs.push(Math.max(high - low, Math.abs(high - prevClose), Math.abs(low - prevClose)));
+  }
+  const recent = trs.slice(-period);
+  const atr = recent.reduce((a, b) => a + b, 0) / recent.length;
+  const lastClose = Number(klines[klines.length - 1][4]);
+  return lastClose > 0 ? (atr / lastClose) * 100 : null;
+}
+
+async function syncCryptoSignals(nowIso, cryptoData) {
+  const prev = readJsonSafe("crypto-signals.json", { signals: [] });
+  const prevMap = new Map((prev.signals || []).map((s) => [s.symbol, s]));
+  const assetMap = new Map((cryptoData?.assets || []).map((a) => [a.symbol, a]));
+
+  const signals = await Promise.all(
+    CRYPTO_SYMBOLS.map(async (symbol) => {
+      const base = symbol.replace(/USDT$/, "");
+      const spot = assetMap.get(symbol);
+      try {
+        const [k1d, k4h] = await Promise.all([
+          fetchJson(
+            `https://data-api.binance.vision/api/v3/klines?symbol=${symbol}&interval=1d&limit=210`,
+            {},
+            12000
+          ),
+          fetchJson(
+            `https://data-api.binance.vision/api/v3/klines?symbol=${symbol}&interval=4h&limit=60`,
+            {},
+            12000
+          ),
+        ]);
+        const closes1d = k1d.map((k) => Number(k[4]));
+        const closes4h = k4h.map((k) => Number(k[4]));
+        const price = closes1d[closes1d.length - 1];
+        const ema20 = calcEma(closes1d, 20);
+        const ema50 = calcEma(closes1d, 50);
+        const ema200 = calcEma(closes1d, 200);
+        const rsi1d = calcRsi(closes1d, 14);
+        const rsi4h = calcRsi(closes4h, 14);
+        const atrPct = calcAtrPct(k1d, 14);
+
+        const last20 = k1d.slice(-20);
+        const support20d = Math.min(...last20.map((k) => Number(k[3])));
+        const resistance20d = Math.max(...last20.map((k) => Number(k[2])));
+
+        const trend =
+          ema20 && ema50
+            ? price > ema20 && ema20 > ema50
+              ? "bullish"
+              : price < ema20 && ema20 < ema50
+              ? "bearish"
+              : "neutral"
+            : "neutral";
+
+        const rsiZone =
+          rsi1d !== null
+            ? rsi1d >= 70
+              ? "overbought"
+              : rsi1d <= 30
+              ? "oversold"
+              : "neutral"
+            : "neutral";
+
+        const fundingPct = spot?.funding_rate_pct ?? null;
+        const fundingStatus =
+          fundingPct !== null
+            ? fundingPct >= 0.03
+              ? "crowded_long"
+              : fundingPct <= -0.01
+              ? "crowded_short"
+              : "normal"
+            : "unknown";
+
+        return {
+          symbol,
+          base,
+          price_usd: round(price, 6),
+          change_24h_pct: spot?.change_24h_pct ?? null,
+          rsi_14_4h: round(rsi4h, 2),
+          rsi_14_1d: round(rsi1d, 2),
+          rsi_zone: rsiZone,
+          ema_20_1d: round(ema20, 4),
+          ema_50_1d: round(ema50, 4),
+          ema_200_1d: round(ema200, 4),
+          atr_14_1d_pct: round(atrPct, 2),
+          support_20d: round(support20d, 4),
+          resistance_20d: round(resistance20d, 4),
+          trend,
+          funding_rate_pct: fundingPct,
+          funding_status: fundingStatus,
+        };
+      } catch (err) {
+        console.warn(`[SIGNALS] ${symbol} error:`, err.message);
+        return prevMap.get(symbol) || { symbol, base, trend: "unavailable" };
+      }
+    })
+  );
+
+  const out = {
+    market: "CRYPTO_TECHNICAL_SIGNALS",
+    updated_at_utc: nowIso,
+    sources: ["data-api.binance.vision/klines", "okx/binance-funding"],
+    count: signals.length,
+    signals,
+  };
+  writeJson("crypto-signals.json", out);
+  console.log(`[SIGNALS] OK count=${signals.length}`);
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// 7. DeFi Stablecoin Yields (DeFiLlama public API)
+// ---------------------------------------------------------------------------
+async function syncDefiYields(nowIso) {
+  const prev = readJsonSafe("defi-yields.json", { pools: [] });
+  const targetChains = new Set(["Base", "Solana", "Arbitrum", "Ethereum", "Optimism", "Polygon", "BSC"]);
+  let pools = prev.pools || [];
+
+  try {
+    const res = await fetchJson("https://yields.llama.fi/pools", {}, 20000);
+    if (Array.isArray(res?.data)) {
+      pools = res.data
+        .filter(
+          (p) =>
+            p.stablecoin === true &&
+            targetChains.has(p.chain) &&
+            typeof p.tvlUsd === "number" &&
+            p.tvlUsd >= 1_000_000 &&
+            typeof p.apy === "number" &&
+            p.apy > 0.5 &&
+            p.apy < 80 &&
+            /USD|DAI|FRAX|USDe/i.test(String(p.symbol || ""))
+        )
+        .sort((a, b) => (b.apyBase ?? b.apy) - (a.apyBase ?? a.apy))
+        .slice(0, 60)
+        .map((p) => ({
+          pool_id: p.pool,
+          chain: p.chain,
+          project: p.project,
+          symbol: p.symbol,
+          tvl_usd: Math.round(p.tvlUsd),
+          apy_total: round(p.apy, 2),
+          apy_base: round(p.apyBase, 2),
+          apy_reward: round(p.apyReward, 2),
+          apy_mean_30d: round(p.apyMean30d, 2),
+          il_risk: p.ilRisk || "no",
+        }));
+    }
+  } catch (err) {
+    console.warn("[DEFI] DeFiLlama error:", err.message);
+  }
+
+  const out = {
+    market: "DEFI_STABLECOIN_YIELDS",
+    updated_at_utc: nowIso,
+    sources: ["yields.llama.fi/pools"],
+    filter_criteria: "stablecoin=true, tvlUsd>=1M, apy 0.5%-80%, major chains",
+    count: pools.length,
+    pools,
+  };
+  writeJson("defi-yields.json", out);
+  console.log(`[DEFI] OK pools=${pools.length}`);
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// 8. Prediction Markets (Polymarket Gamma public API)
+// ---------------------------------------------------------------------------
+function classifyPredictionTopic(question, slug = "") {
+  const q = String(question || "").toLowerCase();
+  const s = String(slug || "").toLowerCase();
+  if (/(^|\b)(nfl|nba|mlb|nhl|ufc|ncaa|premier league|champions league|fifa|atp|wta|spread:|o\/u\b|vs\.)/.test(q) || /^(nfl|nba|mlb|nhl|cbb|cfb|soccer|tennis)-/.test(s)) {
+    return "sports";
+  }
+  if (/\b(bitcoin|btc|ethereum|eth|solana|sol|crypto|usdc|usdt|binance|coinbase|xrp|doge|defi|memecoin)\b/.test(q)) {
+    return "crypto";
+  }
+  if (/\b(venezuela|argentina|brazil|brasil|mexico|colombia|latam|maduro|milei|lula|petro|bolivia|chile|peru)\b/.test(q)) {
+    return "latam";
+  }
+  if (/\b(fed|fomc|interest rate|inflation|cpi|recession|gdp|tariff|oil|gold|s&p|nasdaq|treasury|rate cut|bps)\b/.test(q)) {
+    return "macro";
+  }
+  if (/\b(trump|election|president|senate|congress|war|ukraine|russia|china|iran|israel|nato|governor|prime minister)\b/.test(q)) {
+    return "politics";
+  }
+  return "other";
+}
+
+async function syncPredictions(nowIso) {
+  const prev = readJsonSafe("predictions.json", { markets: [] });
+  let markets = prev.markets || [];
+
+  try {
+    const raw = await fetchJson(
+      "https://gamma-api.polymarket.com/markets?active=true&closed=false&order=volume24hr&ascending=false&limit=60",
+      {},
+      15000
+    );
+    if (Array.isArray(raw)) {
+      markets = raw
+        .filter((m) => m.question && Number(m.volume24hr || 0) > 1000)
+        .slice(0, 40)
+        .map((m) => {
+          let outcomes = [];
+          let prices = [];
+          try {
+            outcomes = typeof m.outcomes === "string" ? JSON.parse(m.outcomes) : m.outcomes || [];
+            prices =
+              typeof m.outcomePrices === "string"
+                ? JSON.parse(m.outcomePrices)
+                : m.outcomePrices || [];
+          } catch {
+            // ignorar
+          }
+          const probabilities = outcomes.map((label, i) => ({
+            outcome: label,
+            probability_pct:
+              prices[i] !== undefined ? round(Number(prices[i]) * 100, 2) : null,
+          }));
+          return {
+            id: m.id,
+            question: m.question,
+            topic: classifyPredictionTopic(m.question, m.slug),
+            probabilities,
+            volume_24h_usd: round(Number(m.volume24hr || 0), 2),
+            volume_total_usd: round(Number(m.volumeNum || m.volume || 0), 2),
+            liquidity_usd: round(Number(m.liquidityNum || m.liquidity || 0), 2),
+            end_date: m.endDate || null,
+            url: m.slug ? `https://polymarket.com/event/${m.slug}` : null,
+          };
+        });
+    }
+  } catch (err) {
+    console.warn("[PREDICTIONS] Polymarket error:", err.message);
+  }
+
+  const out = {
+    market: "PREDICTION_MARKETS_POLYMARKET",
+    updated_at_utc: nowIso,
+    sources: ["gamma-api.polymarket.com/markets"],
+    count: markets.length,
+    markets,
+  };
+  writeJson("predictions.json", out);
+  console.log(`[PREDICTIONS] OK markets=${markets.length}`);
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// 9. Ecosistema Unificado (cross-market)
+// ---------------------------------------------------------------------------
+function buildEcosystem(nowIso, bcv, bvc, crypto, nyse, latamFx, signals, defi, predictions) {
   const usdBcv = bcv?.latest?.usd_bcv ?? null;
   const usdtP2p = bcv?.latest?.usdt_p2p_mid ?? null;
 
@@ -753,6 +1214,28 @@ function buildEcosystem(nowIso, bcv, bvc, crypto, nyse) {
           ? round(((paxg.price_usd - gld.price_usd * 10) / (gld.price_usd * 10)) * 100, 2)
           : null,
     },
+    latam_fx_spreads: (latamFx?.countries || []).map((c) => ({
+      code: c.code,
+      currency: c.currency,
+      official_usd: c.official_usd,
+      usdt_p2p_mid: c.usdt_p2p_mid,
+      spread_vs_official_pct: c.spread_vs_official_pct,
+    })),
+    crypto_signals_highlights: (signals?.signals || []).slice(0, 6).map((s) => ({
+      base: s.base,
+      rsi_14_1d: s.rsi_14_1d,
+      trend: s.trend,
+      funding_status: s.funding_status,
+    })),
+    top_base_usdc_yields: (defi?.pools || [])
+      .filter((p) => p.chain === "Base")
+      .slice(0, 5),
+    top_predictions: (predictions?.markets || []).slice(0, 5).map((m) => ({
+      question: m.question,
+      topic: m.topic,
+      probabilities: m.probabilities,
+      volume_24h_usd: m.volume_24h_usd,
+    })),
   };
 
   writeJson("ecosystem.json", out);
@@ -765,12 +1248,16 @@ async function main() {
   console.log(`[SYNC] Starting latam-x402 data sync at ${nowIso}`);
 
   const bcv = await syncBcv(nowIso);
-  const [bvc, crypto, nyse] = await Promise.all([
+  const [bvc, crypto, nyse, latamFx, defi, predictions] = await Promise.all([
     syncBvc(nowIso, bcv),
     syncCrypto(nowIso),
     syncNyse(nowIso),
+    syncLatamFx(nowIso, bcv),
+    syncDefiYields(nowIso),
+    syncPredictions(nowIso),
   ]);
-  buildEcosystem(nowIso, bcv, bvc, crypto, nyse);
+  const signals = await syncCryptoSignals(nowIso, crypto);
+  buildEcosystem(nowIso, bcv, bvc, crypto, nyse, latamFx, signals, defi, predictions);
   console.log("[SYNC] Done.");
 }
 

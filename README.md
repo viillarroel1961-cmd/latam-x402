@@ -19,11 +19,15 @@ Financial data across Venezuela, LatAm equities, Crypto, and Wall Street normall
 | `GET /api/health` | Free | Live status & last sync UTC per feed |
 | `GET /api/docs` / `/api/openapi.json` | Free | OpenAPI 3.1 + x402 discovery manifest |
 | `GET /api/v1/bcv` | `$0.002` | BCV USD/EUR + USDT P2P + spread + history (`?days=30`) |
+| `GET /api/v1/latam-fx` | `$0.005` | 8 LatAm countries official vs parallel/MEP/CCL vs Binance USDT P2P (`?country=AR`) |
 | `GET /api/v1/crypto` | `$0.002` | Global crypto spot 24h + funding (`?symbol=BTC`) |
+| `GET /api/v1/crypto/signals` | `$0.005` | Pre-computed RSI(14) 4h/1d, EMA 20/50/200, ATR%, 20d S/R, trend & funding (`?symbol=BTC`) |
 | `GET /api/v1/nyse` | `$0.003` | NYSE/NASDAQ US & LatAm ADRs (`?symbol=MELI&category=latam_adr`) |
 | `GET /api/v1/bvc` | `$0.005` | Bolsa de Caracas in VES, USD BCV & USD P2P (`?onlyPriced=true`) |
 | `GET /api/v1/bvc/:ticker` | `$0.005` | Single BVC issuer (e.g. `BVCC`, `BNC`, `MVZ.A`, `RST`) |
-| `GET /api/v1/ecosystem` | `$0.01` | Full unified cross-market snapshot + ratios |
+| `GET /api/v1/defi/yields` | `$0.005` | Top DeFi stablecoin yields (TVL >= $1M) on Base, Solana, Arbitrum & Ethereum (`?chain=Base`) |
+| `GET /api/v1/predictions` | `$0.005` | Most liquid Polymarket prediction markets (`?topic=crypto&limit=20`) |
+| `GET /api/v1/ecosystem` | `$0.01` | Full unified cross-market snapshot + ratios (`?sections=all`) |
 
 ## Documentation & Examples
 - Full API reference & real JSON response examples (ES): [`DOCS.md`](./DOCS.md)

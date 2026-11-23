@@ -36,11 +36,15 @@ No usa API keys, registro ni suscripciones mensuales. El flujo entre un agente d
 | Método | Ruta | Precio | Parámetros opcionales | Qué entrega |
 |---|---|---:|---|---|
 | `GET` | `/api/v1/bcv` | **`$0.002`** | `?days=30` (`1`–`365`) | Tasa oficial BCV USD y EUR, Binance P2P USDT/VES (compra/venta/medio), brecha `%`, EUR/USD implícito e histórico diario |
+| `GET` | `/api/v1/latam-fx` | **`$0.005`** | `?country=VE\|AR\|CO\|BR\|MX\|CL\|PE\|BO` | Tasa oficial vs paralelo/MEP/CCL vs **USDT P2P Binance** + brecha `%` en **8 países LatAm** |
 | `GET` | `/api/v1/crypto` | **`$0.002`** | `?symbol=BTC` | 12 criptos principales: precio spot USD, cambio 24h `%`, máx/mín 24h, volumen 24h USD y **funding rate** perpetuo |
+| `GET` | `/api/v1/crypto/signals` | **`$0.005`** | `?symbol=BTC` · `?trend=bullish\|bearish\|neutral` | Indicadores precalculados: **RSI(14) 4h y 1d**, EMA 20/50/200, ATR%, soporte/resistencia 20d, tendencia y extremos de funding |
 | `GET` | `/api/v1/nyse` | **`$0.003`** | `?symbol=MELI` · `?category=etf\|latam_etf\|us_equity\|latam_adr` | 20 activos NYSE/NASDAQ (ETFs US, mega-caps y ADRs LatAm) con precio USD, cierre previo, cambio `%` y volumen |
 | `GET` | `/api/v1/bvc` | **`$0.005`** | `?onlyPriced=true` | 38 emisoras de la Bolsa de Caracas con precio en **VES**, variación `%`, volumen, monto efectivo y valuación cruzada en **USD BCV** y **USD P2P** + resumen del día |
 | `GET` | `/api/v1/bvc/:ticker` | **`$0.005`** | `:ticker` (ej. `BVCC`, `BNC`, `BPV`, `BVL`, `MVZ.A`, `RST`, `TDV.D`) | Cotización individual de 1 acción de la BVC en VES, USD BCV y USD P2P |
-| `GET` | `/api/v1/ecosystem` | **`$0.010`** | `?sections=all\|fx\|bvc\|crypto\|nyse\|ratios` | **Snapshot unificado de los 4 mercados** + métricas cruzadas (`BTC/VES`, `SPY/VES`, `BTC/SPY`, `PAXG/GLD`, brecha VE) |
+| `GET` | `/api/v1/defi/yields` | **`$0.005`** | `?chain=Base` · `?symbol=USDC` · `?minTvl=5000000` | Top 60 pools de stablecoins (TVL ≥ `$1M`) en Base, Solana, Arbitrum, Ethereum, Optimism, Polygon y BSC vía DeFiLlama |
+| `GET` | `/api/v1/predictions` | **`$0.005`** | `?topic=all\|crypto\|macro\|latam\|politics\|sports` · `?limit=20` | Top 40 mercados más líquidos de **Polymarket** con probabilidades `%` y volumen 24h |
+| `GET` | `/api/v1/ecosystem` | **`$0.010`** | `?sections=all\|fx\|latam\|bvc\|crypto\|signals\|nyse\|defi\|predictions\|ratios` | **Snapshot unificado de todos los mercados** + métricas cruzadas (`BTC/VES`, `SPY/VES`, `BTC/SPY`, `PAXG/GLD`, brechas LatAm) |
 
 ---
 
@@ -260,6 +264,102 @@ Con `?sections=ratios` (o `fx`, `bvc`, `crypto`, `nyse`) puede pedir solo el blo
   }
 }
 ```
+
+---
+
+### 3.7. `GET /api/v1/latam-fx?country=AR` *(`$0.005` USDC)*
+
+**Para qué sirve:** comparar la brecha cambiaria real (oficial vs paralelo/MEP/CCL vs USDT P2P Binance) en **8 países de Latinoamérica** (`VE`, `AR`, `CO`, `BR`, `MX`, `CL`, `PE`, `BO`).
+
+```json
+{
+  "market": "LATAM_FX_P2P",
+  "updated_at_utc": "2026-11-23T02:44:34.895Z",
+  "count": 1,
+  "countries": [
+    {
+      "code": "AR",
+      "country": "Argentina",
+      "currency": "ARS",
+      "official_usd": 1600,
+      "parallel_usd": 1675,
+      "usdt_p2p_buy": 1770,
+      "usdt_p2p_sell": 1765.4,
+      "usdt_p2p_mid": 1767.7,
+      "spread_vs_official_pct": 10.48,
+      "mep_usd": 1743.1,
+      "ccl_usd": 1806.2,
+      "cripto_usd": 1769.64
+    }
+  ]
+}
+```
+
+---
+
+### 3.8. `GET /api/v1/crypto/signals?symbol=BTC` *(`$0.005` USDC)*
+
+**Para qué sirve:** agentes de trading reciben **RSI(14) 4h/1d, EMA 20/50/200, ATR%, soportes/resistencias 20d, tendencia y funding** ya calculados sin descargar velas.
+
+```json
+{
+  "market": "CRYPTO_TECHNICAL_SIGNALS",
+  "updated_at_utc": "2026-11-23T02:44:34.895Z",
+  "count": 1,
+  "signals": [
+    {
+      "symbol": "BTCUSDT",
+      "base": "BTC",
+      "price_usd": 60559.67,
+      "change_24h_pct": 1.48,
+      "rsi_14_4h": 46.84,
+      "rsi_14_1d": 25.63,
+      "rsi_zone": "oversold",
+      "ema_20_1d": 67188.5412,
+      "ema_50_1d": 72979.2369,
+      "ema_200_1d": 72082.3988,
+      "atr_14_1d_pct": 5.29,
+      "support_20d": 55130,
+      "resistance_20d": 81196.01,
+      "trend": "bearish",
+      "funding_rate_pct": -0.001,
+      "funding_status": "normal"
+    }
+  ]
+}
+```
+
+---
+
+### 3.9. `GET /api/v1/defi/yields?chain=Base&symbol=USDC` *(`$0.005` USDC)*
+
+**Para qué sirve:** encontrar los mejores rendimientos APY reales en stablecoins (TVL ≥ `$1M`) por red vía DeFiLlama.
+
+```json
+{
+  "market": "DEFI_STABLECOIN_YIELDS",
+  "updated_at_utc": "2026-11-23T02:44:34.895Z",
+  "sources": ["yields.llama.fi/pools"],
+  "pools": [
+    {
+      "chain": "Ethereum",
+      "project": "sky-lending",
+      "symbol": "STUSDS",
+      "tvl_usd": 161609473,
+      "apy_total": 49.74,
+      "apy_base": 49.74,
+      "apy_mean_30d": 12.09,
+      "il_risk": "no"
+    }
+  ]
+}
+```
+
+---
+
+### 3.10. `GET /api/v1/predictions?topic=crypto&limit=10` *(`$0.005` USDC)*
+
+**Para qué sirve:** probabilidades implícitas y volumen 24h de los mercados más líquidos de **Polymarket** filtrados por tema (`crypto`, `macro`, `latam`, `politics`, `sports`).
 
 ---
 

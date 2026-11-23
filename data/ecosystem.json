@@ -1,16 +1,16 @@
 {
   "ecosystem": "latam-x402",
   "version": "1.0.0",
-  "updated_at_utc": "2026-11-22T23:08:26.478Z",
+  "updated_at_utc": "2026-11-23T02:50:22.851Z",
   "fx_venezuela": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "usd_bcv": 918.7662,
     "eur_bcv": 1009.0717,
     "usd_paralelo": 1086.8627,
-    "usdt_p2p_buy": 1088,
-    "usdt_p2p_sell": 1090,
-    "usdt_p2p_mid": 1089,
-    "spread_vs_bcv_pct": 18.53,
+    "usdt_p2p_buy": 1091,
+    "usdt_p2p_sell": 1090.099,
+    "usdt_p2p_mid": 1090.5495,
+    "spread_vs_bcv_pct": 18.7,
     "eur_usd_implied": 1.0983
   },
   "bvc_caracas": {
@@ -31,7 +31,7 @@
         "turnover_ves": 2191963.32,
         "turnover_usd_bcv": 2385.77,
         "price_usd_bcv": 16.302287,
-        "price_usd_p2p": 13.753893,
+        "price_usd_p2p": 13.734351,
         "last_trade_time": "12:40:16",
         "status": "live"
       },
@@ -45,7 +45,7 @@
         "turnover_ves": 1587200.55,
         "turnover_usd_bcv": 1727.53,
         "price_usd_bcv": 1.741466,
-        "price_usd_p2p": 1.469238,
+        "price_usd_p2p": 1.46715,
         "last_trade_time": "12:52:31",
         "status": "live"
       },
@@ -59,7 +59,7 @@
         "turnover_ves": 3926319.9,
         "turnover_usd_bcv": 4273.47,
         "price_usd_bcv": 2.960492,
-        "price_usd_p2p": 2.497704,
+        "price_usd_p2p": 2.494155,
         "last_trade_time": "12:49:28",
         "status": "live"
       },
@@ -73,7 +73,7 @@
         "turnover_ves": 574129.92,
         "turnover_usd_bcv": 624.89,
         "price_usd_bcv": 0.011744,
-        "price_usd_p2p": 0.009908,
+        "price_usd_p2p": 0.009894,
         "last_trade_time": "12:52:33",
         "status": "live"
       },
@@ -87,7 +87,7 @@
         "turnover_ves": 6728318,
         "turnover_usd_bcv": 7323.21,
         "price_usd_bcv": 10.176691,
-        "price_usd_p2p": 8.585859,
+        "price_usd_p2p": 8.573659,
         "last_trade_time": "12:41:58",
         "status": "live"
       },
@@ -101,7 +101,7 @@
         "turnover_ves": 546038,
         "turnover_usd_bcv": 594.32,
         "price_usd_bcv": 1.278889,
-        "price_usd_p2p": 1.078972,
+        "price_usd_p2p": 1.077438,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -115,7 +115,7 @@
         "turnover_ves": 614710.89,
         "turnover_usd_bcv": 669.06,
         "price_usd_bcv": 0.206788,
-        "price_usd_p2p": 0.174463,
+        "price_usd_p2p": 0.174215,
         "last_trade_time": "12:53:02",
         "status": "live"
       },
@@ -129,7 +129,7 @@
         "turnover_ves": 17088715.42,
         "turnover_usd_bcv": 18599.63,
         "price_usd_bcv": 0.267478,
-        "price_usd_p2p": 0.225666,
+        "price_usd_p2p": 0.225345,
         "last_trade_time": "13:00:00",
         "status": "live"
       }
@@ -145,7 +145,7 @@
         "turnover_ves": 3926319.9,
         "turnover_usd_bcv": 4273.47,
         "price_usd_bcv": 2.960492,
-        "price_usd_p2p": 2.497704,
+        "price_usd_p2p": 2.494155,
         "last_trade_time": "12:49:28",
         "status": "live"
       },
@@ -159,7 +159,7 @@
         "turnover_ves": 17088715.42,
         "turnover_usd_bcv": 18599.63,
         "price_usd_bcv": 0.267478,
-        "price_usd_p2p": 0.225666,
+        "price_usd_p2p": 0.225345,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -173,7 +173,7 @@
         "turnover_ves": 7171347.96,
         "turnover_usd_bcv": 7805.41,
         "price_usd_bcv": 3.526468,
-        "price_usd_p2p": 2.975207,
+        "price_usd_p2p": 2.970979,
         "last_trade_time": "12:46:47",
         "status": "live"
       },
@@ -187,7 +187,7 @@
         "turnover_ves": 18600101.79,
         "turnover_usd_bcv": 20244.65,
         "price_usd_bcv": 1.012227,
-        "price_usd_p2p": 0.853994,
+        "price_usd_p2p": 0.852781,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -201,7 +201,7 @@
         "turnover_ves": 1310739.87,
         "turnover_usd_bcv": 1426.63,
         "price_usd_bcv": 2.28132,
-        "price_usd_p2p": 1.924702,
+        "price_usd_p2p": 1.921967,
         "last_trade_time": "12:54:26",
         "status": "live"
       },
@@ -215,7 +215,7 @@
         "turnover_ves": 997220.01,
         "turnover_usd_bcv": 1085.39,
         "price_usd_bcv": 0.929507,
-        "price_usd_p2p": 0.784206,
+        "price_usd_p2p": 0.783091,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -229,7 +229,7 @@
         "turnover_ves": 82706.3,
         "turnover_usd_bcv": 90.02,
         "price_usd_bcv": 9.749662,
-        "price_usd_p2p": 8.225583,
+        "price_usd_p2p": 8.213896,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -243,7 +243,7 @@
         "turnover_ves": 282780.89,
         "turnover_usd_bcv": 307.78,
         "price_usd_bcv": 2.471793,
-        "price_usd_p2p": 2.085399,
+        "price_usd_p2p": 2.082436,
         "last_trade_time": "12:44:19",
         "status": "live"
       },
@@ -257,7 +257,7 @@
         "turnover_ves": 414830.1,
         "turnover_usd_bcv": 451.51,
         "price_usd_bcv": 0.868556,
-        "price_usd_p2p": 0.732782,
+        "price_usd_p2p": 0.731741,
         "last_trade_time": "13:00:00",
         "status": "live"
       },
@@ -271,7 +271,7 @@
         "turnover_ves": 136080.5,
         "turnover_usd_bcv": 148.11,
         "price_usd_bcv": 1.180932,
-        "price_usd_p2p": 0.996327,
+        "price_usd_p2p": 0.994911,
         "last_trade_time": "13:00:00",
         "status": "live"
       }
@@ -281,48 +281,48 @@
     "btc": {
       "symbol": "BTCUSDT",
       "base": "BTC",
-      "price_usd": 60911.73,
-      "change_24h_pct": 1.21,
+      "price_usd": 60465.74,
+      "change_24h_pct": 1.56,
       "high_24h": 61669.99,
       "low_24h": 58768.51,
-      "quote_volume_24h_usd": 1202510550.84,
-      "funding_rate": 0.000022,
-      "funding_rate_pct": 0.0022
+      "quote_volume_24h_usd": 1229513959.73,
+      "funding_rate": -0.000009,
+      "funding_rate_pct": -0.0009
     },
     "eth": {
       "symbol": "ETHUSDT",
       "base": "ETH",
-      "price_usd": 1718.52,
-      "change_24h_pct": 2.09,
+      "price_usd": 1699.95,
+      "change_24h_pct": 1.78,
       "high_24h": 1732.52,
       "low_24h": 1648.35,
-      "quote_volume_24h_usd": 393833778.43,
-      "funding_rate": -0.000037,
-      "funding_rate_pct": -0.0037
+      "quote_volume_24h_usd": 404477200.65,
+      "funding_rate": -0.000042,
+      "funding_rate_pct": -0.0042
     },
     "sol": {
       "symbol": "SOLUSDT",
       "base": "SOL",
-      "price_usd": 70.35,
-      "change_24h_pct": 0.09,
+      "price_usd": 69.91,
+      "change_24h_pct": 0.55,
       "high_24h": 71.43,
       "low_24h": 68.74,
-      "quote_volume_24h_usd": 134647802.62,
-      "funding_rate": 0.000029,
-      "funding_rate_pct": 0.0029
+      "quote_volume_24h_usd": 135575643.2,
+      "funding_rate": -0.000046,
+      "funding_rate_pct": -0.0046
     },
     "paxg": {
       "symbol": "PAXGUSDT",
       "base": "PAXG",
-      "price_usd": 3558.83,
-      "change_24h_pct": 0.2,
-      "high_24h": 3577.25,
+      "price_usd": 3577.23,
+      "change_24h_pct": 0.92,
+      "high_24h": 3623.63,
       "low_24h": 3528.01,
-      "quote_volume_24h_usd": 12752200.81,
-      "funding_rate": null,
-      "funding_rate_pct": null
+      "quote_volume_24h_usd": 16996762.3,
+      "funding_rate": 0.000016,
+      "funding_rate_pct": 0.0016
     },
-    "avg_funding_rate_pct": 0.0005
+    "avg_funding_rate_pct": -0.0068
   },
   "nyse_benchmarks": {
     "us_indices": [
@@ -415,11 +415,210 @@
     ]
   },
   "cross_market_metrics": {
-    "venezuela_fx_spread_pct": 18.53,
-    "btc_price_ves_bcv": 55963638.71,
-    "btc_price_ves_p2p": 66332873.97,
+    "venezuela_fx_spread_pct": 18.7,
+    "btc_price_ves_bcv": 55553878.17,
+    "btc_price_ves_p2p": 65940882.52,
     "spy_price_ves_bcv": 633774.11,
-    "btc_per_spy_ratio": 88.3,
-    "paxg_vs_gld_10x_spread_pct": 10.22
-  }
+    "btc_per_spy_ratio": 87.66,
+    "paxg_vs_gld_10x_spread_pct": 10.79
+  },
+  "latam_fx_spreads": [
+    {
+      "code": "VE",
+      "currency": "VES",
+      "official_usd": 918.7662,
+      "usdt_p2p_mid": 1090.5495,
+      "spread_vs_official_pct": 18.7
+    },
+    {
+      "code": "AR",
+      "currency": "ARS",
+      "official_usd": 1600,
+      "usdt_p2p_mid": 1767.4,
+      "spread_vs_official_pct": 10.46
+    },
+    {
+      "code": "CO",
+      "currency": "COP",
+      "official_usd": 3437.4171,
+      "usdt_p2p_mid": 3429.5,
+      "spread_vs_official_pct": -0.23
+    },
+    {
+      "code": "BR",
+      "currency": "BRL",
+      "official_usd": 5.9453,
+      "usdt_p2p_mid": null,
+      "spread_vs_official_pct": null
+    },
+    {
+      "code": "MX",
+      "currency": "MXN",
+      "official_usd": 19.1134,
+      "usdt_p2p_mid": 19.21,
+      "spread_vs_official_pct": 0.51
+    },
+    {
+      "code": "CL",
+      "currency": "CLP",
+      "official_usd": 1016.5896,
+      "usdt_p2p_mid": 1035.98,
+      "spread_vs_official_pct": 1.91
+    },
+    {
+      "code": "PE",
+      "currency": "PEN",
+      "official_usd": 3.4426,
+      "usdt_p2p_mid": 3.515,
+      "spread_vs_official_pct": 2.1
+    },
+    {
+      "code": "BO",
+      "currency": "BOB",
+      "official_usd": 11.75,
+      "usdt_p2p_mid": 12.005,
+      "spread_vs_official_pct": 2.17
+    }
+  ],
+  "crypto_signals_highlights": [
+    {
+      "base": "BTC",
+      "rsi_14_1d": 25.51,
+      "trend": "bearish",
+      "funding_status": "normal"
+    },
+    {
+      "base": "ETH",
+      "rsi_14_1d": 28.79,
+      "trend": "bearish",
+      "funding_status": "normal"
+    },
+    {
+      "base": "SOL",
+      "rsi_14_1d": 27.35,
+      "trend": "bearish",
+      "funding_status": "normal"
+    },
+    {
+      "base": "BNB",
+      "rsi_14_1d": 26.88,
+      "trend": "bearish",
+      "funding_status": "normal"
+    },
+    {
+      "base": "XRP",
+      "rsi_14_1d": 27.96,
+      "trend": "bearish",
+      "funding_status": "normal"
+    },
+    {
+      "base": "ADA",
+      "rsi_14_1d": 25.93,
+      "trend": "bearish",
+      "funding_status": "crowded_short"
+    }
+  ],
+  "top_base_usdc_yields": [
+    {
+      "pool_id": "ae3397ed-1f0f-4aa4-ab62-44413ea8cd9e",
+      "chain": "Base",
+      "project": "veranta",
+      "symbol": "USDC",
+      "tvl_usd": 9423843,
+      "apy_total": 30.23,
+      "apy_base": 30.23,
+      "apy_reward": null,
+      "apy_mean_30d": 28.81,
+      "il_risk": "no"
+    },
+    {
+      "pool_id": "062ba2ef-c132-4989-8e67-0ea2ebd37888",
+      "chain": "Base",
+      "project": "harvest-finance",
+      "symbol": "USDC",
+      "tvl_usd": 1711289,
+      "apy_total": 27.56,
+      "apy_base": 27.56,
+      "apy_reward": null,
+      "apy_mean_30d": 25.48,
+      "il_risk": "no"
+    }
+  ],
+  "top_predictions": [
+    {
+      "question": "Vikings vs. 49ers",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Vikings",
+          "probability_pct": 4.5
+        },
+        {
+          "outcome": "49ers",
+          "probability_pct": 95.5
+        }
+      ],
+      "volume_24h_usd": 2589133.97
+    },
+    {
+      "question": "Spread: Knicks (-6.5)",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Knicks",
+          "probability_pct": 48.5
+        },
+        {
+          "outcome": "Pacers",
+          "probability_pct": 51.5
+        }
+      ],
+      "volume_24h_usd": 2018634.1
+    },
+    {
+      "question": "Pacers vs. Knicks",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Pacers",
+          "probability_pct": 25.5
+        },
+        {
+          "outcome": "Knicks",
+          "probability_pct": 74.5
+        }
+      ],
+      "volume_24h_usd": 1603867.56
+    },
+    {
+      "question": "Nuggets vs. Bulls",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Nuggets",
+          "probability_pct": 99.95
+        },
+        {
+          "outcome": "Bulls",
+          "probability_pct": 0.05
+        }
+      ],
+      "volume_24h_usd": 1515949.42
+    },
+    {
+      "question": "Celtics vs. Warriors",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Celtics",
+          "probability_pct": 65.5
+        },
+        {
+          "outcome": "Warriors",
+          "probability_pct": 34.5
+        }
+      ],
+      "volume_24h_usd": 794552.46
+    }
+  ]
 }

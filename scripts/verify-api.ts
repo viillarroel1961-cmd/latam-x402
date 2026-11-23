@@ -34,10 +34,14 @@ async function main() {
     health: await probe("/api/health"),
     docs: await probe("/api/docs"),
     bcv: await probe("/api/v1/bcv"),
+    latamFx: await probe("/api/v1/latam-fx"),
     bvc: await probe("/api/v1/bvc"),
     bvcTicker: await probe("/api/v1/bvc/BVCC"),
     crypto: await probe("/api/v1/crypto"),
+    cryptoSignals: await probe("/api/v1/crypto/signals"),
     nyse: await probe("/api/v1/nyse"),
+    defiYields: await probe("/api/v1/defi/yields"),
+    predictions: await probe("/api/v1/predictions"),
     ecosystem: await probe("/api/v1/ecosystem"),
   };
 
@@ -47,10 +51,14 @@ async function main() {
     results.health === 200 &&
     results.docs === 200 &&
     results.bcv === 402 &&
+    results.latamFx === 402 &&
     results.bvc === 402 &&
     results.bvcTicker === 402 &&
     results.crypto === 402 &&
+    results.cryptoSignals === 402 &&
     results.nyse === 402 &&
+    results.defiYields === 402 &&
+    results.predictions === 402 &&
     results.ecosystem === 402;
 
   if (!ok) {
