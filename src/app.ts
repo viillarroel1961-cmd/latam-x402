@@ -4,7 +4,12 @@ import { paymentMiddleware, x402ResourceServer } from "@x402/hono";
 import { ExactEvmScheme } from "@x402/evm/exact/server";
 import { HTTPFacilitatorClient } from "@x402/core/server";
 import { loadMarketData } from "./data.js";
-import { buildOpenApiSpec, type X402RuntimeConfig } from "./openapi.js";
+import {
+  buildLlmsTxt,
+  buildOpenApiSpec,
+  buildWellKnownX402,
+  type X402RuntimeConfig,
+} from "./openapi.js";
 
 try {
   process.loadEnvFile?.();
@@ -186,6 +191,30 @@ export function createApp() {
     const origin = new URL(c.req.url).origin;
     c.header("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
     return c.json(buildOpenApiSpec(origin, cfg));
+  });
+
+  app.get("/openapi.json", (c) => {
+    const origin = new URL(c.req.url).origin;
+    c.header("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
+    return c.json(buildOpenApiSpec(origin, cfg));
+  });
+
+  app.get("/.well-known/x402.json", (c) => {
+    const origin = new URL(c.req.url).origin;
+    c.header("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
+    return c.json(buildWellKnownX402(origin, cfg));
+  });
+
+  app.get("/.well-known/x402", (c) => {
+    const origin = new URL(c.req.url).origin;
+    c.header("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
+    return c.json(buildWellKnownX402(origin, cfg));
+  });
+
+  app.get("/llms.txt", (c) => {
+    const origin = new URL(c.req.url).origin;
+    c.header("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
+    return c.text(buildLlmsTxt(origin, cfg));
   });
 
   // -------------------------------------------------------------------------
