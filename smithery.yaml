@@ -1,0 +1,23 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      evmPrivateKey:
+        type: string
+        title: Base Wallet Private Key (optional)
+        description: Optional 0x EVM private key funded with USDC on Base to automatically sign x402 micropayments ($0.002-$0.01 per call).
+      apiBaseUrl:
+        type: string
+        title: API Base URL
+        default: https://latam-x402.vercel.app
+        description: Base URL of the latam-x402 API.
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["tsx", "mcp/server.ts"],
+      env: {
+        ...(config.evmPrivateKey ? { EVM_PRIVATE_KEY: config.evmPrivateKey } : {}),
+        LATAM_X402_URL: config.apiBaseUrl || "https://latam-x402.vercel.app"
+      }
+    })

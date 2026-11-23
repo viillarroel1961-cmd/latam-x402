@@ -5,6 +5,7 @@ import { ExactEvmScheme } from "@x402/evm/exact/server";
 import { HTTPFacilitatorClient } from "@x402/core/server";
 import { declareDiscoveryExtension } from "@x402/extensions/bazaar";
 import { loadMarketData } from "./data.js";
+import { handleMcpJsonRpc, MCP_TOOLS } from "./mcp.js";
 import {
   buildLlmsTxt,
   buildOpenApiSpec,
@@ -372,6 +373,62 @@ export function createApp() {
     c.header("Cache-Control", "public, max-age=86400");
     c.header("Content-Type", "image/svg+xml");
     return c.body(faviconSvg);
+  });
+
+  // Remote Streamable HTTP MCP endpoint (JSON-RPC 2.0)
+  app.get("/api/mcp", (c) => {
+    const origin = new URL(c.req.url).origin;
+    c.header("Cache-Control", "public, s-maxage=300");
+    return c.json({
+      name: "latam-x402-mcp",
+      version: "1.1.0",
+      transport: "streamable-http",
+      endpoint: `${origin}/api/mcp`,
+      toolsCount: MCP_TOOLS.length,
+      docs: `${origin}/api/docs`,
+    });
+  });
+
+  app.post("/api/mcp", async (c) => {
+    c.header("Cache-Control", "no-store");
+    try {
+      const origin = new URL(c.req.url).origin;
+      const body = await c.req.json();
+      const paymentSig =
+        c.req.header("payment-signature") || c.req.header("x-payment") || undefined;
+
+      if (Array.isArray(body)) {
+        const responses = (
+          await Promise.all(
+            body.map((item) =>
+              handleMcpJsonRpc(item, { apiBaseUrl: origin, paymentSignatureHeader: paymentSig })
+            )
+          )
+        ).filter((r) => r !== null);
+        return c.json(responses);
+      }
+
+      const res = await handleMcpJsonRpc(body, {
+        apiBaseUrl: origin,
+        paymentSignatureHeader: paymentSig,
+      });
+      if (res === null) {
+        return c.body(null, 202);
+      }
+      return c.json(res);
+    } catch (err) {
+      return c.json(
+        {
+          jsonrpc: "2.0",
+          id: null,
+          error: {
+            code: -32700,
+            message: `Invalid JSON-RPC payload: ${err instanceof Error ? err.message : String(err)}`,
+          },
+        },
+        400
+      );
+    }
   });
 
   // -------------------------------------------------------------------------

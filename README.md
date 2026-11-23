@@ -31,6 +31,8 @@ Financial data across Venezuela, LatAm equities, Crypto, and Wall Street normall
 
 ## Documentation & Examples
 - Full API reference & real JSON response examples (ES): [`DOCS.md`](./DOCS.md)
+- MCP Server installation (Claude Desktop, Cursor, Cline, Glama, Smithery): [`llms-install.md`](./llms-install.md)
+- Remote MCP endpoint (Streamable HTTP): `https://latam-x402.vercel.app/api/mcp`
 - Machine-readable OpenAPI 3.1: `https://latam-x402.vercel.app/openapi.json`
 - x402 discovery manifest: `https://latam-x402.vercel.app/.well-known/x402.json`
 - LLM index: `https://latam-x402.vercel.app/llms.txt`
