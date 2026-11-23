@@ -108,6 +108,7 @@ export function buildLlmsTxt(baseUrl: string, cfg: X402RuntimeConfig) {
 }
 
 export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
+  const jsonObjectSchema = { type: "object", additionalProperties: true };
   return {
     openapi: "3.1.0",
     info: {
@@ -115,6 +116,11 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
       version: "1.0.0",
       description:
         "Pay-per-call x402 API (USDC on Base via PayAI facilitator) unifying Venezuela BCV official FX + Binance P2P spread, Bolsa de Valores de Caracas (BVC) cross-valued in VES/USD, Global Crypto spot & funding rates, and NYSE/LatAm ADRs & ETFs.",
+      contact: {
+        name: "latam-x402",
+        email: "viillarroel1961@gmail.com",
+        url: "https://github.com/viillarroel1961-cmd/latam-x402",
+      },
     },
     servers: [{ url: baseUrl }],
     "x-x402": {
@@ -136,13 +142,25 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
       "/api/health": {
         get: {
           summary: "Health check and feed freshness (free)",
-          responses: { "200": { description: "Service status and last sync timestamps" } },
+          security: [],
+          responses: {
+            "200": {
+              description: "Service status and last sync timestamps",
+              content: { "application/json": { schema: jsonObjectSchema } },
+            },
+          },
         },
       },
       "/api/docs": {
         get: {
           summary: "OpenAPI 3.1 + x402 discovery manifest (free)",
-          responses: { "200": { description: "Machine-readable API & x402 pricing schema" } },
+          security: [],
+          responses: {
+            "200": {
+              description: "Machine-readable API & x402 pricing schema",
+              content: { "application/json": { schema: jsonObjectSchema } },
+            },
+          },
         },
       },
       "/api/v1/bcv": {
@@ -158,7 +176,10 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
             },
           ],
           responses: {
-            "200": { description: "Latest BCV USD/EUR, USDT P2P mid, spread % and daily history" },
+            "200": {
+              description: "Latest BCV USD/EUR, USDT P2P mid, spread % and daily history",
+              content: { "application/json": { schema: jsonObjectSchema } },
+            },
             "402": { description: "Payment Required (x402 Base USDC)" },
           },
         },
@@ -176,7 +197,10 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
             },
           ],
           responses: {
-            "200": { description: "BVC catalog cross-valued in VES, USD BCV & USD P2P" },
+            "200": {
+              description: "BVC catalog cross-valued in VES, USD BCV & USD P2P",
+              content: { "application/json": { schema: jsonObjectSchema } },
+            },
             "402": { description: "Payment Required (x402 Base USDC)" },
           },
         },
@@ -189,11 +213,15 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
               name: "ticker",
               in: "path",
               required: true,
-              schema: { type: "string", example: "BVCC" },
+              schema: { type: "string", default: "BVCC", example: "BVCC" },
+              description: "Bolsa de Valores de Caracas ticker symbol (e.g. BVCC, BNC, BPV, RST)",
             },
           ],
           responses: {
-            "200": { description: "Single BVC ticker details in VES & USD" },
+            "200": {
+              description: "Single BVC ticker details in VES & USD",
+              content: { "application/json": { schema: jsonObjectSchema } },
+            },
             "402": { description: "Payment Required (x402 Base USDC)" },
             "404": { description: "Ticker not found in BVC catalog" },
           },
@@ -212,7 +240,10 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
             },
           ],
           responses: {
-            "200": { description: "Spot 24h prices, volume and perpetual funding rates" },
+            "200": {
+              description: "Spot 24h prices, volume and perpetual funding rates",
+              content: { "application/json": { schema: jsonObjectSchema } },
+            },
             "402": { description: "Payment Required (x402 Base USDC)" },
           },
         },
@@ -226,16 +257,21 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
               in: "query",
               required: false,
               schema: { type: "string", example: "MELI" },
+              description: "Optional ticker filter (e.g. SPY, NVDA, MELI, NU, PBR)",
             },
             {
               name: "category",
               in: "query",
               required: false,
               schema: { type: "string", enum: ["etf", "latam_etf", "us_equity", "latam_adr"] },
+              description: "Optional asset category filter",
             },
           ],
           responses: {
-            "200": { description: "Delayed / end-of-day quotes for US benchmarks and LatAm ADRs" },
+            "200": {
+              description: "Delayed / end-of-day quotes for US benchmarks and LatAm ADRs",
+              content: { "application/json": { schema: jsonObjectSchema } },
+            },
             "402": { description: "Payment Required (x402 Base USDC)" },
           },
         },
@@ -243,10 +279,24 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
       "/api/v1/ecosystem": {
         get: {
           summary: `Unified cross-market ecosystem snapshot (${cfg.prices.ecosystem} USDC)`,
+          parameters: [
+            {
+              name: "sections",
+              in: "query",
+              required: false,
+              schema: {
+                type: "string",
+                enum: ["all", "fx", "bvc", "crypto", "nyse", "ratios"],
+                default: "all",
+              },
+              description: "Return full ecosystem ('all') or focus on a specific cross-market section",
+            },
+          ],
           responses: {
             "200": {
               description:
                 "Single JSON combining BCV FX + spread, BVC movers in USD, Crypto benchmarks & funding, NYSE/LatAm leaders and cross-market ratios",
+              content: { "application/json": { schema: jsonObjectSchema } },
             },
             "402": { description: "Payment Required (x402 Base USDC)" },
           },

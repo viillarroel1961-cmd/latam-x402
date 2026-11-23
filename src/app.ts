@@ -217,6 +217,20 @@ export function createApp() {
     return c.text(buildLlmsTxt(origin, cfg));
   });
 
+  const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0B1220"/><circle cx="32" cy="32" r="22" fill="none" stroke="#2563EB" stroke-width="4"/><text x="32" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#38BDF8">402</text></svg>`;
+
+  app.get("/favicon.svg", (c) => {
+    c.header("Cache-Control", "public, max-age=86400");
+    c.header("Content-Type", "image/svg+xml");
+    return c.body(faviconSvg);
+  });
+
+  app.get("/favicon.ico", (c) => {
+    c.header("Cache-Control", "public, max-age=86400");
+    c.header("Content-Type", "image/svg+xml");
+    return c.body(faviconSvg);
+  });
+
   // -------------------------------------------------------------------------
   // Rutas pagas (/api/v1/*) protegidas por x402
   // -------------------------------------------------------------------------
@@ -304,8 +318,25 @@ export function createApp() {
 
   app.get("/api/v1/ecosystem", async (c) => {
     c.header("Cache-Control", "no-store");
-    const { data } = await loadMarketData("ecosystem.json");
+    const { data } = await loadMarketData<Record<string, unknown>>("ecosystem.json");
     if (!data) return c.json({ error: "Ecosystem snapshot not synced yet" }, 503);
+
+    const section = (c.req.query("sections") || "all").trim().toLowerCase();
+    const map: Record<string, string> = {
+      fx: "fx_venezuela",
+      bvc: "bvc_caracas",
+      crypto: "crypto_benchmarks",
+      nyse: "nyse_benchmarks",
+      ratios: "cross_market_metrics",
+    };
+    if (section !== "all" && map[section]) {
+      return c.json({
+        ecosystem: data.ecosystem,
+        version: data.version,
+        updated_at_utc: data.updated_at_utc,
+        [map[section]]: data[map[section]],
+      });
+    }
     return c.json(data);
   });
 
