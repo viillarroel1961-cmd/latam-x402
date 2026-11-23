@@ -1,131 +1,11 @@
 {
   "market": "PREDICTION_MARKETS_POLYMARKET",
-  "updated_at_utc": "2026-11-23T02:50:22.851Z",
+  "updated_at_utc": "2026-11-23T07:34:09.152Z",
   "sources": [
     "gamma-api.polymarket.com/markets"
   ],
   "count": 40,
   "markets": [
-    {
-      "id": "6577539",
-      "question": "Vikings vs. 49ers",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Vikings",
-          "probability_pct": 4.5
-        },
-        {
-          "outcome": "49ers",
-          "probability_pct": 95.5
-        }
-      ],
-      "volume_24h_usd": 2589133.97,
-      "volume_total_usd": 2570513.42,
-      "liquidity_usd": 375185.94,
-      "end_date": "2026-11-23T01:20:00Z",
-      "url": "https://polymarket.com/event/nfl-min-sf-2026-11-23"
-    },
-    {
-      "id": "7245984",
-      "question": "Spread: Knicks (-6.5)",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Knicks",
-          "probability_pct": 48.5
-        },
-        {
-          "outcome": "Pacers",
-          "probability_pct": 51.5
-        }
-      ],
-      "volume_24h_usd": 2018634.1,
-      "volume_total_usd": 2018192.66,
-      "liquidity_usd": 35988.88,
-      "end_date": "2026-11-23T01:00:00Z",
-      "url": "https://polymarket.com/event/nba-ind-nyk-2026-11-22-spread-home-6pt5"
-    },
-    {
-      "id": "6840924",
-      "question": "Pacers vs. Knicks",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Pacers",
-          "probability_pct": 25.5
-        },
-        {
-          "outcome": "Knicks",
-          "probability_pct": 74.5
-        }
-      ],
-      "volume_24h_usd": 1603867.56,
-      "volume_total_usd": 1583546.17,
-      "liquidity_usd": 92241.61,
-      "end_date": "2026-11-23T01:00:00Z",
-      "url": "https://polymarket.com/event/nba-ind-nyk-2026-11-22"
-    },
-    {
-      "id": "6840922",
-      "question": "Nuggets vs. Bulls",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Nuggets",
-          "probability_pct": 99.95
-        },
-        {
-          "outcome": "Bulls",
-          "probability_pct": 0.05
-        }
-      ],
-      "volume_24h_usd": 1515949.42,
-      "volume_total_usd": 1360835.81,
-      "liquidity_usd": 628332.31,
-      "end_date": "2026-11-23T00:00:00Z",
-      "url": "https://polymarket.com/event/nba-den-chi-2026-11-22"
-    },
-    {
-      "id": "6840925",
-      "question": "Celtics vs. Warriors",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Celtics",
-          "probability_pct": 65.5
-        },
-        {
-          "outcome": "Warriors",
-          "probability_pct": 34.5
-        }
-      ],
-      "volume_24h_usd": 794552.46,
-      "volume_total_usd": 725321.29,
-      "liquidity_usd": 414110.89,
-      "end_date": "2026-11-23T01:30:00Z",
-      "url": "https://polymarket.com/event/nba-bos-gsw-2026-11-22"
-    },
-    {
-      "id": "6643526",
-      "question": "Spread: 49ers (-3.5)",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "49ers",
-          "probability_pct": 91.5
-        },
-        {
-          "outcome": "Vikings",
-          "probability_pct": 8.5
-        }
-      ],
-      "volume_24h_usd": 606771.7,
-      "volume_total_usd": 608687.93,
-      "liquidity_usd": 54870.62,
-      "end_date": "2026-11-23T01:20:00Z",
-      "url": "https://polymarket.com/event/nfl-min-sf-2026-11-23-spread-home-3pt5"
-    },
     {
       "id": "6367372",
       "question": "Israel x Iran ceasefire continues through November 22?",
@@ -133,18 +13,38 @@
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 99.65
+          "probability_pct": 99.75
         },
         {
           "outcome": "No",
-          "probability_pct": 0.35
+          "probability_pct": 0.25
         }
       ],
-      "volume_24h_usd": 425393.6,
-      "volume_total_usd": 3326211.37,
-      "liquidity_usd": 63009.22,
+      "volume_24h_usd": 430632.02,
+      "volume_total_usd": 3407079.47,
+      "liquidity_usd": 66999.51,
       "end_date": "2026-11-23T04:59:00Z",
       "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-november-22"
+    },
+    {
+      "id": "6919847",
+      "question": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 17.85
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 82.15
+        }
+      ],
+      "volume_24h_usd": 429004.66,
+      "volume_total_usd": 4587503.54,
+      "liquidity_usd": 103889.58,
+      "end_date": "2029-01-01T04:59:00Z",
+      "url": "https://polymarket.com/event/will-candidate-a-be-the-next-ceo-of-nvidia"
     },
     {
       "id": "2772194",
@@ -160,171 +60,11 @@
           "probability_pct": 99.85
         }
       ],
-      "volume_24h_usd": 421436.01,
-      "volume_total_usd": 47031087.24,
-      "liquidity_usd": 576481.72,
+      "volume_24h_usd": 428998.63,
+      "volume_total_usd": 47122439.86,
+      "liquidity_usd": 581569.4,
       "end_date": "2027-05-30T23:59:00Z",
       "url": "https://polymarket.com/event/will-shakhtar-donetsk-win-the-2026-27-uefa-champions-league-championship-20260701202025578"
-    },
-    {
-      "id": "5054002",
-      "question": "Will \"Mo Bamba\" by Sheck Wes be on the radio in GTA VI at launch?",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 99.95
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 0.05
-        }
-      ],
-      "volume_24h_usd": 402110.5,
-      "volume_total_usd": 443233.11,
-      "liquidity_usd": 2922915.31,
-      "end_date": "2026-12-04T04:59:00Z",
-      "url": "https://polymarket.com/event/will-mo-bamba-be-on-gta-vi-radio-at-launch"
-    },
-    {
-      "id": "561988",
-      "question": "Will Josh Hawley win the 2028 Republican presidential nomination?",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 1.15
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 98.85
-        }
-      ],
-      "volume_24h_usd": 372002.32,
-      "volume_total_usd": 21127353.76,
-      "liquidity_usd": 153283.08,
-      "end_date": "2028-11-08T04:59:00Z",
-      "url": "https://polymarket.com/event/will-josh-hawley-win-the-2028-republican-presidential-nomination"
-    },
-    {
-      "id": "6643527",
-      "question": "Spread: 49ers (-4.5)",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "49ers",
-          "probability_pct": 89.5
-        },
-        {
-          "outcome": "Vikings",
-          "probability_pct": 10.5
-        }
-      ],
-      "volume_24h_usd": 323556.53,
-      "volume_total_usd": 320888.06,
-      "liquidity_usd": 60393.42,
-      "end_date": "2026-11-23T01:20:00Z",
-      "url": "https://polymarket.com/event/nfl-min-sf-2026-11-23-spread-home-4pt5"
-    },
-    {
-      "id": "665374",
-      "question": "Will the U.S. invade Iran before 2027?",
-      "topic": "politics",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 6.5
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 93.5
-        }
-      ],
-      "volume_24h_usd": 302576.69,
-      "volume_total_usd": 81350636.13,
-      "liquidity_usd": 273964.18,
-      "end_date": "2027-01-01T04:59:00Z",
-      "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027"
-    },
-    {
-      "id": "7253282",
-      "question": "Celtics vs. Warriors: O/U 210.5",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Over",
-          "probability_pct": 6.5
-        },
-        {
-          "outcome": "Under",
-          "probability_pct": 93.5
-        }
-      ],
-      "volume_24h_usd": 299132.32,
-      "volume_total_usd": 298895.25,
-      "liquidity_usd": 32383.78,
-      "end_date": "2026-11-23T01:30:00Z",
-      "url": "https://polymarket.com/event/nba-bos-gsw-2026-11-22-total-210pt5"
-    },
-    {
-      "id": "7242638",
-      "question": "Spread: Celtics (-7.5)",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Celtics",
-          "probability_pct": 38.5
-        },
-        {
-          "outcome": "Warriors",
-          "probability_pct": 61.5
-        }
-      ],
-      "volume_24h_usd": 287202.3,
-      "volume_total_usd": 287142.7,
-      "liquidity_usd": 40049.55,
-      "end_date": "2026-11-23T01:30:00Z",
-      "url": "https://polymarket.com/event/nba-bos-gsw-2026-11-22-spread-away-7pt5"
-    },
-    {
-      "id": "6919847",
-      "question": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 14.4
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 85.6
-        }
-      ],
-      "volume_24h_usd": 279680.49,
-      "volume_total_usd": 4435993,
-      "liquidity_usd": 106557.56,
-      "end_date": "2029-01-01T04:59:00Z",
-      "url": "https://polymarket.com/event/will-candidate-a-be-the-next-ceo-of-nvidia"
-    },
-    {
-      "id": "7242626",
-      "question": "Spread: Celtics (-8.5)",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Celtics",
-          "probability_pct": 33.5
-        },
-        {
-          "outcome": "Warriors",
-          "probability_pct": 66.5
-        }
-      ],
-      "volume_24h_usd": 250583.43,
-      "volume_total_usd": 250550.6,
-      "liquidity_usd": 39087.4,
-      "end_date": "2026-11-23T01:30:00Z",
-      "url": "https://polymarket.com/event/nba-bos-gsw-2026-11-22-spread-away-8pt5"
     },
     {
       "id": "6998284",
@@ -333,78 +73,78 @@
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 1.8
+          "probability_pct": 2.9
         },
         {
           "outcome": "No",
-          "probability_pct": 98.2
+          "probability_pct": 97.1
         }
       ],
-      "volume_24h_usd": 219850.69,
-      "volume_total_usd": 3253604.66,
-      "liquidity_usd": 317965.97,
+      "volume_24h_usd": 374707.52,
+      "volume_total_usd": 3398395.28,
+      "liquidity_usd": 179764.8,
       "end_date": "2026-12-01T04:59:00Z",
       "url": "https://polymarket.com/event/will-jensen-huang-rejoin-nvidia-by-november-30-2026"
     },
     {
-      "id": "6254898",
-      "question": "Oilers vs. Blues",
-      "topic": "sports",
+      "id": "7222313",
+      "question": "Yokohama: Ryo Ono vs Lennon Roark Jones",
+      "topic": "other",
       "probabilities": [
         {
-          "outcome": "Oilers",
-          "probability_pct": 57.95
+          "outcome": "Ryo Ono",
+          "probability_pct": 29.5
         },
         {
-          "outcome": "Blues",
-          "probability_pct": 42.05
+          "outcome": "Lennon Roark Jones",
+          "probability_pct": 70.5
         }
       ],
-      "volume_24h_usd": 219807.98,
-      "volume_total_usd": 215084.13,
-      "liquidity_usd": 23838.06,
-      "end_date": "2026-11-23T00:00:00Z",
-      "url": "https://polymarket.com/event/nhl-edm-stl-2026-11-22"
+      "volume_24h_usd": 349237.51,
+      "volume_total_usd": 204752.09,
+      "liquidity_usd": 138493.38,
+      "end_date": "2026-11-30T01:00:00Z",
+      "url": "https://polymarket.com/event/atp-ono-lennonr-2026-11-22"
     },
     {
-      "id": "7245975",
-      "question": "Spread: Knicks (-8.5)",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Knicks",
-          "probability_pct": 39
-        },
-        {
-          "outcome": "Pacers",
-          "probability_pct": 61
-        }
-      ],
-      "volume_24h_usd": 213956.49,
-      "volume_total_usd": 179796.65,
-      "liquidity_usd": 32622.52,
-      "end_date": "2026-11-23T01:00:00Z",
-      "url": "https://polymarket.com/event/nba-ind-nyk-2026-11-22-spread-home-8pt5"
-    },
-    {
-      "id": "3215005",
-      "question": "Will the Fed decrease interest rates by 50+ bps after the December 2026 meeting?",
-      "topic": "macro",
+      "id": "561980",
+      "question": "Will Nikki Haley win the 2028 Republican presidential nomination?",
+      "topic": "other",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 0.35
+          "probability_pct": 0.7
         },
         {
           "outcome": "No",
-          "probability_pct": 99.65
+          "probability_pct": 99.3
         }
       ],
-      "volume_24h_usd": 201824.48,
-      "volume_total_usd": 8140802.85,
-      "liquidity_usd": 214811.04,
-      "end_date": "2026-12-09T23:59:00Z",
-      "url": "https://polymarket.com/event/will-the-fed-decrease-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808633"
+      "volume_24h_usd": 334611.57,
+      "volume_total_usd": 11568807.33,
+      "liquidity_usd": 140955.89,
+      "end_date": "2028-11-08T04:59:00Z",
+      "url": "https://polymarket.com/event/will-nikki-haley-win-the-2028-republican-presidential-nomination"
+    },
+    {
+      "id": "6998285",
+      "question": "Will Jensen Huang rejoin NVIDIA by December 31, 2026?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 9.75
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 90.25
+        }
+      ],
+      "volume_24h_usd": 330119.11,
+      "volume_total_usd": 4038388.32,
+      "liquidity_usd": 93711.56,
+      "end_date": "2027-01-01T04:59:00Z",
+      "url": "https://polymarket.com/event/will-jensen-huang-rejoin-nvidia-by-december-31-2026"
     },
     {
       "id": "3215007",
@@ -413,18 +153,38 @@
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 6.85
+          "probability_pct": 6.45
         },
         {
           "outcome": "No",
-          "probability_pct": 93.15
+          "probability_pct": 93.55
         }
       ],
-      "volume_24h_usd": 194339.64,
-      "volume_total_usd": 13021430.18,
-      "liquidity_usd": 376869.03,
+      "volume_24h_usd": 182943.86,
+      "volume_total_usd": 13054036.74,
+      "liquidity_usd": 411665.61,
       "end_date": "2026-12-09T23:59:00Z",
       "url": "https://polymarket.com/event/will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635"
+    },
+    {
+      "id": "6643795",
+      "question": "Spread: Bengals (-6.5)",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Bengals",
+          "probability_pct": 47.5
+        },
+        {
+          "outcome": "Commanders",
+          "probability_pct": 52.5
+        }
+      ],
+      "volume_24h_usd": 182791.14,
+      "volume_total_usd": 194073.71,
+      "liquidity_usd": 227091.38,
+      "end_date": "2026-11-24T01:15:00Z",
+      "url": "https://polymarket.com/event/nfl-cin-was-2026-11-24-spread-away-6pt5"
     },
     {
       "id": "3215006",
@@ -440,36 +200,156 @@
           "probability_pct": 99.35
         }
       ],
-      "volume_24h_usd": 187681.42,
-      "volume_total_usd": 8974193.34,
-      "liquidity_usd": 284253.9,
+      "volume_24h_usd": 180498.73,
+      "volume_total_usd": 9039441.66,
+      "liquidity_usd": 265137.1,
       "end_date": "2026-12-09T23:59:00Z",
       "url": "https://polymarket.com/event/will-the-fed-decrease-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808634"
     },
     {
-      "id": "6998285",
-      "question": "Will Jensen Huang rejoin NVIDIA by December 31, 2026?",
+      "id": "682708",
+      "question": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
+      "topic": "politics",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 57.35
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 42.65
+        }
+      ],
+      "volume_24h_usd": 172173.8,
+      "volume_total_usd": 10735223.8,
+      "liquidity_usd": 119820.09,
+      "end_date": "2026-10-28T03:59:00Z",
+      "url": "https://polymarket.com/event/will-gadi-eizenkot-be-the-next-prime-minister-of-israel"
+    },
+    {
+      "id": "5054002",
+      "question": "Will \"Mo Bamba\" by Sheck Wes be on the radio in GTA VI at launch?",
       "topic": "other",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 6.75
+          "probability_pct": 99.95
         },
         {
           "outcome": "No",
-          "probability_pct": 93.25
+          "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 176320.75,
-      "volume_total_usd": 3841023.2,
-      "liquidity_usd": 207203.85,
-      "end_date": "2027-01-01T04:59:00Z",
-      "url": "https://polymarket.com/event/will-jensen-huang-rejoin-nvidia-by-december-31-2026"
+      "volume_24h_usd": 156249.61,
+      "volume_total_usd": 446329.48,
+      "liquidity_usd": 2640783.52,
+      "end_date": "2026-12-04T04:59:00Z",
+      "url": "https://polymarket.com/event/will-mo-bamba-be-on-gta-vi-radio-at-launch"
     },
     {
       "id": "3902370",
       "question": "Israel x Iran ceasefire continues through November 30?",
       "topic": "politics",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 93.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 6.5
+        }
+      ],
+      "volume_24h_usd": 153481.54,
+      "volume_total_usd": 2518489.78,
+      "liquidity_usd": 60537.31,
+      "end_date": "2026-11-30T20:29:00Z",
+      "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-november-30"
+    },
+    {
+      "id": "682705",
+      "question": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
+      "topic": "politics",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 27.8
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 72.2
+        }
+      ],
+      "volume_24h_usd": 149250.25,
+      "volume_total_usd": 35858056.69,
+      "liquidity_usd": 314291.5,
+      "end_date": "2026-10-28T03:59:00Z",
+      "url": "https://polymarket.com/event/will-benjamin-netanyahu-be-the-next-prime-minister-of-israel"
+    },
+    {
+      "id": "3215005",
+      "question": "Will the Fed decrease interest rates by 50+ bps after the December 2026 meeting?",
+      "topic": "macro",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 0.35
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 99.65
+        }
+      ],
+      "volume_24h_usd": 140771.58,
+      "volume_total_usd": 8153105.61,
+      "liquidity_usd": 212699.24,
+      "end_date": "2026-12-09T23:59:00Z",
+      "url": "https://polymarket.com/event/will-the-fed-decrease-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808633"
+    },
+    {
+      "id": "7222316",
+      "question": "Yokohama: Kasidit Samrej vs Dimitris Sakellaridis",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Kasidit Samrej",
+          "probability_pct": 92.65
+        },
+        {
+          "outcome": "Dimitris Sakellaridis",
+          "probability_pct": 7.35
+        }
+      ],
+      "volume_24h_usd": 138030.59,
+      "volume_total_usd": 132442.86,
+      "liquidity_usd": 101514.54,
+      "end_date": "2026-11-30T01:00:00Z",
+      "url": "https://polymarket.com/event/atp-samrej-sakell-2026-11-22"
+    },
+    {
+      "id": "6507412",
+      "question": "Will Ethereum reach $2,600 in November?",
+      "topic": "crypto",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 2.55
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 97.45
+        }
+      ],
+      "volume_24h_usd": 135792.84,
+      "volume_total_usd": 247881.69,
+      "liquidity_usd": 84209.22,
+      "end_date": "2026-12-01T05:00:00Z",
+      "url": "https://polymarket.com/event/will-ethereum-reach-2600-in-november-2026"
+    },
+    {
+      "id": "3215008",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "topic": "macro",
       "probabilities": [
         {
           "outcome": "Yes",
@@ -480,191 +360,11 @@
           "probability_pct": 9.5
         }
       ],
-      "volume_24h_usd": 175286.21,
-      "volume_total_usd": 2498370.6,
-      "liquidity_usd": 56774.34,
-      "end_date": "2026-11-30T20:29:00Z",
-      "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-november-30"
-    },
-    {
-      "id": "6643688",
-      "question": "Vikings vs. 49ers: O/U 46.5",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Over",
-          "probability_pct": 97
-        },
-        {
-          "outcome": "Under",
-          "probability_pct": 3
-        }
-      ],
-      "volume_24h_usd": 160948.54,
-      "volume_total_usd": 180832.05,
-      "liquidity_usd": 58208.89,
-      "end_date": "2026-11-23T01:20:00Z",
-      "url": "https://polymarket.com/event/nfl-min-sf-2026-11-23-total-46pt5"
-    },
-    {
-      "id": "7245979",
-      "question": "Spread: Knicks (-7.5)",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Knicks",
-          "probability_pct": 44
-        },
-        {
-          "outcome": "Pacers",
-          "probability_pct": 56
-        }
-      ],
-      "volume_24h_usd": 159880.07,
-      "volume_total_usd": 159730.93,
-      "liquidity_usd": 32099,
-      "end_date": "2026-11-23T01:00:00Z",
-      "url": "https://polymarket.com/event/nba-ind-nyk-2026-11-22-spread-home-7pt5"
-    },
-    {
-      "id": "682708",
-      "question": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
-      "topic": "politics",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 60.4
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 39.6
-        }
-      ],
-      "volume_24h_usd": 145135.44,
-      "volume_total_usd": 10684612.73,
-      "liquidity_usd": 119206.12,
-      "end_date": "2026-10-28T03:59:00Z",
-      "url": "https://polymarket.com/event/will-gadi-eizenkot-be-the-next-prime-minister-of-israel"
-    },
-    {
-      "id": "7242615",
-      "question": "Celtics vs. Warriors: O/U 211.5",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Over",
-          "probability_pct": 5.5
-        },
-        {
-          "outcome": "Under",
-          "probability_pct": 94.5
-        }
-      ],
-      "volume_24h_usd": 142646.14,
-      "volume_total_usd": 141899.48,
-      "liquidity_usd": 53476.43,
-      "end_date": "2026-11-23T01:30:00Z",
-      "url": "https://polymarket.com/event/nba-bos-gsw-2026-11-22-total-211pt5"
-    },
-    {
-      "id": "6643687",
-      "question": "Vikings vs. 49ers: O/U 44.5",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Over",
-          "probability_pct": 97.9
-        },
-        {
-          "outcome": "Under",
-          "probability_pct": 2.1
-        }
-      ],
-      "volume_24h_usd": 136155.68,
-      "volume_total_usd": 135431.93,
-      "liquidity_usd": 51709.5,
-      "end_date": "2026-11-23T01:20:00Z",
-      "url": "https://polymarket.com/event/nfl-min-sf-2026-11-23-total-44pt5"
-    },
-    {
-      "id": "7242942",
-      "question": "Celtics vs. Warriors: O/U 212.5",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Over",
-          "probability_pct": 4.5
-        },
-        {
-          "outcome": "Under",
-          "probability_pct": 95.5
-        }
-      ],
-      "volume_24h_usd": 134726.49,
-      "volume_total_usd": 135902.49,
-      "liquidity_usd": 33086.44,
-      "end_date": "2026-11-23T01:30:00Z",
-      "url": "https://polymarket.com/event/nba-bos-gsw-2026-11-22-total-212pt5"
-    },
-    {
-      "id": "7204593",
-      "question": "Will Bitcoin reach $62,000 November 16-22?",
-      "topic": "crypto",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 3.3
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 96.7
-        }
-      ],
-      "volume_24h_usd": 134270.28,
-      "volume_total_usd": 184850.26,
-      "liquidity_usd": 51974.92,
-      "end_date": "2026-11-23T05:00:00Z",
-      "url": "https://polymarket.com/event/will-bitcoin-reach-62k-november-16-22-2026"
-    },
-    {
-      "id": "682705",
-      "question": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
-      "topic": "politics",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 29.55
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 70.45
-        }
-      ],
-      "volume_24h_usd": 124333.06,
-      "volume_total_usd": 35822427.68,
-      "liquidity_usd": 273853.66,
-      "end_date": "2026-10-28T03:59:00Z",
-      "url": "https://polymarket.com/event/will-benjamin-netanyahu-be-the-next-prime-minister-of-israel"
-    },
-    {
-      "id": "7242629",
-      "question": "Celtics vs. Warriors: O/U 213.5",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Over",
-          "probability_pct": 4
-        },
-        {
-          "outcome": "Under",
-          "probability_pct": 96
-        }
-      ],
-      "volume_24h_usd": 123385.57,
-      "volume_total_usd": 123027.44,
-      "liquidity_usd": 48767.49,
-      "end_date": "2026-11-23T01:30:00Z",
-      "url": "https://polymarket.com/event/nba-bos-gsw-2026-11-22-total-213pt5"
+      "volume_24h_usd": 132194.6,
+      "volume_total_usd": 11295121.51,
+      "liquidity_usd": 913772.58,
+      "end_date": "2026-12-09T23:59:00Z",
+      "url": "https://polymarket.com/event/will-the-fed-increase-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808636"
     },
     {
       "id": "3215009",
@@ -680,51 +380,351 @@
           "probability_pct": 97.65
         }
       ],
-      "volume_24h_usd": 117823.58,
-      "volume_total_usd": 8782357.43,
-      "liquidity_usd": 782060.3,
+      "volume_24h_usd": 128795.84,
+      "volume_total_usd": 8796670.45,
+      "liquidity_usd": 802087.48,
       "end_date": "2026-12-09T23:59:00Z",
       "url": "https://polymarket.com/event/will-the-fed-increase-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808637"
     },
     {
-      "id": "7219122",
-      "question": "UT Martin Skyhawks vs. Utah Valley Wolverines",
-      "topic": "sports",
+      "id": "665374",
+      "question": "Will the U.S. invade Iran before 2027?",
+      "topic": "politics",
       "probabilities": [
         {
-          "outcome": "UT Martin Skyhawks",
-          "probability_pct": 18.5
+          "outcome": "Yes",
+          "probability_pct": 5.5
         },
         {
-          "outcome": "Utah Valley Wolverines",
-          "probability_pct": 81.5
+          "outcome": "No",
+          "probability_pct": 94.5
         }
       ],
-      "volume_24h_usd": 114706.82,
-      "volume_total_usd": 114268.28,
-      "liquidity_usd": 33527.7,
-      "end_date": "2026-11-23T01:00:00Z",
-      "url": "https://polymarket.com/event/cbb-tmrt-utahv-2026-11-22"
+      "volume_24h_usd": 127926.06,
+      "volume_total_usd": 81357665.39,
+      "liquidity_usd": 279033.83,
+      "end_date": "2027-01-01T04:59:00Z",
+      "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027"
     },
     {
-      "id": "7147735",
-      "question": "Will xQc finish GTA VI by November 22?",
+      "id": "6507414",
+      "question": "Will Ethereum reach $2,500 in November?",
+      "topic": "crypto",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 3.05
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 96.95
+        }
+      ],
+      "volume_24h_usd": 123754.31,
+      "volume_total_usd": 288193.73,
+      "liquidity_usd": 71608.32,
+      "end_date": "2026-12-01T05:00:00Z",
+      "url": "https://polymarket.com/event/will-ethereum-reach-2500-in-november-2026"
+    },
+    {
+      "id": "679027",
+      "question": "Will Bruno Retailleau win the 2027 French presidential election?",
+      "topic": "politics",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 0.65
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 99.35
+        }
+      ],
+      "volume_24h_usd": 112466.18,
+      "volume_total_usd": 4611845.53,
+      "liquidity_usd": 258714.07,
+      "end_date": "2027-04-19T03:59:00Z",
+      "url": "https://polymarket.com/event/will-bruno-retailleau-win-the-2027-french-presidential-election"
+    },
+    {
+      "id": "3580933",
+      "question": "Will Puma Shen win the next Taipei Mayor election?",
+      "topic": "politics",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 30
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 70
+        }
+      ],
+      "volume_24h_usd": 110025.62,
+      "volume_total_usd": 4002653.93,
+      "liquidity_usd": 429857.69,
+      "end_date": "2026-11-29T04:59:00Z",
+      "url": "https://polymarket.com/event/will-puma-shen-win-the-next-taipei-mayor-election-20260813125857102"
+    },
+    {
+      "id": "6721890",
+      "question": "Will Ethereum reach $2,400 in November?",
+      "topic": "crypto",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 4
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 96
+        }
+      ],
+      "volume_24h_usd": 105402.49,
+      "volume_total_usd": 180155.49,
+      "liquidity_usd": 75311.53,
+      "end_date": "2026-12-01T05:00:00Z",
+      "url": "https://polymarket.com/event/will-ethereum-reach-2400-in-november-2026-from-november-5"
+    },
+    {
+      "id": "703257",
+      "question": "Will the US confirm that aliens exist before 2027?",
       "topic": "other",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 77.3
+          "probability_pct": 1.45
         },
         {
           "outcome": "No",
-          "probability_pct": 22.7
+          "probability_pct": 98.55
         }
       ],
-      "volume_24h_usd": 112881.7,
-      "volume_total_usd": 153977.34,
-      "liquidity_usd": 13593.19,
-      "end_date": "2026-11-23T04:59:00Z",
-      "url": "https://polymarket.com/event/will-xqc-finish-gta-vi-by-november-22"
+      "volume_24h_usd": 101084.93,
+      "volume_total_usd": 47283564.39,
+      "liquidity_usd": 2710146.66,
+      "end_date": "2027-01-01T04:59:00Z",
+      "url": "https://polymarket.com/event/will-the-us-confirm-that-aliens-exist-before-2027-789-924-249"
+    },
+    {
+      "id": "3580932",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "topic": "politics",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 70.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 29.5
+        }
+      ],
+      "volume_24h_usd": 97905.32,
+      "volume_total_usd": 3255333.91,
+      "liquidity_usd": 431334.91,
+      "end_date": "2026-11-29T04:59:00Z",
+      "url": "https://polymarket.com/event/will-chiang-wan-an-win-the-next-taipei-mayor-election-20260813125857101"
+    },
+    {
+      "id": "663583",
+      "question": "Will the Iranian regime fall before 2027?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 2.45
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 97.55
+        }
+      ],
+      "volume_24h_usd": 97640.32,
+      "volume_total_usd": 30348698.39,
+      "liquidity_usd": 399374.12,
+      "end_date": "2027-01-01T04:59:00Z",
+      "url": "https://polymarket.com/event/will-the-iranian-regime-fall-by-the-end-of-2026"
+    },
+    {
+      "id": "701502",
+      "question": "Will Bitcoin dip to $45,000 by December 31, 2026?",
+      "topic": "crypto",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 14.1
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 85.9
+        }
+      ],
+      "volume_24h_usd": 97031.73,
+      "volume_total_usd": 10684892.17,
+      "liquidity_usd": 132886.51,
+      "end_date": "2027-01-01T05:00:00Z",
+      "url": "https://polymarket.com/event/will-bitcoin-dip-to-45000-by-december-31-2026-674-923-755-971-998-525-926-245-316-517-544-589-965-923-986-841-815-224-586-231-289-533-573"
+    },
+    {
+      "id": "4418549",
+      "question": "Will AI solve the Riemann Hypothesis in 2026?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 60.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 39.5
+        }
+      ],
+      "volume_24h_usd": 96941.91,
+      "volume_total_usd": 239602.41,
+      "liquidity_usd": 41076.77,
+      "end_date": "2027-01-01T04:59:00Z",
+      "url": "https://polymarket.com/event/will-ai-solve-the-riemann-hypothesis-in-2026"
+    },
+    {
+      "id": "7236575",
+      "question": "Exact Score: Any Other Score?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 24
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 76
+        }
+      ],
+      "volume_24h_usd": 95374,
+      "volume_total_usd": 95374,
+      "liquidity_usd": 1521.33,
+      "end_date": "2026-11-29T17:30:00Z",
+      "url": "https://polymarket.com/event/lal-cel-vil-2026-11-29-exact-score-any-other"
+    },
+    {
+      "id": "3399468",
+      "question": "Israel x Iran ceasefire continues through December 31?",
+      "topic": "politics",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 69.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 30.5
+        }
+      ],
+      "volume_24h_usd": 94859.48,
+      "volume_total_usd": 3375681.9,
+      "liquidity_usd": 65611.02,
+      "end_date": "2026-12-31T20:29:00Z",
+      "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-december-31-415"
+    },
+    {
+      "id": "6895719",
+      "question": "Trail Blazers vs. 76ers",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Trail Blazers",
+          "probability_pct": 38.5
+        },
+        {
+          "outcome": "76ers",
+          "probability_pct": 61.5
+        }
+      ],
+      "volume_24h_usd": 93673.01,
+      "volume_total_usd": 95012.53,
+      "liquidity_usd": 72259.12,
+      "end_date": "2026-11-24T00:00:00Z",
+      "url": "https://polymarket.com/event/nba-por-phi-2026-11-23"
+    },
+    {
+      "id": "6928142",
+      "question": "Counter-Strike: NIP vs M80 (BO1) - PGL Major Singapore Stage 1",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "NIP",
+          "probability_pct": 56.5
+        },
+        {
+          "outcome": "M80",
+          "probability_pct": 43.5
+        }
+      ],
+      "volume_24h_usd": 92389.21,
+      "volume_total_usd": 93322.94,
+      "liquidity_usd": 125222.59,
+      "end_date": "2026-11-24T11:00:00Z",
+      "url": "https://polymarket.com/event/cs2-nip-m80-2026-11-24"
+    },
+    {
+      "id": "6367369",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "topic": "politics",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 77.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 22.5
+        }
+      ],
+      "volume_24h_usd": 88134.25,
+      "volume_total_usd": 1387814.53,
+      "liquidity_usd": 55331.6,
+      "end_date": "2026-12-16T04:59:00Z",
+      "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-december-15"
+    },
+    {
+      "id": "3215013",
+      "question": "Will the Fed increase interest rates by 25 bps after the January 2027 meeting?",
+      "topic": "macro",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 52.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 47.5
+        }
+      ],
+      "volume_24h_usd": 85387.2,
+      "volume_total_usd": 1171974.24,
+      "liquidity_usd": 117618.43,
+      "end_date": "2027-01-28T04:59:00Z",
+      "url": "https://polymarket.com/event/will-the-fed-increase-interest-rates-by-25-bps-after-the-january-2027-meeting-20260729233815506"
+    },
+    {
+      "id": "6721888",
+      "question": "Will Ethereum reach $2,300 in November?",
+      "topic": "crypto",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 5.25
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 94.75
+        }
+      ],
+      "volume_24h_usd": 83086.51,
+      "volume_total_usd": 161805.43,
+      "liquidity_usd": 65013.31,
+      "end_date": "2026-12-01T05:00:00Z",
+      "url": "https://polymarket.com/event/will-ethereum-reach-2300-in-november-2026-from-november-5"
     },
     {
       "id": "1339767",
@@ -733,38 +733,58 @@
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 30.85
+          "probability_pct": 24.85
         },
         {
           "outcome": "No",
-          "probability_pct": 69.15
+          "probability_pct": 75.15
         }
       ],
-      "volume_24h_usd": 104740.42,
-      "volume_total_usd": 6870158.18,
-      "liquidity_usd": 92843.95,
+      "volume_24h_usd": 83005.03,
+      "volume_total_usd": 6903907.9,
+      "liquidity_usd": 116095.42,
       "end_date": "2027-01-01T05:00:00Z",
       "url": "https://polymarket.com/event/will-bitcoin-dip-to-50000-by-december-31-2026-454-325-222-878-949-487-451-853-523-111"
     },
     {
-      "id": "6507412",
-      "question": "Will Ethereum reach $2,600 in November?",
-      "topic": "crypto",
+      "id": "559706",
+      "question": "Will Abdul El-Sayed win the 2028 Democratic presidential nomination?",
+      "topic": "other",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 2.85
+          "probability_pct": 0.8
         },
         {
           "outcome": "No",
-          "probability_pct": 97.15
+          "probability_pct": 99.2
         }
       ],
-      "volume_24h_usd": 104551.04,
-      "volume_total_usd": 216639.89,
-      "liquidity_usd": 82742.92,
-      "end_date": "2026-12-01T05:00:00Z",
-      "url": "https://polymarket.com/event/will-ethereum-reach-2600-in-november-2026"
+      "volume_24h_usd": 82076.56,
+      "volume_total_usd": 2356613.48,
+      "liquidity_usd": 294584.57,
+      "end_date": "2028-11-07T00:00:00Z",
+      "url": "https://polymarket.com/event/will-abdul-el-sayed-win-the-2028-democratic-presidential-nomination"
+    },
+    {
+      "id": "7176830",
+      "question": "Will Elon Musk post 65-89 tweets from November 21 to November 23, 2026?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 16.1
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 83.9
+        }
+      ],
+      "volume_24h_usd": 81904.07,
+      "volume_total_usd": 100758.62,
+      "liquidity_usd": 4686.91,
+      "end_date": "2026-11-23T17:00:00Z",
+      "url": "https://polymarket.com/event/elon-musk-of-tweets-november-21-november-23-2026-65-89"
     },
     {
       "id": "4662693",
@@ -780,31 +800,11 @@
           "probability_pct": 91.5
         }
       ],
-      "volume_24h_usd": 103852.16,
-      "volume_total_usd": 2452930.24,
-      "liquidity_usd": 107669.55,
+      "volume_24h_usd": 77880.12,
+      "volume_total_usd": 2452980.62,
+      "liquidity_usd": 113518.49,
       "end_date": "2028-01-01T04:59:00Z",
       "url": "https://polymarket.com/event/will-anthropic-announce-bankruptcy-by-december-31-2027"
-    },
-    {
-      "id": "663583",
-      "question": "Will the Iranian regime fall before 2027?",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 2.55
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 97.45
-        }
-      ],
-      "volume_24h_usd": 103438.06,
-      "volume_total_usd": 30346039.33,
-      "liquidity_usd": 358862.06,
-      "end_date": "2027-01-01T04:59:00Z",
-      "url": "https://polymarket.com/event/will-the-iranian-regime-fall-by-the-end-of-2026"
     }
   ]
 }
