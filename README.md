@@ -25,6 +25,13 @@ Financial data across Venezuela, LatAm equities, Crypto, and Wall Street normall
 | `GET /api/v1/bvc/:ticker` | `$0.005` | Single BVC issuer (e.g. `BVCC`, `BNC`, `MVZ.A`, `RST`) |
 | `GET /api/v1/ecosystem` | `$0.01` | Full unified cross-market snapshot + ratios |
 
+## Documentation & Examples
+- Full API reference & real JSON response examples (ES): [`DOCS.md`](./DOCS.md)
+- Machine-readable OpenAPI 3.1: `https://latam-x402.vercel.app/openapi.json`
+- x402 discovery manifest: `https://latam-x402.vercel.app/.well-known/x402.json`
+- LLM index: `https://latam-x402.vercel.app/llms.txt`
+- Merchant page (x402scan / Poncho): `https://tryponcho.com/m/latam-x402.vercel.app`
+
 ## Local Development
 
 ```bash
