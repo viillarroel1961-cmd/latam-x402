@@ -1,21 +1,21 @@
 {
   "market": "BCV_FX_VE",
-  "updated_at_utc": "2026-11-23T20:12:29.195Z",
+  "updated_at_utc": "2026-11-24T04:48:39.795Z",
   "sources": [
     "ve.dolarapi.com/dolares",
     "ve.dolarapi.com/euros",
     "binance-p2p-ves"
   ],
   "latest": {
-    "date": "2026-11-23",
-    "usd_bcv": 918.7662,
-    "eur_bcv": 1009.0717,
-    "usd_paralelo": 1107.3262,
-    "usdt_p2p_buy": 1109,
-    "usdt_p2p_sell": 1109,
-    "usdt_p2p_mid": 1109,
-    "spread_vs_bcv_pct": 20.71,
-    "eur_usd_implied": 1.0983
+    "date": "2026-11-24",
+    "usd_bcv": 919.8227,
+    "eur_bcv": 1011.1795,
+    "usd_paralelo": 1095.2234,
+    "usdt_p2p_buy": 1106.5,
+    "usdt_p2p_sell": 1106,
+    "usdt_p2p_mid": 1106.25,
+    "spread_vs_bcv_pct": 20.27,
+    "eur_usd_implied": 1.0993
   },
   "history": [
     {
@@ -31,6 +31,13 @@
       "eur_bcv": 1009.0717,
       "usdt_p2p_mid": 1109,
       "spread_vs_bcv_pct": 20.71
+    },
+    {
+      "date": "2026-11-24",
+      "usd_bcv": 919.8227,
+      "eur_bcv": 1011.1795,
+      "usdt_p2p_mid": 1106.25,
+      "spread_vs_bcv_pct": 20.27
     }
   ]
 }
