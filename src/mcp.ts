@@ -25,7 +25,7 @@ export const MCP_TOOLS: McpToolDef[] = [
   {
     name: "get_api_health",
     description:
-      "Free health check for latam-x402 API. Returns live status, Base Mainnet x402 config, and UTC freshness timestamps of all 9 financial data feeds.",
+      "Free health check for latam-x402 API. Returns live status, Base Mainnet x402 config, and UTC freshness timestamps of all 10 financial data feeds.",
     inputSchema: { type: "object", properties: {} },
     annotations: {
       title: "API Health & Feed Freshness (Free)",
@@ -150,6 +150,29 @@ export const MCP_TOOLS: McpToolDef[] = [
     },
     annotations: {
       title: "Pre-computed Crypto Technical Signals ($0.005)",
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: true,
+    },
+  },
+  {
+    name: "get_crypto_liquidity",
+    description:
+      "Paid ($0.008 USDC via x402 Base). Multi-exchange crypto derivatives liquidity: aggregated liquidation magnet clusters (Binance, Bybit, OKX, Hyperliquid), Open Interest, funding, top trader L/S ratios & squeeze risk signals.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        symbol: { type: "string", description: "Optional base symbol filter (e.g. BTC, ETH, SOL, BNB)" },
+        squeezeRisk: {
+          type: "string",
+          enum: ["long_squeeze", "short_squeeze", "neutral"],
+          description: "Optional squeeze risk regime filter",
+        },
+      },
+    },
+    annotations: {
+      title: "Crypto Derivatives Liquidity & Squeeze Magnets ($0.008)",
       readOnlyHint: true,
       destructiveHint: false,
       idempotentHint: true,
@@ -286,6 +309,10 @@ function buildEndpointUrl(baseUrl: string, toolName: string, args: Record<string
       addParam("symbol", args.symbol);
       addParam("trend", args.trend);
       return `${base}/api/v1/crypto/signals${suffix()}`;
+    case "get_crypto_liquidity":
+      addParam("symbol", args.symbol);
+      addParam("squeezeRisk", args.squeezeRisk);
+      return `${base}/api/v1/liquidity${suffix()}`;
     case "get_nyse_equities":
       addParam("symbol", args.symbol);
       addParam("category", args.category);
@@ -449,7 +476,7 @@ export async function handleMcpJsonRpc(
         },
         serverInfo: {
           name: "latam-x402-mcp",
-          version: "1.1.0",
+          version: "1.2.0",
         },
       },
     };

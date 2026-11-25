@@ -7,6 +7,7 @@ export interface X402RuntimeConfig {
     bvc: string;
     crypto: string;
     cryptoSignals: string;
+    liquidity: string;
     nyse: string;
     latamFx: string;
     defiYields: string;
@@ -73,6 +74,15 @@ export function buildWellKnownX402(baseUrl: string, cfg: X402RuntimeConfig) {
       description:
         "Pre-computed crypto technicals: RSI(14) 4h/1d, EMA 20/50/200, ATR%, 20d S/R, trend & funding extremes",
       amount: toDecimal(cfg.prices.cryptoSignals),
+      extensions: { bazaar: { discoverable: true } },
+    },
+    {
+      method: "GET",
+      path: "/api/v1/liquidity",
+      url: `${baseUrl}/api/v1/liquidity`,
+      description:
+        "Multi-exchange crypto derivatives liquidity: liquidation magnet clusters (Binance, Bybit, OKX, Hyperliquid), OI, funding, top L/S ratios & squeeze risk signals",
+      amount: toDecimal(cfg.prices.liquidity),
       extensions: { bazaar: { discoverable: true } },
     },
     {
@@ -149,6 +159,7 @@ export function buildLlmsTxt(baseUrl: string, cfg: X402RuntimeConfig) {
 - GET ${baseUrl}/api/v1/bvc/{ticker} (${cfg.prices.bvc} USDC): Single BVC ticker quote (e.g. BVCC, BNC, BPV, BVL, MVZ.A, RST, TDV.D).
 - GET ${baseUrl}/api/v1/crypto (${cfg.prices.crypto} USDC): Major crypto spot 24h prices, volume, and perpetual funding rates (?symbol=BTC).
 - GET ${baseUrl}/api/v1/crypto/signals (${cfg.prices.cryptoSignals} USDC): Pre-computed RSI(14) 4h/1d, EMA 20/50/200, ATR%, 20d support/resistance, trend & funding extremes (?symbol=BTC&trend=bullish).
+- GET ${baseUrl}/api/v1/liquidity (${cfg.prices.liquidity} USDC): Multi-exchange crypto liquidation magnet clusters (Binance, Bybit, OKX, Hyperliquid), OI, funding, top trader L/S ratios & squeeze risk score (?symbol=BTC&squeezeRisk=long_squeeze).
 - GET ${baseUrl}/api/v1/nyse (${cfg.prices.nyse} USDC): US benchmarks (SPY, QQQ, DIA, GLD, USO, AAPL, MSFT, NVDA...) and LatAm ADRs/ETFs (ILF, MELI, NU, PBR, VALE, EC, YPF) (?category=latam_adr&symbol=MELI).
 - GET ${baseUrl}/api/v1/defi/yields (${cfg.prices.defiYields} USDC): Top DeFi stablecoin yields (TVL >= $1M) filtered by chain & symbol (?chain=Base&symbol=USDC&minTvl=5000000).
 - GET ${baseUrl}/api/v1/predictions (${cfg.prices.predictions} USDC): Top liquid Polymarket prediction markets with probabilities & 24h volume (?topic=crypto&limit=15).
@@ -162,7 +173,7 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
     openapi: "3.1.0",
     info: {
       title: "latam-x402 — Unified LatAm & Global Market Data API",
-      version: "1.1.0",
+      version: "1.2.0",
       description:
         "Pay-per-call x402 API (USDC on Base via PayAI facilitator) unifying Venezuela BCV + 8-country LatAm FX/P2P spreads, Bolsa de Valores de Caracas (BVC) cross-valued in VES/USD, Global Crypto spot & technical signals, NYSE/LatAm ADRs, DeFi stablecoin yields & Polymarket predictions.",
       contact: {
@@ -185,6 +196,7 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
         { method: "GET", path: "/api/v1/bvc/{ticker}", price: cfg.prices.bvc, description: "Single BVC ticker quote with VES & USD cross-valuations" },
         { method: "GET", path: "/api/v1/crypto", price: cfg.prices.crypto, description: "Global crypto spot 24h prices, volume & perpetual funding rates" },
         { method: "GET", path: "/api/v1/crypto/signals", price: cfg.prices.cryptoSignals, description: "Pre-computed crypto technicals (RSI 14, EMA 20/50/200, ATR%, S/R, funding)" },
+        { method: "GET", path: "/api/v1/liquidity", price: cfg.prices.liquidity, description: "Multi-exchange crypto liquidation clusters, OI, funding, top L/S & squeeze risk signals" },
         { method: "GET", path: "/api/v1/nyse", price: cfg.prices.nyse, description: "NYSE/NASDAQ US benchmarks & LatAm ADRs/ETFs delayed quotes" },
         { method: "GET", path: "/api/v1/defi/yields", price: cfg.prices.defiYields, description: "Top DeFi stablecoin yields (TVL >= $1M) on Base, Solana, Arbitrum & Ethereum" },
         { method: "GET", path: "/api/v1/predictions", price: cfg.prices.predictions, description: "Most liquid Polymarket prediction markets with probabilities & 24h volume" },
@@ -344,6 +356,35 @@ export function buildOpenApiSpec(baseUrl: string, cfg: X402RuntimeConfig) {
           responses: {
             "200": {
               description: "RSI(14) 4h & 1d, EMA 20/50/200, ATR%, 20d S/R, trend & funding status",
+              content: { "application/json": { schema: jsonObjectSchema } },
+            },
+            "402": { description: "Payment Required (x402 Base USDC)" },
+          },
+        },
+      },
+      "/api/v1/liquidity": {
+        get: {
+          summary: `Multi-exchange Crypto derivatives liquidity & squeeze risk (${cfg.prices.liquidity} USDC)`,
+          parameters: [
+            {
+              name: "symbol",
+              in: "query",
+              required: false,
+              schema: { type: "string", example: "BTC" },
+              description: "Optional filter by base symbol or pair (e.g. BTC, ETH, SOL, BNB)",
+            },
+            {
+              name: "squeezeRisk",
+              in: "query",
+              required: false,
+              schema: { type: "string", enum: ["long_squeeze", "short_squeeze", "neutral"] },
+              description: "Optional filter by detected squeeze risk regime",
+            },
+          ],
+          responses: {
+            "200": {
+              description:
+                "Aggregated multi-exchange OI, funding, top L/S ratios, 1h/4h/24h liquidations, liquidation magnet clusters above/below price & squeeze risk score",
               content: { "application/json": { schema: jsonObjectSchema } },
             },
             "402": { description: "Payment Required (x402 Base USDC)" },

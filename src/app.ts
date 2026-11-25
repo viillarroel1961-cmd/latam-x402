@@ -46,6 +46,7 @@ export function getRuntimeConfig(): X402RuntimeConfig {
       bvc: process.env.PRICE_BVC || "$0.005",
       crypto: process.env.PRICE_CRYPTO || "$0.002",
       cryptoSignals: process.env.PRICE_CRYPTO_SIGNALS || "$0.005",
+      liquidity: process.env.PRICE_LIQUIDITY || "$0.008",
       nyse: process.env.PRICE_NYSE || "$0.003",
       latamFx: process.env.PRICE_LATAM_FX || "$0.005",
       defiYields: process.env.PRICE_DEFI_YIELDS || "$0.005",
@@ -189,6 +190,34 @@ export function createApp() {
             }),
           },
         },
+        "GET /api/v1/liquidity": {
+          accepts: { scheme: "exact", price: cfg.prices.liquidity, network: cfg.network, payTo: cfg.payTo },
+          description: "Multi-exchange crypto derivatives liquidity: liquidation magnet clusters, OI, funding, top L/S & squeeze risk score",
+          mimeType: "application/json",
+          extensions: {
+            ...declareDiscoveryExtension({
+              input: { symbol: "BTC", squeezeRisk: "long_squeeze" },
+              inputSchema: {
+                properties: {
+                  symbol: { type: "string", description: "Optional base symbol or pair filter (e.g. BTC, ETH, SOL, BNB)" },
+                  squeezeRisk: { type: "string", description: "Optional squeeze risk filter (long_squeeze, short_squeeze, neutral)" },
+                },
+              },
+              output: {
+                example: {
+                  market: "CRYPTO_DERIVATIVES_LIQUIDITY",
+                  assets: [
+                    {
+                      symbol: "BTC",
+                      price_usd: 59700.3,
+                      signal: { squeeze_risk: "long_squeeze", risk_score: 58, crowded_side: "longs" },
+                    },
+                  ],
+                },
+              },
+            }),
+          },
+        },
         "GET /api/v1/nyse": {
           accepts: { scheme: "exact", price: cfg.prices.nyse, network: cfg.network, payTo: cfg.payTo },
           description: "NYSE/NASDAQ US benchmarks & LatAm ADRs/ETFs quotes",
@@ -278,9 +307,9 @@ export function createApp() {
     c.header("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
     return c.json({
       name: "latam-x402",
-      version: "1.1.0",
+      version: "1.2.0",
       description:
-        "Unified LatAm & Global Market Data API (BCV & 8-country LatAm FX/P2P, Bolsa de Caracas, Crypto & Signals, NYSE, DeFi Yields & Polymarket) monetized via x402 USDC on Base.",
+        "Unified LatAm & Global Market Data API (BCV & 8-country LatAm FX/P2P, Bolsa de Caracas, Crypto, Signals & Derivatives Liquidity, NYSE, DeFi Yields & Polymarket) monetized via x402 USDC on Base.",
       protocol: "x402-v2",
       network: cfg.network,
       facilitator: cfg.facilitatorUrl,
@@ -294,12 +323,13 @@ export function createApp() {
   });
 
   app.get("/api/health", async (c) => {
-    const [bcv, latamFx, bvc, crypto, signals, nyse, defi, predictions, eco] = await Promise.all([
+    const [bcv, latamFx, bvc, crypto, signals, liquidity, nyse, defi, predictions, eco] = await Promise.all([
       loadMarketData<{ updated_at_utc?: string }>("bcv.json"),
       loadMarketData<{ updated_at_utc?: string }>("latam-fx.json"),
       loadMarketData<{ updated_at_utc?: string }>("bvc.json"),
       loadMarketData<{ updated_at_utc?: string }>("crypto.json"),
       loadMarketData<{ updated_at_utc?: string }>("crypto-signals.json"),
+      loadMarketData<{ updated_at_utc?: string }>("liquidity.json"),
       loadMarketData<{ updated_at_utc?: string }>("nyse.json"),
       loadMarketData<{ updated_at_utc?: string }>("defi-yields.json"),
       loadMarketData<{ updated_at_utc?: string }>("predictions.json"),
@@ -309,7 +339,7 @@ export function createApp() {
     return c.json({
       status: "ok",
       service: "latam-x402",
-      version: "1.1.0",
+      version: "1.2.0",
       now_utc: new Date().toISOString(),
       x402: {
         network: cfg.network,
@@ -323,6 +353,7 @@ export function createApp() {
         bvc: { source: bvc.source, updated_at_utc: bvc.data?.updated_at_utc ?? null },
         crypto: { source: crypto.source, updated_at_utc: crypto.data?.updated_at_utc ?? null },
         crypto_signals: { source: signals.source, updated_at_utc: signals.data?.updated_at_utc ?? null },
+        liquidity: { source: liquidity.source, updated_at_utc: liquidity.data?.updated_at_utc ?? null },
         nyse: { source: nyse.source, updated_at_utc: nyse.data?.updated_at_utc ?? null },
         defi_yields: { source: defi.source, updated_at_utc: defi.data?.updated_at_utc ?? null },
         predictions: { source: predictions.source, updated_at_utc: predictions.data?.updated_at_utc ?? null },
@@ -387,7 +418,7 @@ export function createApp() {
     c.header("Cache-Control", "public, s-maxage=300");
     return c.json({
       name: "latam-x402-mcp",
-      version: "1.1.0",
+      version: "1.2.0",
       transport: "streamable-http",
       endpoint: `${origin}/api/mcp`,
       toolsCount: MCP_TOOLS.length,
@@ -536,6 +567,27 @@ export function createApp() {
     if (sym) signals = signals.filter((s) => s.base === sym || s.symbol === sym);
     if (trend) signals = signals.filter((s) => s.trend?.toLowerCase() === trend);
     return c.json({ ...data, count: signals.length, signals });
+  });
+
+  app.get("/api/v1/liquidity", async (c) => {
+    c.header("Cache-Control", "no-store");
+    const { data } = await loadMarketData<{
+      assets?: Array<{ symbol: string; pair?: string; signal?: { squeeze_risk?: string } }>;
+    } & Record<string, unknown>>("liquidity.json");
+    if (!data) return c.json({ error: "Crypto liquidity dataset not synced yet" }, 503);
+
+    const sym = (c.req.query("symbol") || "").trim().toUpperCase();
+    const squeezeRisk = (c.req.query("squeezeRisk") || "").trim().toLowerCase();
+    let assets = Array.isArray(data.assets) ? data.assets : [];
+    if (sym) {
+      assets = assets.filter(
+        (a) => a.symbol.toUpperCase() === sym || (a.pair || "").toUpperCase() === sym
+      );
+    }
+    if (squeezeRisk) {
+      assets = assets.filter((a) => a.signal?.squeeze_risk?.toLowerCase() === squeezeRisk);
+    }
+    return c.json({ ...data, count: assets.length, assets });
   });
 
   app.get("/api/v1/nyse", async (c) => {

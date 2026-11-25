@@ -51,6 +51,7 @@ function resolveRoutePrice(path: string, cfg: X402RuntimeConfig): string {
   if (path === "/api/v1/bvc" || path.startsWith("/api/v1/bvc/")) return cfg.prices.bvc;
   if (path === "/api/v1/crypto") return cfg.prices.crypto;
   if (path === "/api/v1/crypto/signals") return cfg.prices.cryptoSignals;
+  if (path === "/api/v1/liquidity") return cfg.prices.liquidity;
   if (path === "/api/v1/nyse") return cfg.prices.nyse;
   if (path === "/api/v1/defi/yields") return cfg.prices.defiYields;
   if (path === "/api/v1/predictions") return cfg.prices.predictions;

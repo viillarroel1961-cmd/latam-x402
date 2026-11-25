@@ -24,6 +24,7 @@ Financial data across Venezuela, LatAm equities, Crypto, and Wall Street normall
 | `GET /api/v1/latam-fx` | `$0.005` | 8 LatAm countries official vs parallel/MEP/CCL vs Binance USDT P2P (`?country=AR`) |
 | `GET /api/v1/crypto` | `$0.002` | Global crypto spot 24h + funding (`?symbol=BTC`) |
 | `GET /api/v1/crypto/signals` | `$0.005` | Pre-computed RSI(14) 4h/1d, EMA 20/50/200, ATR%, 20d S/R, trend & funding (`?symbol=BTC`) |
+| `GET /api/v1/liquidity` | `$0.008` | Multi-exchange liquidation clusters (Binance, Bybit, OKX, Hyperliquid), OI, funding, top L/S & squeeze risk (`?symbol=BTC&squeezeRisk=long_squeeze`) |
 | `GET /api/v1/nyse` | `$0.003` | NYSE/NASDAQ US & LatAm ADRs (`?symbol=MELI&category=latam_adr`) |
 | `GET /api/v1/bvc` | `$0.005` | Bolsa de Caracas in VES, USD BCV & USD P2P (`?onlyPriced=true`) |
 | `GET /api/v1/bvc/:ticker` | `$0.005` | Single BVC issuer (e.g. `BVCC`, `BNC`, `MVZ.A`, `RST`) |

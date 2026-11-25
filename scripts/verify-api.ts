@@ -39,6 +39,7 @@ async function main() {
     bvcTicker: await probe("/api/v1/bvc/BVCC"),
     crypto: await probe("/api/v1/crypto"),
     cryptoSignals: await probe("/api/v1/crypto/signals"),
+    liquidity: await probe("/api/v1/liquidity"),
     nyse: await probe("/api/v1/nyse"),
     defiYields: await probe("/api/v1/defi/yields"),
     predictions: await probe("/api/v1/predictions"),
@@ -56,6 +57,7 @@ async function main() {
     results.bvcTicker === 402 &&
     results.crypto === 402 &&
     results.cryptoSignals === 402 &&
+    results.liquidity === 402 &&
     results.nyse === 402 &&
     results.defiYields === 402 &&
     results.predictions === 402 &&
