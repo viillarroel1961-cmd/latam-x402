@@ -1,19 +1,19 @@
 {
   "market": "CRYPTO_DERIVATIVES_LIQUIDITY",
-  "updated_at_utc": "2026-11-25T01:15:56Z",
+  "updated_at_utc": "2026-11-25T11:18:35Z",
   "sources": [
     "coinank.com (multi-exchange derivatives aggregator)",
     "coinank.com/chart/derivatives/liq-map (aggregated liquidation clusters)"
   ],
   "market_context": {
-    "total_open_interest_usd": 79936186582.66,
-    "total_oi_change_24h_pct": -3.02,
-    "total_volume_24h_usd": 186645630167.62,
-    "total_liquidations_24h_usd": 328267065.91,
-    "total_liquidations_24h_long_usd": 269466440.32,
-    "total_liquidations_24h_short_usd": 58800625.59,
-    "global_long_ratio": 0.4955,
-    "global_short_ratio": 0.5045,
+    "total_open_interest_usd": 80083856059.02,
+    "total_oi_change_24h_pct": -1.06,
+    "total_volume_24h_usd": 177513777828.89,
+    "total_liquidations_24h_usd": 286860049.62,
+    "total_liquidations_24h_long_usd": 226404396.79,
+    "total_liquidations_24h_short_usd": 60455652.83,
+    "global_long_ratio": 0.5013,
+    "global_short_ratio": 0.4987,
     "fear_greed_index": 14,
     "btc_dominance_pct": 58.61
   },
@@ -22,45 +22,45 @@
     {
       "symbol": "BTC",
       "pair": "BTCUSDT",
-      "price_usd": 59700.3,
-      "mark_price_usd": 59716.37347826,
-      "basis_rate_pct": -0.06,
+      "price_usd": 58853.3,
+      "mark_price_usd": 58869.32326087,
+      "basis_rate_pct": -0.02,
       "price_change_pct": {
-        "1h": 0.38,
-        "4h": -0.06,
-        "24h": -2.953
+        "1h": -0.23,
+        "4h": -0.44,
+        "24h": -1.25
       },
       "derivatives": {
-        "open_interest_usd": 32786206262.1,
+        "open_interest_usd": 32788448769.45,
         "oi_change_pct": {
-          "1h": 0.41,
-          "4h": -0.46,
-          "24h": -1.56
+          "1h": -0.14,
+          "4h": -0.05,
+          "24h": -0.83
         },
-        "oi_to_volume_ratio": 0.5151,
-        "funding_rate_pct": 0.00646,
-        "long_short_ratio": 0.9829,
-        "top_accounts_ls_ratio": 2.6443,
-        "top_positions_ls_ratio": 1.8476,
-        "taker_buy_ratio_1h": 0.5327,
+        "oi_to_volume_ratio": 0.5598,
+        "funding_rate_pct": 0.00843,
+        "long_short_ratio": 1.0051,
+        "top_accounts_ls_ratio": 2.7051,
+        "top_positions_ls_ratio": 1.9072,
+        "taker_buy_ratio_1h": 0.5114,
         "liquidations_usd": {
           "1h": {
-            "longs": 273100.84,
-            "shorts": 32456.58
+            "longs": 355070.29,
+            "shorts": 23696.06
           },
           "4h": {
-            "longs": 1094109.91,
-            "shorts": 291407.29
+            "longs": 15473697.18,
+            "shorts": 3434880.23
           },
           "24h": {
-            "longs": 89274165.27,
-            "shorts": 22398409.89
+            "longs": 52505913.87,
+            "shorts": 21984768.33
           }
         }
       },
       "technicals": {
-        "rsi_1h": 41.76,
-        "rsi_4h": 42.36,
+        "rsi_1h": 39.29,
+        "rsi_4h": 36.25,
         "rsi_1d": 24.51,
         "atr14_pct": 5.261,
         "bb_width": 0.3654
@@ -74,52 +74,52 @@
           "Lighter",
           "Aster"
         ],
-        "total_above_usd": 190574124294.0,
-        "total_below_usd": 115938212869.0,
-        "above_below_ratio": 1.644,
+        "total_above_usd": 189742783512.0,
+        "total_below_usd": 81223632334.0,
+        "above_below_ratio": 2.336,
         "above": [
           {
-            "price": 60847.08,
-            "distance_pct": 2.0,
-            "estimated_liq_usd": 55751633155.0,
-            "share_of_side_pct": 29.3,
-            "strength": "very_high"
-          },
-          {
-            "price": 61145.35,
-            "distance_pct": 2.5,
-            "estimated_liq_usd": 36136159149.0,
-            "share_of_side_pct": 19.0,
+            "price": 60582.54,
+            "distance_pct": 3.0,
+            "estimated_liq_usd": 29913841389.0,
+            "share_of_side_pct": 15.8,
             "strength": "high"
           },
           {
-            "price": 60548.81,
+            "price": 60876.63,
+            "distance_pct": 3.5,
+            "estimated_liq_usd": 29371966199.0,
+            "share_of_side_pct": 15.5,
+            "strength": "high"
+          },
+          {
+            "price": 59700.27,
             "distance_pct": 1.5,
-            "estimated_liq_usd": 27208484610.0,
-            "share_of_side_pct": 14.3,
+            "estimated_liq_usd": 29096769474.0,
+            "share_of_side_pct": 15.3,
             "strength": "high"
           }
         ],
         "below": [
           {
-            "price": 59057.46,
-            "distance_pct": -1.0,
-            "estimated_liq_usd": 45562917373.0,
-            "share_of_side_pct": 39.3,
+            "price": 58523.91,
+            "distance_pct": -0.5,
+            "estimated_liq_usd": 27763720053.0,
+            "share_of_side_pct": 34.2,
             "strength": "very_high"
           },
           {
-            "price": 58759.19,
-            "distance_pct": -1.5,
-            "estimated_liq_usd": 21113548608.0,
-            "share_of_side_pct": 18.2,
-            "strength": "high"
+            "price": 58229.82,
+            "distance_pct": -1.0,
+            "estimated_liq_usd": 23206556135.0,
+            "share_of_side_pct": 28.6,
+            "strength": "very_high"
           },
           {
-            "price": 59355.73,
-            "distance_pct": -0.5,
-            "estimated_liq_usd": 15883885661.0,
-            "share_of_side_pct": 13.7,
+            "price": 57935.73,
+            "distance_pct": -1.5,
+            "estimated_liq_usd": 12800073964.0,
+            "share_of_side_pct": 15.8,
             "strength": "high"
           }
         ]
@@ -131,7 +131,7 @@
         "short_squeeze_score": 32,
         "crowded_side": "longs",
         "nearest_magnet_side": "below",
-        "nearest_magnet_pct": -1.0,
+        "nearest_magnet_pct": -0.5,
         "agent_hint": "crowded_longs_watch_sweep_below",
         "summary": "Long positioning and/or downside liquidity clusters dominate; elevated risk of downward liquidity sweep."
       }
@@ -139,45 +139,45 @@
     {
       "symbol": "ETH",
       "pair": "ETHUSDT",
-      "price_usd": 1673.74,
-      "mark_price_usd": 1674.35790698,
-      "basis_rate_pct": -0.07,
+      "price_usd": 1648.85,
+      "mark_price_usd": 1649.16372093,
+      "basis_rate_pct": -0.01,
       "price_change_pct": {
-        "1h": 0.34,
-        "4h": -0.04,
-        "24h": -2.597
+        "1h": 0.19,
+        "4h": -0.48,
+        "24h": -1.894
       },
       "derivatives": {
-        "open_interest_usd": 16251554617.21,
+        "open_interest_usd": 16347185570.53,
         "oi_change_pct": {
-          "1h": 0.32,
-          "4h": 0.02,
-          "24h": -1.92
+          "1h": 0.18,
+          "4h": -0.77,
+          "24h": 0.33
         },
-        "oi_to_volume_ratio": 0.5214,
-        "funding_rate_pct": 0.0081,
-        "long_short_ratio": 0.9737,
-        "top_accounts_ls_ratio": 2.2268,
-        "top_positions_ls_ratio": 1.7893,
-        "taker_buy_ratio_1h": 0.5223,
+        "oi_to_volume_ratio": 0.5771,
+        "funding_rate_pct": 0.00512,
+        "long_short_ratio": 0.9923,
+        "top_accounts_ls_ratio": 2.1797,
+        "top_positions_ls_ratio": 1.7728,
+        "taker_buy_ratio_1h": 0.5157,
         "liquidations_usd": {
           "1h": {
-            "longs": 671741.23,
-            "shorts": 75618.7
+            "longs": 7894.11,
+            "shorts": 197428.6
           },
           "4h": {
-            "longs": 1038936.25,
-            "shorts": 233323.46
+            "longs": 9876955.02,
+            "shorts": 1437072.93
           },
           "24h": {
-            "longs": 36540105.52,
-            "shorts": 11578181.12
+            "longs": 31089442.34,
+            "shorts": 9309728.39
           }
         }
       },
       "technicals": {
-        "rsi_1h": 40.81,
-        "rsi_4h": 43.15,
+        "rsi_1h": 38.49,
+        "rsi_4h": 36.4,
         "rsi_1d": 27.9,
         "atr14_pct": 5.828,
         "bb_width": 0.4111
@@ -191,110 +191,110 @@
           "Lighter",
           "Aster"
         ],
-        "total_above_usd": 104084902322.0,
-        "total_below_usd": 56377621419.0,
-        "above_below_ratio": 1.846,
+        "total_above_usd": 113884766257.0,
+        "total_below_usd": 36191900666.0,
+        "above_below_ratio": 3.147,
         "above": [
           {
-            "price": 1714.31,
-            "distance_pct": 2.5,
-            "estimated_liq_usd": 25178222144.0,
-            "share_of_side_pct": 24.2,
-            "strength": "very_high"
-          },
-          {
-            "price": 1705.95,
-            "distance_pct": 2.0,
-            "estimated_liq_usd": 18195850879.0,
-            "share_of_side_pct": 17.5,
+            "price": 1697.23,
+            "distance_pct": 3.0,
+            "estimated_liq_usd": 15597258253.0,
+            "share_of_side_pct": 13.7,
             "strength": "high"
           },
           {
-            "price": 1697.59,
-            "distance_pct": 1.5,
-            "estimated_liq_usd": 13845882978.0,
-            "share_of_side_pct": 13.3,
+            "price": 1689.0,
+            "distance_pct": 2.5,
+            "estimated_liq_usd": 15232234063.0,
+            "share_of_side_pct": 13.4,
+            "strength": "high"
+          },
+          {
+            "price": 1705.47,
+            "distance_pct": 3.5,
+            "estimated_liq_usd": 14986504515.0,
+            "share_of_side_pct": 13.2,
             "strength": "high"
           }
         ],
         "below": [
           {
-            "price": 1655.78,
-            "distance_pct": -1.0,
-            "estimated_liq_usd": 18657064644.0,
-            "share_of_side_pct": 33.1,
+            "price": 1623.08,
+            "distance_pct": -1.5,
+            "estimated_liq_usd": 11505747149.0,
+            "share_of_side_pct": 31.8,
             "strength": "very_high"
           },
           {
-            "price": 1664.14,
-            "distance_pct": -0.5,
-            "estimated_liq_usd": 11357159727.0,
-            "share_of_side_pct": 20.1,
-            "strength": "high"
+            "price": 1631.32,
+            "distance_pct": -1.0,
+            "estimated_liq_usd": 11449941086.0,
+            "share_of_side_pct": 31.6,
+            "strength": "very_high"
           },
           {
-            "price": 1647.41,
-            "distance_pct": -1.5,
-            "estimated_liq_usd": 10408141557.0,
-            "share_of_side_pct": 18.5,
+            "price": 1614.84,
+            "distance_pct": -2.0,
+            "estimated_liq_usd": 4987606005.0,
+            "share_of_side_pct": 13.8,
             "strength": "high"
           }
         ]
       },
       "signal": {
-        "squeeze_risk": "long_squeeze",
-        "risk_score": 51,
-        "long_squeeze_score": 51,
+        "squeeze_risk": "neutral",
+        "risk_score": 41,
+        "long_squeeze_score": 41,
         "short_squeeze_score": 32,
         "crowded_side": "longs",
         "nearest_magnet_side": "below",
-        "nearest_magnet_pct": -1.0,
-        "agent_hint": "crowded_longs_watch_sweep_below",
-        "summary": "Long positioning and/or downside liquidity clusters dominate; elevated risk of downward liquidity sweep."
+        "nearest_magnet_pct": -1.5,
+        "agent_hint": "balanced_derivatives_monitor_nearest_magnet",
+        "summary": "No extreme single-sided squeeze imbalance; monitor nearest liquidity magnet before entry."
       }
     },
     {
       "symbol": "SOL",
       "pair": "SOLUSDT",
-      "price_usd": 69.61,
-      "mark_price_usd": 69.65201311,
-      "basis_rate_pct": -0.07,
+      "price_usd": 67.81,
+      "mark_price_usd": 67.84475142,
+      "basis_rate_pct": -0.03,
       "price_change_pct": {
-        "1h": 0.23,
-        "4h": 0.55,
-        "24h": -3.867
+        "1h": 0.13,
+        "4h": -1.17,
+        "24h": -3.184
       },
       "derivatives": {
-        "open_interest_usd": 2755336828.98,
+        "open_interest_usd": 2728184225.33,
         "oi_change_pct": {
-          "1h": 0.34,
-          "4h": 0.39,
-          "24h": -2.43
+          "1h": 0.16,
+          "4h": -1.41,
+          "24h": -1.43
         },
-        "oi_to_volume_ratio": 0.6043,
-        "funding_rate_pct": 0.00852,
-        "long_short_ratio": 0.9966,
-        "top_accounts_ls_ratio": 3.7778,
-        "top_positions_ls_ratio": 2.1327,
-        "taker_buy_ratio_1h": 0.5448,
+        "oi_to_volume_ratio": 0.603,
+        "funding_rate_pct": -0.0061,
+        "long_short_ratio": 0.9734,
+        "top_accounts_ls_ratio": 3.662,
+        "top_positions_ls_ratio": 2.1897,
+        "taker_buy_ratio_1h": 0.4559,
         "liquidations_usd": {
           "1h": {
-            "longs": 3591.59,
-            "shorts": 3517.85
+            "longs": 852.17,
+            "shorts": 5956.68
           },
           "4h": {
-            "longs": 118780.2,
-            "shorts": 226821.84
+            "longs": 5891712.6,
+            "shorts": 368696.47
           },
           "24h": {
-            "longs": 13648524.93,
-            "shorts": 798188.59
+            "longs": 13715026.06,
+            "shorts": 1070518.57
           }
         }
       },
       "technicals": {
-        "rsi_1h": 41.89,
-        "rsi_4h": 43.86,
+        "rsi_1h": 34.09,
+        "rsi_4h": 37.39,
         "rsi_1d": 28.84,
         "atr14_pct": 6.054,
         "bb_width": 0.3735
@@ -308,52 +308,52 @@
           "Lighter",
           "Aster"
         ],
-        "total_above_usd": 18598022198.0,
-        "total_below_usd": 10917911828.0,
-        "above_below_ratio": 1.703,
+        "total_above_usd": 19595343570.0,
+        "total_below_usd": 4940226567.0,
+        "above_below_ratio": 3.966,
         "above": [
           {
-            "price": 70.64,
-            "distance_pct": 1.49,
-            "estimated_liq_usd": 2517113498.0,
-            "share_of_side_pct": 13.5,
+            "price": 70.51,
+            "distance_pct": 4.0,
+            "estimated_liq_usd": 2997576267.0,
+            "share_of_side_pct": 15.3,
             "strength": "high"
           },
           {
-            "price": 70.3,
-            "distance_pct": 1.01,
-            "estimated_liq_usd": 2468125724.0,
-            "share_of_side_pct": 13.3,
+            "price": 70.17,
+            "distance_pct": 3.5,
+            "estimated_liq_usd": 2893738101.0,
+            "share_of_side_pct": 14.8,
             "strength": "high"
           },
           {
-            "price": 70.99,
-            "distance_pct": 2.0,
-            "estimated_liq_usd": 2343058761.0,
-            "share_of_side_pct": 12.6,
-            "strength": "high"
+            "price": 70.85,
+            "distance_pct": 4.5,
+            "estimated_liq_usd": 1916674124.0,
+            "share_of_side_pct": 9.8,
+            "strength": "medium"
           }
         ],
         "below": [
           {
-            "price": 68.21,
-            "distance_pct": -2.0,
-            "estimated_liq_usd": 2734328754.0,
-            "share_of_side_pct": 25.0,
+            "price": 67.12,
+            "distance_pct": -1.0,
+            "estimated_liq_usd": 2110169059.0,
+            "share_of_side_pct": 42.7,
             "strength": "very_high"
           },
           {
-            "price": 68.56,
-            "distance_pct": -1.49,
-            "estimated_liq_usd": 2690326687.0,
-            "share_of_side_pct": 24.6,
+            "price": 66.78,
+            "distance_pct": -1.5,
+            "estimated_liq_usd": 1220402640.0,
+            "share_of_side_pct": 24.7,
             "strength": "very_high"
           },
           {
-            "price": 68.9,
-            "distance_pct": -1.01,
-            "estimated_liq_usd": 1470441540.0,
-            "share_of_side_pct": 13.5,
+            "price": 66.44,
+            "distance_pct": -2.01,
+            "estimated_liq_usd": 726406777.0,
+            "share_of_side_pct": 14.7,
             "strength": "high"
           }
         ]
@@ -362,10 +362,10 @@
         "squeeze_risk": "long_squeeze",
         "risk_score": 58,
         "long_squeeze_score": 58,
-        "short_squeeze_score": 32,
+        "short_squeeze_score": 34,
         "crowded_side": "longs",
-        "nearest_magnet_side": "above",
-        "nearest_magnet_pct": 1.49,
+        "nearest_magnet_side": "below",
+        "nearest_magnet_pct": -1.0,
         "agent_hint": "crowded_longs_watch_sweep_below",
         "summary": "Long positioning and/or downside liquidity clusters dominate; elevated risk of downward liquidity sweep."
       }
@@ -373,45 +373,45 @@
     {
       "symbol": "BNB",
       "pair": "BNBUSDT",
-      "price_usd": 547.19,
-      "mark_price_usd": 546.91687781,
-      "basis_rate_pct": 0.04,
+      "price_usd": 541.92,
+      "mark_price_usd": 541.63059233,
+      "basis_rate_pct": 0.06,
       "price_change_pct": {
-        "1h": 0.17,
-        "4h": -0.36,
-        "24h": -2.409
+        "1h": 0.1,
+        "4h": -0.2,
+        "24h": -0.682
       },
       "derivatives": {
-        "open_interest_usd": 698301848.7,
+        "open_interest_usd": 698857963.46,
         "oi_change_pct": {
-          "1h": 0.27,
-          "4h": -0.46,
-          "24h": -1.18
+          "1h": 0.05,
+          "4h": 0.0,
+          "24h": 0.6
         },
-        "oi_to_volume_ratio": 1.5519,
-        "funding_rate_pct": 0.00301,
-        "long_short_ratio": 1.026,
-        "top_accounts_ls_ratio": 2.4614,
-        "top_positions_ls_ratio": 1.0222,
-        "taker_buy_ratio_1h": 0.5481,
+        "oi_to_volume_ratio": 1.5903,
+        "funding_rate_pct": 0.0,
+        "long_short_ratio": 1.0645,
+        "top_accounts_ls_ratio": 2.4758,
+        "top_positions_ls_ratio": 1.0293,
+        "taker_buy_ratio_1h": 0.4588,
         "liquidations_usd": {
           "1h": {
-            "longs": 3258.63,
+            "longs": 312.18,
             "shorts": 0.0
           },
           "4h": {
-            "longs": 6675.41,
-            "shorts": 0.0
+            "longs": 206520.43,
+            "shorts": 8652.7
           },
           "24h": {
-            "longs": 823378.19,
-            "shorts": 85082.36
+            "longs": 505876.03,
+            "shorts": 82848.48
           }
         }
       },
       "technicals": {
-        "rsi_1h": 42.18,
-        "rsi_4h": 43.51,
+        "rsi_1h": 41.8,
+        "rsi_4h": 37.14,
         "rsi_1d": 26.37,
         "atr14_pct": 5.481,
         "bb_width": 0.369
@@ -425,52 +425,52 @@
           "Lighter",
           "Aster"
         ],
-        "total_above_usd": 2296847803.0,
-        "total_below_usd": 1818583978.0,
-        "above_below_ratio": 1.263,
+        "total_above_usd": 2552149962.0,
+        "total_below_usd": 1259607993.0,
+        "above_below_ratio": 2.026,
         "above": [
           {
-            "price": 555.41,
-            "distance_pct": 1.5,
-            "estimated_liq_usd": 589589379.0,
-            "share_of_side_pct": 25.7,
-            "strength": "very_high"
-          },
-          {
-            "price": 558.14,
-            "distance_pct": 2.0,
-            "estimated_liq_usd": 552299542.0,
-            "share_of_side_pct": 24.0,
-            "strength": "very_high"
-          },
-          {
-            "price": 552.67,
+            "price": 547.22,
             "distance_pct": 1.0,
-            "estimated_liq_usd": 353642073.0,
-            "share_of_side_pct": 15.4,
+            "estimated_liq_usd": 483346127.0,
+            "share_of_side_pct": 18.9,
+            "strength": "high"
+          },
+          {
+            "price": 555.34,
+            "distance_pct": 2.5,
+            "estimated_liq_usd": 464058770.0,
+            "share_of_side_pct": 18.2,
+            "strength": "high"
+          },
+          {
+            "price": 552.64,
+            "distance_pct": 2.0,
+            "estimated_liq_usd": 443856629.0,
+            "share_of_side_pct": 17.4,
             "strength": "high"
           }
         ],
         "below": [
           {
-            "price": 541.73,
+            "price": 536.38,
             "distance_pct": -1.0,
-            "estimated_liq_usd": 704807757.0,
-            "share_of_side_pct": 38.8,
+            "estimated_liq_usd": 509852908.0,
+            "share_of_side_pct": 40.5,
             "strength": "very_high"
           },
           {
-            "price": 538.99,
+            "price": 533.67,
             "distance_pct": -1.5,
-            "estimated_liq_usd": 329653475.0,
-            "share_of_side_pct": 18.1,
-            "strength": "high"
+            "estimated_liq_usd": 290423643.0,
+            "share_of_side_pct": 23.1,
+            "strength": "very_high"
           },
           {
-            "price": 544.46,
-            "distance_pct": -0.5,
-            "estimated_liq_usd": 284737062.0,
-            "share_of_side_pct": 15.7,
+            "price": 530.96,
+            "distance_pct": -2.0,
+            "estimated_liq_usd": 177686185.0,
+            "share_of_side_pct": 14.1,
             "strength": "high"
           }
         ]
@@ -479,7 +479,7 @@
         "squeeze_risk": "neutral",
         "risk_score": 42,
         "long_squeeze_score": 42,
-        "short_squeeze_score": 22,
+        "short_squeeze_score": 32,
         "crowded_side": "longs",
         "nearest_magnet_side": "below",
         "nearest_magnet_pct": -1.0,
