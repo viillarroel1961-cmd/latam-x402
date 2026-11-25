@@ -1,6 +1,6 @@
 {
   "market": "NYSE_US_LATAM",
-  "updated_at_utc": "2026-11-24T17:40:27.707Z",
+  "updated_at_utc": "2026-11-25T02:25:01.343Z",
   "delay_notice": "Standard delayed / end-of-day quotes (~15 min)",
   "coverage": {
     "total": 20,
@@ -13,10 +13,10 @@
       "category": "etf",
       "exchange": "NYSEArca",
       "currency": "USD",
-      "price_usd": 719.66,
+      "price_usd": 718.78,
       "prev_close_usd": 732.44,
-      "change_pct": -1.74,
-      "volume": 33765246,
+      "change_pct": -1.86,
+      "volume": 64228000,
       "source": "yahoo-finance"
     },
     {
@@ -25,10 +25,10 @@
       "category": "etf",
       "exchange": "NasdaqGM",
       "currency": "USD",
-      "price_usd": 639.739,
+      "price_usd": 638.1,
       "prev_close_usd": 656.95,
-      "change_pct": -2.62,
-      "volume": 34769079,
+      "change_pct": -2.87,
+      "volume": 57091400,
       "source": "yahoo-finance"
     },
     {
@@ -37,10 +37,10 @@
       "category": "etf",
       "exchange": "NYSEArca",
       "currency": "USD",
-      "price_usd": 499.755,
+      "price_usd": 499.74,
       "prev_close_usd": 507.31,
       "change_pct": -1.49,
-      "volume": 2650009,
+      "volume": 4094000,
       "source": "yahoo-finance"
     },
     {
@@ -49,10 +49,10 @@
       "category": "etf",
       "exchange": "NYSEArca",
       "currency": "USD",
-      "price_usd": 326.81,
+      "price_usd": 325.45,
       "prev_close_usd": 352.48,
-      "change_pct": -7.28,
-      "volume": 5300480,
+      "change_pct": -7.67,
+      "volume": 9428500,
       "source": "yahoo-finance"
     },
     {
@@ -61,10 +61,10 @@
       "category": "etf",
       "exchange": "NYSEArca",
       "currency": "USD",
-      "price_usd": 135.621,
+      "price_usd": 135.43,
       "prev_close_usd": 140.24,
-      "change_pct": -3.29,
-      "volume": 2022526,
+      "change_pct": -3.43,
+      "volume": 2869300,
       "source": "yahoo-finance"
     },
     {
@@ -73,10 +73,10 @@
       "category": "latam_etf",
       "exchange": "NYSEArca",
       "currency": "USD",
-      "price_usd": 29.45,
+      "price_usd": 29.25,
       "prev_close_usd": 31.32,
-      "change_pct": -5.97,
-      "volume": 2688407,
+      "change_pct": -6.61,
+      "volume": 3526300,
       "source": "yahoo-finance"
     },
     {
@@ -85,10 +85,10 @@
       "category": "us_equity",
       "exchange": "NasdaqGS",
       "currency": "USD",
-      "price_usd": 353.15,
+      "price_usd": 354.07,
       "prev_close_usd": 351.91,
-      "change_pct": 0.35,
-      "volume": 16557496,
+      "change_pct": 0.61,
+      "volume": 41214200,
       "source": "yahoo-finance"
     },
     {
@@ -97,10 +97,10 @@
       "category": "us_equity",
       "exchange": "NasdaqGS",
       "currency": "USD",
-      "price_usd": 499.694,
+      "price_usd": 496.13,
       "prev_close_usd": 506.24,
-      "change_pct": -1.29,
-      "volume": 9957561,
+      "change_pct": -2,
+      "volume": 23086900,
       "source": "yahoo-finance"
     },
     {
@@ -109,10 +109,10 @@
       "category": "us_equity",
       "exchange": "NasdaqGS",
       "currency": "USD",
-      "price_usd": 153.57,
+      "price_usd": 155.38,
       "prev_close_usd": 155.46,
-      "change_pct": -1.22,
-      "volume": 232856941,
+      "change_pct": -0.05,
+      "volume": 383594200,
       "source": "yahoo-finance"
     },
     {
@@ -121,10 +121,10 @@
       "category": "us_equity",
       "exchange": "NasdaqGS",
       "currency": "USD",
-      "price_usd": 253.05,
+      "price_usd": 252.29,
       "prev_close_usd": 257.89,
-      "change_pct": -1.88,
-      "volume": 15021287,
+      "change_pct": -2.17,
+      "volume": 33845600,
       "source": "yahoo-finance"
     },
     {
@@ -133,10 +133,10 @@
       "category": "us_equity",
       "exchange": "NasdaqGS",
       "currency": "USD",
-      "price_usd": 279.095,
+      "price_usd": 279.05,
       "prev_close_usd": 280.2,
-      "change_pct": -0.39,
-      "volume": 14783043,
+      "change_pct": -0.41,
+      "volume": 33820500,
       "source": "yahoo-finance"
     },
     {
@@ -145,10 +145,10 @@
       "category": "us_equity",
       "exchange": "NasdaqGS",
       "currency": "USD",
-      "price_usd": 594.63,
+      "price_usd": 589.82,
       "prev_close_usd": 618.87,
-      "change_pct": -3.92,
-      "volume": 5194758,
+      "change_pct": -4.69,
+      "volume": 12149700,
       "source": "yahoo-finance"
     },
     {
@@ -157,10 +157,10 @@
       "category": "us_equity",
       "exchange": "NasdaqGS",
       "currency": "USD",
-      "price_usd": 384.197,
+      "price_usd": 384.68,
       "prev_close_usd": 380.11,
-      "change_pct": 1.08,
-      "volume": 16918223,
+      "change_pct": 1.2,
+      "volume": 28697600,
       "source": "yahoo-finance"
     },
     {
@@ -169,10 +169,10 @@
       "category": "us_equity",
       "exchange": "NYSE",
       "currency": "USD",
-      "price_usd": 317.75,
+      "price_usd": 317.1,
       "prev_close_usd": 329.96,
-      "change_pct": -3.7,
-      "volume": 2593918,
+      "change_pct": -3.9,
+      "volume": 7195900,
       "source": "yahoo-finance"
     },
     {
@@ -181,10 +181,10 @@
       "category": "latam_adr",
       "exchange": "NasdaqGS",
       "currency": "USD",
-      "price_usd": 1438.24,
+      "price_usd": 1450.31,
       "prev_close_usd": 1436.83,
-      "change_pct": 0.1,
-      "volume": 200878,
+      "change_pct": 0.94,
+      "volume": 560900,
       "source": "yahoo-finance"
     },
     {
@@ -193,10 +193,10 @@
       "category": "latam_adr",
       "exchange": "NYSE",
       "currency": "USD",
-      "price_usd": 11.965,
+      "price_usd": 11.86,
       "prev_close_usd": 12.33,
-      "change_pct": -2.96,
-      "volume": 22140151,
+      "change_pct": -3.81,
+      "volume": 44301100,
       "source": "yahoo-finance"
     },
     {
@@ -205,10 +205,10 @@
       "category": "latam_adr",
       "exchange": "NYSE",
       "currency": "USD",
-      "price_usd": 16.035,
+      "price_usd": 15.67,
       "prev_close_usd": 17.41,
-      "change_pct": -7.9,
-      "volume": 11401486,
+      "change_pct": -9.99,
+      "volume": 28246900,
       "source": "yahoo-finance"
     },
     {
@@ -217,10 +217,10 @@
       "category": "latam_adr",
       "exchange": "NYSE",
       "currency": "USD",
-      "price_usd": 9.415,
+      "price_usd": 9.37,
       "prev_close_usd": 10.42,
-      "change_pct": -9.64,
-      "volume": 46449962,
+      "change_pct": -10.08,
+      "volume": 73779000,
       "source": "yahoo-finance"
     },
     {
@@ -229,10 +229,10 @@
       "category": "latam_adr",
       "exchange": "NYSE",
       "currency": "USD",
-      "price_usd": 13.017,
+      "price_usd": 12.93,
       "prev_close_usd": 14.86,
-      "change_pct": -12.4,
-      "volume": 717527,
+      "change_pct": -12.99,
+      "volume": 1981800,
       "source": "yahoo-finance"
     },
     {
@@ -241,10 +241,10 @@
       "category": "latam_adr",
       "exchange": "NYSE",
       "currency": "USD",
-      "price_usd": 32.44,
+      "price_usd": 31.71,
       "prev_close_usd": 36.41,
-      "change_pct": -10.9,
-      "volume": 914547,
+      "change_pct": -12.91,
+      "volume": 1730400,
       "source": "yahoo-finance"
     }
   ]
