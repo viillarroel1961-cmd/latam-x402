@@ -1,11 +1,31 @@
 {
   "market": "PREDICTION_MARKETS_POLYMARKET",
-  "updated_at_utc": "2026-11-26T10:51:53.481Z",
+  "updated_at_utc": "2026-11-26T21:29:11.425Z",
   "sources": [
     "gamma-api.polymarket.com/markets"
   ],
   "count": 40,
   "markets": [
+    {
+      "id": "6747201",
+      "question": "Bears vs. Lions",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Bears",
+          "probability_pct": 71.5
+        },
+        {
+          "outcome": "Lions",
+          "probability_pct": 28.5
+        }
+      ],
+      "volume_24h_usd": 4213700.57,
+      "volume_total_usd": 4136006.64,
+      "liquidity_usd": 76952.96,
+      "end_date": "2026-11-26T18:00:00Z",
+      "url": "https://polymarket.com/event/nfl-chi-det-2026-11-26"
+    },
     {
       "id": "7222313",
       "question": "Yokohama: Ryo Ono vs Lennon Roark Jones",
@@ -27,6 +47,26 @@
       "url": "https://polymarket.com/event/atp-ono-lennonr-2026-11-22"
     },
     {
+      "id": "7203506",
+      "question": "Will the price of Bitcoin be between $60,000 and $62,000 on November 27?",
+      "topic": "crypto",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 58
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 42
+        }
+      ],
+      "volume_24h_usd": 2022888.08,
+      "volume_total_usd": 2025338.92,
+      "liquidity_usd": 44113.23,
+      "end_date": "2026-11-27T17:00:00Z",
+      "url": "https://polymarket.com/event/will-the-price-of-bitcoin-be-between-60000-62000-on-november-27-2026"
+    },
+    {
       "id": "6977205",
       "question": "New NVIDIA CEO named by December 31, 2026?",
       "topic": "other",
@@ -40,195 +80,15 @@
           "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 3149331.98,
-      "volume_total_usd": 12414370.72,
-      "liquidity_usd": 2825378.75,
+      "volume_24h_usd": 1985717.3,
+      "volume_total_usd": 13112852.47,
+      "liquidity_usd": 2397519.04,
       "end_date": "2027-01-01T04:59:00Z",
       "url": "https://polymarket.com/event/new-nvidia-ceo-named-by-december-31-2026"
     },
     {
-      "id": "3215007",
-      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-      "topic": "macro",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 3.9
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 96.1
-        }
-      ],
-      "volume_24h_usd": 1661634.1,
-      "volume_total_usd": 16660313.07,
-      "liquidity_usd": 546502.42,
-      "end_date": "2026-12-09T23:59:00Z",
-      "url": "https://polymarket.com/event/will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635"
-    },
-    {
-      "id": "7344752",
-      "question": "Counter-Strike: Lynn Vision vs PVISION (BO3) - PGL Major Singapore Stage 1",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "Lynn Vision",
-          "probability_pct": 3.5
-        },
-        {
-          "outcome": "PVISION",
-          "probability_pct": 96.5
-        }
-      ],
-      "volume_24h_usd": 1621318.32,
-      "volume_total_usd": 1617604.46,
-      "liquidity_usd": 244881.07,
-      "end_date": "2026-11-26T15:00:00Z",
-      "url": "https://polymarket.com/event/cs2-lvg-pv-2026-11-26"
-    },
-    {
-      "id": "3215009",
-      "question": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
-      "topic": "macro",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 2.05
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 97.95
-        }
-      ],
-      "volume_24h_usd": 1397798.66,
-      "volume_total_usd": 11505233.9,
-      "liquidity_usd": 436182.48,
-      "end_date": "2026-12-09T23:59:00Z",
-      "url": "https://polymarket.com/event/will-the-fed-increase-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808637"
-    },
-    {
-      "id": "7344754",
-      "question": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "PVISION",
-          "probability_pct": 94.5
-        },
-        {
-          "outcome": "Lynn Vision",
-          "probability_pct": 5.5
-        }
-      ],
-      "volume_24h_usd": 766120.92,
-      "volume_total_usd": 766116.46,
-      "liquidity_usd": 4033.21,
-      "end_date": "2026-11-26T15:00:00Z",
-      "url": "https://polymarket.com/event/cs2-lvg-pv-2026-11-26-map-handicap-home-1pt5"
-    },
-    {
-      "id": "3215008",
-      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-      "topic": "macro",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 93.5
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 6.5
-        }
-      ],
-      "volume_24h_usd": 742807.99,
-      "volume_total_usd": 13668424.68,
-      "liquidity_usd": 1035210.43,
-      "end_date": "2026-12-09T23:59:00Z",
-      "url": "https://polymarket.com/event/will-the-fed-increase-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808636"
-    },
-    {
-      "id": "7344762",
-      "question": "Counter-Strike: 100 Thieves vs 9z - Map 2 Winner",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "100 Thieves",
-          "probability_pct": 99.95
-        },
-        {
-          "outcome": "9z",
-          "probability_pct": 0.05
-        }
-      ],
-      "volume_24h_usd": 699804.71,
-      "volume_total_usd": 664125.16,
-      "liquidity_usd": 838373.12,
-      "end_date": "2026-11-26T15:10:00Z",
-      "url": "https://polymarket.com/event/cs2-100t-9z-2026-11-26-game2"
-    },
-    {
-      "id": "3215006",
-      "question": "Will the Fed decrease interest rates by 25 bps after the December 2026 meeting?",
-      "topic": "macro",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 0.25
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 99.75
-        }
-      ],
-      "volume_24h_usd": 643346.17,
-      "volume_total_usd": 11078573.66,
-      "liquidity_usd": 1375334.4,
-      "end_date": "2026-12-09T23:59:00Z",
-      "url": "https://polymarket.com/event/will-the-fed-decrease-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808634"
-    },
-    {
-      "id": "7344763",
-      "question": "Counter-Strike: 100 Thieves vs 9z (BO3) - PGL Major Singapore Stage 1",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "100 Thieves",
-          "probability_pct": 56.5
-        },
-        {
-          "outcome": "9z",
-          "probability_pct": 43.5
-        }
-      ],
-      "volume_24h_usd": 611564.62,
-      "volume_total_usd": 594858.93,
-      "liquidity_usd": 338507.39,
-      "end_date": "2026-11-26T15:10:00Z",
-      "url": "https://polymarket.com/event/cs2-100t-9z-2026-11-26"
-    },
-    {
-      "id": "7344751",
-      "question": "Counter-Strike: Lynn Vision vs PVISION - Map 2 Winner",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "Lynn Vision",
-          "probability_pct": 6.5
-        },
-        {
-          "outcome": "PVISION",
-          "probability_pct": 93.5
-        }
-      ],
-      "volume_24h_usd": 579302.53,
-      "volume_total_usd": 554924.99,
-      "liquidity_usd": 56218.29,
-      "end_date": "2026-11-26T15:00:00Z",
-      "url": "https://polymarket.com/event/cs2-lvg-pv-2026-11-26-game2"
-    },
-    {
-      "id": "7158208",
-      "question": "Fourth Jensen Huang affair reported by November 30?",
+      "id": "6994029",
+      "question": "Will AFC Bournemouth win on 2026-11-26?",
       "topic": "other",
       "probabilities": [
         {
@@ -240,11 +100,71 @@
           "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 502168.36,
-      "volume_total_usd": 1547822.07,
-      "liquidity_usd": 556801.22,
-      "end_date": "2026-12-01T04:59:00Z",
-      "url": "https://polymarket.com/event/fourth-jensen-huang-affair-reported-by-november-30"
+      "volume_24h_usd": 1037472.2,
+      "volume_total_usd": 1060786.81,
+      "liquidity_usd": 232604.23,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/uel-cel1-bou-2026-11-26-bou"
+    },
+    {
+      "id": "7102131",
+      "question": "Will Crystal Palace FC win on 2026-11-26?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 8.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 91.5
+        }
+      ],
+      "volume_24h_usd": 609057.31,
+      "volume_total_usd": 595194.84,
+      "liquidity_usd": 90997.99,
+      "end_date": "2026-11-26T20:00:00Z",
+      "url": "https://polymarket.com/event/uel-cry-rso-2026-11-26-cry"
+    },
+    {
+      "id": "6994230",
+      "question": "Will AC Milan win on 2026-11-26?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 99.95
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 0.05
+        }
+      ],
+      "volume_24h_usd": 551880.29,
+      "volume_total_usd": 553127.68,
+      "liquidity_usd": 181942.78,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/uel-oly-mil1-2026-11-26-mil1"
+    },
+    {
+      "id": "6936803",
+      "question": "Spread: Cowboys (-8.5)",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Cowboys",
+          "probability_pct": 49.5
+        },
+        {
+          "outcome": "Eagles",
+          "probability_pct": 50.5
+        }
+      ],
+      "volume_24h_usd": 497829.42,
+      "volume_total_usd": 495786.73,
+      "liquidity_usd": 900792.41,
+      "end_date": "2026-11-26T21:30:00Z",
+      "url": "https://polymarket.com/event/nfl-phi-dal-2026-11-26-spread-home-8pt5"
     },
     {
       "id": "703257",
@@ -253,38 +173,18 @@
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 1.55
+          "probability_pct": 1.35
         },
         {
           "outcome": "No",
-          "probability_pct": 98.45
+          "probability_pct": 98.65
         }
       ],
-      "volume_24h_usd": 499136.72,
-      "volume_total_usd": 47942348.64,
-      "liquidity_usd": 2776915.48,
+      "volume_24h_usd": 471870.9,
+      "volume_total_usd": 47969572.41,
+      "liquidity_usd": 2770670.79,
       "end_date": "2027-01-01T04:59:00Z",
       "url": "https://polymarket.com/event/will-the-us-confirm-that-aliens-exist-before-2027-789-924-249"
-    },
-    {
-      "id": "7326918",
-      "question": "Dota 2: GamerLegion vs Aurora - Game 1 Winner",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "GamerLegion",
-          "probability_pct": 40.5
-        },
-        {
-          "outcome": "Aurora",
-          "probability_pct": 59.5
-        }
-      ],
-      "volume_24h_usd": 498341.78,
-      "volume_total_usd": 440696.12,
-      "liquidity_usd": 65427.02,
-      "end_date": "2026-11-26T16:00:00Z",
-      "url": "https://polymarket.com/event/dota2-gl-aur1-2026-11-26-game1"
     },
     {
       "id": "2772194",
@@ -300,31 +200,31 @@
           "probability_pct": 99.85
         }
       ],
-      "volume_24h_usd": 453444.72,
-      "volume_total_usd": 48478263.36,
-      "liquidity_usd": 228267.55,
+      "volume_24h_usd": 445307.99,
+      "volume_total_usd": 48663178.36,
+      "liquidity_usd": 236350.92,
       "end_date": "2027-05-30T23:59:00Z",
       "url": "https://polymarket.com/event/will-shakhtar-donetsk-win-the-2026-27-uefa-champions-league-championship-20260701202025578"
     },
     {
-      "id": "3215005",
-      "question": "Will the Fed decrease interest rates by 50+ bps after the December 2026 meeting?",
-      "topic": "macro",
+      "id": "6994285",
+      "question": "Will Beşiktaş JK win on 2026-11-26?",
+      "topic": "other",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 0.25
+          "probability_pct": 99.95
         },
         {
           "outcome": "No",
-          "probability_pct": 99.75
+          "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 450935.7,
-      "volume_total_usd": 9386505.36,
-      "liquidity_usd": 162202.74,
-      "end_date": "2026-12-09T23:59:00Z",
-      "url": "https://polymarket.com/event/will-the-fed-decrease-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808633"
+      "volume_24h_usd": 416467.46,
+      "volume_total_usd": 421140.35,
+      "liquidity_usd": 286921.81,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/uel-bes-hbs-2026-11-26-bes"
     },
     {
       "id": "3580932",
@@ -333,16 +233,16 @@
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 59.5
+          "probability_pct": 62.5
         },
         {
           "outcome": "No",
-          "probability_pct": 40.5
+          "probability_pct": 37.5
         }
       ],
-      "volume_24h_usd": 370791.07,
-      "volume_total_usd": 3947187.65,
-      "liquidity_usd": 161586.6,
+      "volume_24h_usd": 414300,
+      "volume_total_usd": 4153460.9,
+      "liquidity_usd": 341229.2,
       "end_date": "2026-11-29T04:59:00Z",
       "url": "https://polymarket.com/event/will-chiang-wan-an-win-the-next-taipei-mayor-election-20260813125857101"
     },
@@ -360,11 +260,31 @@
           "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 326414.47,
-      "volume_total_usd": 1670967.04,
-      "liquidity_usd": 655638.56,
+      "volume_24h_usd": 411991.13,
+      "volume_total_usd": 1833435.46,
+      "liquidity_usd": 658068.52,
       "end_date": "2027-01-01T04:59:00Z",
       "url": "https://polymarket.com/event/jensen-huang-admits-to-another-affair-by-december-31"
+    },
+    {
+      "id": "7158208",
+      "question": "Fourth Jensen Huang affair reported by November 30?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 99.95
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 0.05
+        }
+      ],
+      "volume_24h_usd": 408551.52,
+      "volume_total_usd": 1666513.7,
+      "liquidity_usd": 546100.45,
+      "end_date": "2026-12-01T04:59:00Z",
+      "url": "https://polymarket.com/event/fourth-jensen-huang-affair-reported-by-november-30"
     },
     {
       "id": "3580933",
@@ -373,82 +293,282 @@
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 41.8
+          "probability_pct": 38.95
         },
         {
           "outcome": "No",
-          "probability_pct": 58.2
+          "probability_pct": 61.05
         }
       ],
-      "volume_24h_usd": 315748.56,
-      "volume_total_usd": 4611394.68,
-      "liquidity_usd": 219152.82,
+      "volume_24h_usd": 382041.96,
+      "volume_total_usd": 4778991.92,
+      "liquidity_usd": 314918.66,
       "end_date": "2026-11-29T04:59:00Z",
       "url": "https://polymarket.com/event/will-puma-shen-win-the-next-taipei-mayor-election-20260813125857102"
     },
     {
-      "id": "679022",
-      "question": "Will David Lisnard win the 2027 French presidential election?",
+      "id": "3215005",
+      "question": "Will the Fed decrease interest rates by 50+ bps after the December 2026 meeting?",
+      "topic": "macro",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 0.15
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 99.85
+        }
+      ],
+      "volume_24h_usd": 379698.72,
+      "volume_total_usd": 9454823.85,
+      "liquidity_usd": 223514.13,
+      "end_date": "2026-12-09T23:59:00Z",
+      "url": "https://polymarket.com/event/will-the-fed-decrease-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808633"
+    },
+    {
+      "id": "6936503",
+      "question": "Spread: Bears (-4.5)",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Bears",
+          "probability_pct": 15.25
+        },
+        {
+          "outcome": "Lions",
+          "probability_pct": 84.75
+        }
+      ],
+      "volume_24h_usd": 369229.09,
+      "volume_total_usd": 369229.09,
+      "liquidity_usd": 36547.09,
+      "end_date": "2026-11-26T18:00:00Z",
+      "url": "https://polymarket.com/event/nfl-chi-det-2026-11-26-spread-away-4pt5"
+    },
+    {
+      "id": "6994027",
+      "question": "Will RC Celta de Vigo win on 2026-11-26?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 0.05
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 99.95
+        }
+      ],
+      "volume_24h_usd": 333060.32,
+      "volume_total_usd": 333209.91,
+      "liquidity_usd": 88077.24,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/uel-cel1-bou-2026-11-26-cel1"
+    },
+    {
+      "id": "6995850",
+      "question": "Will AS Monaco FC win on 2026-11-26?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 99.95
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 0.05
+        }
+      ],
+      "volume_24h_usd": 292956.02,
+      "volume_total_usd": 293625.13,
+      "liquidity_usd": 192824.23,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/col-hmi-asm-2026-11-26-asm"
+    },
+    {
+      "id": "3215009",
+      "question": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
+      "topic": "macro",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 2.15
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 97.85
+        }
+      ],
+      "volume_24h_usd": 291652.34,
+      "volume_total_usd": 11629554.45,
+      "liquidity_usd": 703906.1,
+      "end_date": "2026-12-09T23:59:00Z",
+      "url": "https://polymarket.com/event/will-the-fed-increase-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808637"
+    },
+    {
+      "id": "6993983",
+      "question": "Will Sport Lisboa e Benfica win on 2026-11-26?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 0.05
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 99.95
+        }
+      ],
+      "volume_24h_usd": 280065.41,
+      "volume_total_usd": 283135.19,
+      "liquidity_usd": 219702.57,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/uel-plz-ben-2026-11-26-ben"
+    },
+    {
+      "id": "3215008",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "topic": "macro",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 93.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 6.5
+        }
+      ],
+      "volume_24h_usd": 270808.42,
+      "volume_total_usd": 13753981.78,
+      "liquidity_usd": 1128339.38,
+      "end_date": "2026-12-09T23:59:00Z",
+      "url": "https://polymarket.com/event/will-the-fed-increase-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808636"
+    },
+    {
+      "id": "7102106",
+      "question": "Will Juventus FC win on 2026-11-26?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 97
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 3
+        }
+      ],
+      "volume_24h_usd": 261199.07,
+      "volume_total_usd": 259637.84,
+      "liquidity_usd": 40445.32,
+      "end_date": "2026-11-26T20:00:00Z",
+      "url": "https://polymarket.com/event/uel-juv-omo-2026-11-26-juv"
+    },
+    {
+      "id": "7277952",
+      "question": "Will the average Ornn B200 rental price in March 2027 be above $8.00?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 72.5
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 27.5
+        }
+      ],
+      "volume_24h_usd": 242160.93,
+      "volume_total_usd": 242170.93,
+      "liquidity_usd": 193055.1,
+      "end_date": "2027-04-01T03:59:00Z",
+      "url": "https://polymarket.com/event/b200-average-rental-price-in-march-2027-above-8pt00"
+    },
+    {
+      "id": "682705",
+      "question": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
       "topic": "politics",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 20.95
+          "probability_pct": 10.45
         },
         {
           "outcome": "No",
-          "probability_pct": 79.05
+          "probability_pct": 89.55
         }
       ],
-      "volume_24h_usd": 251918.03,
-      "volume_total_usd": 9183824.29,
-      "liquidity_usd": 332885.07,
-      "end_date": "2027-04-19T03:59:00Z",
-      "url": "https://polymarket.com/event/will-david-lisnard-win-the-2027-french-presidential-election"
+      "volume_24h_usd": 235966.39,
+      "volume_total_usd": 36431753.37,
+      "liquidity_usd": 173100.73,
+      "end_date": "2026-10-28T03:59:00Z",
+      "url": "https://polymarket.com/event/will-benjamin-netanyahu-be-the-next-prime-minister-of-israel"
     },
     {
-      "id": "7287078",
-      "question": "Jensen Huang announced resignation or removal again by March 31, 2027?",
-      "topic": "other",
+      "id": "6937349",
+      "question": "Spread: Broncos (-4.5)",
+      "topic": "sports",
       "probabilities": [
         {
-          "outcome": "Yes",
-          "probability_pct": 16.5
+          "outcome": "Broncos",
+          "probability_pct": 49.5
         },
         {
-          "outcome": "No",
-          "probability_pct": 83.5
+          "outcome": "Steelers",
+          "probability_pct": 50.5
         }
       ],
-      "volume_24h_usd": 202054.12,
-      "volume_total_usd": 355999.52,
-      "liquidity_usd": 200460.22,
-      "end_date": "2027-04-01T03:59:00Z",
-      "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-again-by-march-31-2027"
+      "volume_24h_usd": 233989.84,
+      "volume_total_usd": 235783.5,
+      "liquidity_usd": 235892.26,
+      "end_date": "2026-11-27T20:00:00Z",
+      "url": "https://polymarket.com/event/nfl-den-pit-2026-11-27-spread-away-4pt5"
     },
     {
-      "id": "559706",
-      "question": "Will Abdul El-Sayed win the 2028 Democratic presidential nomination?",
-      "topic": "other",
+      "id": "6937084",
+      "question": "Spread: Bills (-2.5)",
+      "topic": "sports",
       "probabilities": [
         {
-          "outcome": "Yes",
-          "probability_pct": 0.95
+          "outcome": "Bills",
+          "probability_pct": 54.5
         },
         {
-          "outcome": "No",
-          "probability_pct": 99.05
+          "outcome": "Chiefs",
+          "probability_pct": 45.5
         }
       ],
-      "volume_24h_usd": 193076.04,
-      "volume_total_usd": 2562858.98,
-      "liquidity_usd": 320166.61,
-      "end_date": "2028-11-07T00:00:00Z",
-      "url": "https://polymarket.com/event/will-abdul-el-sayed-win-the-2028-democratic-presidential-nomination"
+      "volume_24h_usd": 224433.95,
+      "volume_total_usd": 250743.54,
+      "liquidity_usd": 909063.77,
+      "end_date": "2026-11-27T01:20:00Z",
+      "url": "https://polymarket.com/event/nfl-kc-buf-2026-11-27-spread-home-2pt5"
     },
     {
-      "id": "7287079",
-      "question": "Jensen Huang announced resignation or removal again by December 31, 2027?",
+      "id": "6936500",
+      "question": "Spread: Bears (-1.5)",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Bears",
+          "probability_pct": 65.5
+        },
+        {
+          "outcome": "Lions",
+          "probability_pct": 34.5
+        }
+      ],
+      "volume_24h_usd": 222189.21,
+      "volume_total_usd": 222199.55,
+      "liquidity_usd": 30809.34,
+      "end_date": "2026-11-26T18:00:00Z",
+      "url": "https://polymarket.com/event/nfl-chi-det-2026-11-26-spread-away-1pt5"
+    },
+    {
+      "id": "6996178",
+      "question": "Will SC Freiburg win on 2026-11-26?",
       "topic": "other",
       "probabilities": [
         {
@@ -460,231 +580,71 @@
           "probability_pct": 71.5
         }
       ],
-      "volume_24h_usd": 192705.32,
-      "volume_total_usd": 335113.61,
-      "liquidity_usd": 221294.41,
-      "end_date": "2028-01-01T04:59:00Z",
-      "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-again-by-december-31-2027"
+      "volume_24h_usd": 218342.88,
+      "volume_total_usd": 214963.48,
+      "liquidity_usd": 56302.06,
+      "end_date": "2026-11-26T20:00:00Z",
+      "url": "https://polymarket.com/event/col-scf-twe-2026-11-26-scf"
     },
     {
-      "id": "7344767",
-      "question": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
+      "id": "3215007",
+      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+      "topic": "macro",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 3.8
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 96.2
+        }
+      ],
+      "volume_24h_usd": 218248.2,
+      "volume_total_usd": 16772642.05,
+      "liquidity_usd": 531757.93,
+      "end_date": "2026-12-09T23:59:00Z",
+      "url": "https://polymarket.com/event/will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635"
+    },
+    {
+      "id": "7327795",
+      "question": "Buenos Aires: Sofia Costoulas vs Varvara Lepchenko",
       "topic": "other",
       "probabilities": [
         {
-          "outcome": "Imperial",
-          "probability_pct": 35.5
-        },
-        {
-          "outcome": "Liquid",
-          "probability_pct": 64.5
-        }
-      ],
-      "volume_24h_usd": 182934.83,
-      "volume_total_usd": 182778.82,
-      "liquidity_usd": 468534.04,
-      "end_date": "2026-11-26T17:00:00Z",
-      "url": "https://polymarket.com/event/cs2-imp11-tl1-2026-11-26"
-    },
-    {
-      "id": "6747201",
-      "question": "Bears vs. Lions",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Bears",
+          "outcome": "Sofia Costoulas",
           "probability_pct": 51.5
         },
         {
-          "outcome": "Lions",
+          "outcome": "Varvara Lepchenko",
           "probability_pct": 48.5
         }
       ],
-      "volume_24h_usd": 181160.2,
-      "volume_total_usd": 272185.28,
-      "liquidity_usd": 1083229.1,
-      "end_date": "2026-11-26T18:00:00Z",
-      "url": "https://polymarket.com/event/nfl-chi-det-2026-11-26"
+      "volume_24h_usd": 205574.93,
+      "volume_total_usd": 182580.61,
+      "liquidity_usd": 109453.29,
+      "end_date": "2026-12-03T15:00:00Z",
+      "url": "https://polymarket.com/event/wta-costoul-lepchen-2026-11-26"
     },
     {
-      "id": "7287077",
-      "question": "Jensen Huang announced resignation or removal again by December 31, 2026?",
+      "id": "7287078",
+      "question": "Jensen Huang announced resignation or removal again by March 31, 2027?",
       "topic": "other",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 5.15
+          "probability_pct": 17
         },
         {
           "outcome": "No",
-          "probability_pct": 94.85
+          "probability_pct": 83
         }
       ],
-      "volume_24h_usd": 167103.85,
-      "volume_total_usd": 683097.53,
-      "liquidity_usd": 208158.72,
-      "end_date": "2027-01-01T04:59:00Z",
-      "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-again-by-december-31-2026"
-    },
-    {
-      "id": "701502",
-      "question": "Will Bitcoin dip to $45,000 by December 31, 2026?",
-      "topic": "crypto",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 13.7
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 86.3
-        }
-      ],
-      "volume_24h_usd": 152888.39,
-      "volume_total_usd": 11011880.67,
-      "liquidity_usd": 136707.42,
-      "end_date": "2027-01-01T05:00:00Z",
-      "url": "https://polymarket.com/event/will-bitcoin-dip-to-45000-by-december-31-2026-674-923-755-971-998-525-926-245-316-517-544-589-965-923-986-841-815-224-586-231-289-533-573"
-    },
-    {
-      "id": "2772195",
-      "question": "Will Fenerbahçe win the 2026-27 UEFA Champions League Championship?",
-      "topic": "sports",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 0.15
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 99.85
-        }
-      ],
-      "volume_24h_usd": 152279.82,
-      "volume_total_usd": 893075.69,
-      "liquidity_usd": 186632.21,
-      "end_date": "2027-05-30T23:59:00Z",
-      "url": "https://polymarket.com/event/will-fenerbahe-win-the-2026-27-uefa-champions-league-championship"
-    },
-    {
-      "id": "7253294",
-      "question": "Big Bash League, Women: Sydney Thunder vs Adelaide Strikers",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "Sydney Thunder",
-          "probability_pct": 99.95
-        },
-        {
-          "outcome": "Adelaide Strikers",
-          "probability_pct": 0.05
-        }
-      ],
-      "volume_24h_usd": 149131.31,
-      "volume_total_usd": 149131.31,
-      "liquidity_usd": 29544.24,
-      "end_date": "2026-12-03T04:40:00Z",
-      "url": "https://polymarket.com/event/cricwbbl-syt-ads-2026-11-25"
-    },
-    {
-      "id": "682708",
-      "question": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
-      "topic": "politics",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 75.95
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 24.05
-        }
-      ],
-      "volume_24h_usd": 142321.78,
-      "volume_total_usd": 11075838.57,
-      "liquidity_usd": 104894.81,
-      "end_date": "2026-10-28T03:59:00Z",
-      "url": "https://polymarket.com/event/will-gadi-eizenkot-be-the-next-prime-minister-of-israel"
-    },
-    {
-      "id": "2695684",
-      "question": "Will Miguel Tellado be the next Prime Minister of Spain?",
-      "topic": "politics",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 0.05
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 99.95
-        }
-      ],
-      "volume_24h_usd": 139553.85,
-      "volume_total_usd": 173599.73,
-      "liquidity_usd": 64483.96,
-      "end_date": "2026-11-30T04:59:00Z",
-      "url": "https://polymarket.com/event/will-miguel-tellado-be-the-next-prime-minister-of-spain-20260625005710101"
-    },
-    {
-      "id": "7278015",
-      "question": "Will the average Ornn H100 rental price in February 2027 be above $3.20?",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 38.5
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 61.5
-        }
-      ],
-      "volume_24h_usd": 134296.15,
-      "volume_total_usd": 135156.15,
-      "liquidity_usd": 69059.97,
-      "end_date": "2027-03-01T04:59:00Z",
-      "url": "https://polymarket.com/event/h100-average-rental-price-in-february-2027-above-3pt20"
-    },
-    {
-      "id": "679026",
-      "question": "Will Gabriel Attal win the 2027 French presidential election?",
-      "topic": "politics",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 0.45
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 99.55
-        }
-      ],
-      "volume_24h_usd": 133706.94,
-      "volume_total_usd": 4508282.4,
-      "liquidity_usd": 427264.53,
-      "end_date": "2027-04-19T03:59:00Z",
-      "url": "https://polymarket.com/event/will-gabriel-attal-win-the-2027-french-presidential-election"
-    },
-    {
-      "id": "701501",
-      "question": "Will Bitcoin dip to $55,000 by December 31, 2026?",
-      "topic": "crypto",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 48.5
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 51.5
-        }
-      ],
-      "volume_24h_usd": 132402.36,
-      "volume_total_usd": 9727519.13,
-      "liquidity_usd": 88795.82,
-      "end_date": "2027-01-01T05:00:00Z",
-      "url": "https://polymarket.com/event/will-bitcoin-dip-to-55000-by-december-31-2026-527-627-868-745-188-361-314-673-612-946-821-624-855-557-684-381-884-939-182-939-516"
+      "volume_24h_usd": 200533.92,
+      "volume_total_usd": 367603.19,
+      "liquidity_usd": 118658.19,
+      "end_date": "2027-04-01T03:59:00Z",
+      "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-again-by-march-31-2027"
     },
     {
       "id": "3902370",
@@ -700,111 +660,151 @@
           "probability_pct": 5.5
         }
       ],
-      "volume_24h_usd": 127917.33,
-      "volume_total_usd": 2895483.47,
-      "liquidity_usd": 78792.36,
+      "volume_24h_usd": 193876.75,
+      "volume_total_usd": 3008495.54,
+      "liquidity_usd": 91280.5,
       "end_date": "2026-11-30T20:29:00Z",
       "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-november-30"
     },
     {
-      "id": "7277963",
-      "question": "Will the average Ornn B200 rental price in June 2027 be above $8.00?",
+      "id": "6994227",
+      "question": "Will Olympiakós SFP win on 2026-11-26?",
       "topic": "other",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 45.5
+          "probability_pct": 0.05
         },
         {
           "outcome": "No",
-          "probability_pct": 54.5
+          "probability_pct": 99.95
         }
       ],
-      "volume_24h_usd": 124592.44,
-      "volume_total_usd": 195381.6,
-      "liquidity_usd": 22355.71,
-      "end_date": "2027-07-01T03:59:00Z",
-      "url": "https://polymarket.com/event/b200-average-rental-price-in-june-2027-above-8pt00"
+      "volume_24h_usd": 185530.15,
+      "volume_total_usd": 202404.59,
+      "liquidity_usd": 235282.18,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/uel-oly-mil1-2026-11-26-oly"
     },
     {
-      "id": "665374",
-      "question": "Will the U.S. invade Iran before 2027?",
+      "id": "6993981",
+      "question": "Will FC Viktoria Plzeň win on 2026-11-26?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 99.95
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 0.05
+        }
+      ],
+      "volume_24h_usd": 183803.44,
+      "volume_total_usd": 184015.07,
+      "liquidity_usd": 119829.23,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/uel-plz-ben-2026-11-26-plz"
+    },
+    {
+      "id": "6994075",
+      "question": "Will Bayer 04 Leverkusen win on 2026-11-26?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 99.95
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 0.05
+        }
+      ],
+      "volume_24h_usd": 182645.62,
+      "volume_total_usd": 182791.95,
+      "liquidity_usd": 62337.19,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/uel-din-lev-2026-11-26-lev"
+    },
+    {
+      "id": "3580994",
+      "question": "Will Lee Shu-chuan win the next New Taipei Mayor election?",
       "topic": "politics",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 5.5
+          "probability_pct": 39.5
         },
         {
           "outcome": "No",
-          "probability_pct": 94.5
+          "probability_pct": 60.5
         }
       ],
-      "volume_24h_usd": 117073.69,
-      "volume_total_usd": 81765213.11,
-      "liquidity_usd": 243563.1,
-      "end_date": "2027-01-01T04:59:00Z",
-      "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027"
+      "volume_24h_usd": 181424.85,
+      "volume_total_usd": 522772.1,
+      "liquidity_usd": 121995.41,
+      "end_date": "2026-11-29T04:59:00Z",
+      "url": "https://polymarket.com/event/will-lee-shu-chuan-win-the-next-new-taipei-mayor-election-20260813125857201"
     },
     {
-      "id": "2695678",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "id": "682708",
+      "question": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
       "topic": "politics",
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 11.5
+          "probability_pct": 81.35
         },
         {
           "outcome": "No",
-          "probability_pct": 88.5
+          "probability_pct": 18.65
         }
       ],
-      "volume_24h_usd": 113321.81,
-      "volume_total_usd": 1704556.77,
-      "liquidity_usd": 304026.61,
-      "end_date": "2026-11-30T04:59:00Z",
-      "url": "https://polymarket.com/event/will-pedro-sanchez-be-the-next-prime-minister-of-spain-20260625005710096"
+      "volume_24h_usd": 178568.2,
+      "volume_total_usd": 11207495.67,
+      "liquidity_usd": 103034.55,
+      "end_date": "2026-10-28T03:59:00Z",
+      "url": "https://polymarket.com/event/will-gadi-eizenkot-be-the-next-prime-minister-of-israel"
     },
     {
-      "id": "2243318",
-      "question": "Will Minnesota Timberwolves win the 2027 NBA Finals?",
+      "id": "6994719",
+      "question": "Beşiktaş JK vs. MH Hapoel Be'er Sheva: O/U 0.5",
       "topic": "sports",
       "probabilities": [
         {
-          "outcome": "Yes",
-          "probability_pct": 8.05
+          "outcome": "Over",
+          "probability_pct": 99.95
         },
         {
-          "outcome": "No",
-          "probability_pct": 91.95
+          "outcome": "Under",
+          "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 113078.25,
-      "volume_total_usd": 1544395.54,
-      "liquidity_usd": 204688.41,
-      "end_date": "2027-07-01T03:59:00Z",
-      "url": "https://polymarket.com/event/will-minnesota-timberwolves-win-the-2027-nba-finals"
+      "volume_24h_usd": 177221.26,
+      "volume_total_usd": 177190.29,
+      "liquidity_usd": 114155.31,
+      "end_date": "2026-11-26T17:45:00Z",
+      "url": "https://polymarket.com/event/uel-bes-hbs-2026-11-26-total-0pt5"
     },
     {
-      "id": "7276616",
-      "question": "Will the average Ornn H100 rental price in December 2026 be above $3.10?",
-      "topic": "other",
+      "id": "7333257",
+      "question": "San Diego State Aztecs vs. Maryland Terrapins",
+      "topic": "sports",
       "probabilities": [
         {
-          "outcome": "Yes",
-          "probability_pct": 44.5
+          "outcome": "San Diego State Aztecs",
+          "probability_pct": 99.95
         },
         {
-          "outcome": "No",
-          "probability_pct": 55.5
+          "outcome": "Maryland Terrapins",
+          "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 111561.05,
-      "volume_total_usd": 234858.55,
-      "liquidity_usd": 170703.29,
-      "end_date": "2027-01-01T04:59:00Z",
-      "url": "https://polymarket.com/event/h100-average-rental-price-in-december-2026-above-3pt10"
+      "volume_24h_usd": 175308.4,
+      "volume_total_usd": 175894.39,
+      "liquidity_usd": 45890.94,
+      "end_date": "2026-11-26T18:00:00Z",
+      "url": "https://polymarket.com/event/cbb-sdst-mary-2026-11-26"
     }
   ]
 }

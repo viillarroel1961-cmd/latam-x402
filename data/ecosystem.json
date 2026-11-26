@@ -1,136 +1,136 @@
 {
   "ecosystem": "latam-x402",
   "version": "1.0.0",
-  "updated_at_utc": "2026-11-26T10:51:53.481Z",
+  "updated_at_utc": "2026-11-26T21:29:11.425Z",
   "fx_venezuela": {
     "date": "2026-11-26",
     "usd_bcv": 924.3534,
     "eur_bcv": 1011.7325,
-    "usd_paralelo": 1099.7205,
-    "usdt_p2p_buy": 1102.28,
-    "usdt_p2p_sell": 1105,
-    "usdt_p2p_mid": 1103.64,
-    "spread_vs_bcv_pct": 19.4,
+    "usd_paralelo": 1094.0731,
+    "usdt_p2p_buy": 1090,
+    "usdt_p2p_sell": 1093.5,
+    "usdt_p2p_mid": 1091.75,
+    "spread_vs_bcv_pct": 18.11,
     "eur_usd_implied": 1.0945
   },
   "bvc_caracas": {
     "index": null,
     "coverage": {
       "catalog_total": 38,
-      "live_quotes": 30,
-      "priced_total": 32
+      "live_quotes": 32,
+      "priced_total": 33
     },
     "top_movers": [
       {
-        "ticker": "IVC.A",
-        "name": "Invaca Inmuebles (A)",
-        "price_ves": 1400,
-        "change_abs_ves": -200,
-        "change_pct": -12.5,
-        "volume_shares": 1074,
-        "turnover_ves": 1516253,
-        "turnover_usd_bcv": 1640.34,
-        "price_usd_bcv": 1.514572,
-        "price_usd_p2p": 1.26853,
-        "last_trade_time": "12:52:01",
+        "ticker": "MVZ.A",
+        "name": "Mercantil Servicios (A)",
+        "price_ves": 16889,
+        "change_abs_ves": 2350,
+        "change_pct": 16.16,
+        "volume_shares": 815,
+        "turnover_ves": 11876997.25,
+        "turnover_usd_bcv": 12848.98,
+        "price_usd_bcv": 18.27115,
+        "price_usd_p2p": 15.469659,
+        "last_trade_time": "13:00:24",
         "status": "live"
       },
       {
-        "ticker": "GZL",
-        "name": "Grupo Zuliano",
-        "price_ves": 1250,
-        "change_abs_ves": -60,
-        "change_pct": -4.58,
-        "volume_shares": 4703,
-        "turnover_ves": 5988671,
-        "turnover_usd_bcv": 6478.77,
-        "price_usd_bcv": 1.352297,
-        "price_usd_p2p": 1.132616,
-        "last_trade_time": "12:51:04",
+        "ticker": "IVC.B",
+        "name": "Invaca Inmuebles (B)",
+        "price_ves": 820,
+        "change_abs_ves": -40,
+        "change_pct": -4.65,
+        "volume_shares": 1342,
+        "turnover_ves": 1105978.04,
+        "turnover_usd_bcv": 1196.49,
+        "price_usd_bcv": 0.887107,
+        "price_usd_p2p": 0.751088,
+        "last_trade_time": "12:29:14",
         "status": "live"
       },
       {
-        "ticker": "ENV",
-        "name": "Envases Venezolanos",
-        "price_ves": 1195,
-        "change_abs_ves": 45,
-        "change_pct": 3.91,
-        "volume_shares": 437,
-        "turnover_ves": 526892.9,
-        "turnover_usd_bcv": 570.01,
-        "price_usd_bcv": 1.292796,
-        "price_usd_p2p": 1.082781,
-        "last_trade_time": "12:50:58",
+        "ticker": "MVZ.B",
+        "name": "Mercantil Servicios (B)",
+        "price_ves": 9000,
+        "change_abs_ves": -350,
+        "change_pct": -3.74,
+        "volume_shares": 352,
+        "turnover_ves": 3218799.71,
+        "turnover_usd_bcv": 3482.22,
+        "price_usd_bcv": 9.736536,
+        "price_usd_p2p": 8.243646,
+        "last_trade_time": "12:50:59",
         "status": "live"
       },
       {
-        "ticker": "ABC.A",
-        "name": "Banco del Caribe (A)",
-        "price_ves": 2700,
-        "change_abs_ves": -90,
-        "change_pct": -3.23,
-        "volume_shares": 808,
-        "turnover_ves": 2161303,
-        "turnover_usd_bcv": 2338.18,
-        "price_usd_bcv": 2.920961,
-        "price_usd_p2p": 2.44645,
-        "last_trade_time": "13:00:03",
-        "status": "live"
-      },
-      {
-        "ticker": "BVL",
-        "name": "Banco de Venezuela",
-        "price_ves": 2085,
-        "change_abs_ves": 64,
-        "change_pct": 3.17,
-        "volume_shares": 3511,
-        "turnover_ves": 6758451.26,
-        "turnover_usd_bcv": 7311.54,
-        "price_usd_bcv": 2.255631,
-        "price_usd_p2p": 1.889203,
-        "last_trade_time": "13:00:03",
+        "ticker": "RST.B",
+        "name": "Ron Santa Teresa (B)",
+        "price_ves": 555,
+        "change_abs_ves": -20,
+        "change_pct": -3.48,
+        "volume_shares": 7383,
+        "turnover_ves": 4088419.2,
+        "turnover_usd_bcv": 4423,
+        "price_usd_bcv": 0.60042,
+        "price_usd_p2p": 0.508358,
+        "last_trade_time": "12:51:08",
         "status": "live"
       },
       {
         "ticker": "BVCC",
         "name": "Bolsa de Valores de Caracas",
-        "price_ves": 948,
-        "change_abs_ves": 28,
-        "change_pct": 3.04,
-        "volume_shares": 3122,
-        "turnover_ves": 2927336.81,
-        "turnover_usd_bcv": 3166.9,
-        "price_usd_bcv": 1.025582,
-        "price_usd_p2p": 0.858976,
-        "last_trade_time": "12:50:11",
+        "price_ves": 920,
+        "change_abs_ves": -28,
+        "change_pct": -2.95,
+        "volume_shares": 57893,
+        "turnover_ves": 49979579.23,
+        "turnover_usd_bcv": 54069.77,
+        "price_usd_bcv": 0.99529,
+        "price_usd_p2p": 0.842684,
+        "last_trade_time": "12:56:56",
         "status": "live"
       },
       {
-        "ticker": "TDV.D",
-        "name": "CANTV (D)",
-        "price_ves": 1380,
-        "change_abs_ves": -15,
-        "change_pct": -1.08,
-        "volume_shares": 1292,
-        "turnover_ves": 1778306.22,
-        "turnover_usd_bcv": 1923.84,
-        "price_usd_bcv": 1.492935,
-        "price_usd_p2p": 1.250408,
-        "last_trade_time": "13:00:08",
+        "ticker": "MPA",
+        "name": "Manufacturas de Papel",
+        "price_ves": 196,
+        "change_abs_ves": -4,
+        "change_pct": -2,
+        "volume_shares": 13134,
+        "turnover_ves": 2605185.77,
+        "turnover_usd_bcv": 2818.39,
+        "price_usd_bcv": 0.21204,
+        "price_usd_p2p": 0.179528,
+        "last_trade_time": "13:00:24",
         "status": "live"
       },
       {
-        "ticker": "TPG",
-        "name": "Telares de Palo Grande",
-        "price_ves": 10.9,
-        "change_abs_ves": -0.1,
-        "change_pct": -0.91,
-        "volume_shares": 66765,
-        "turnover_ves": 726910.27,
-        "turnover_usd_bcv": 786.4,
-        "price_usd_bcv": 0.011792,
-        "price_usd_p2p": 0.009876,
-        "last_trade_time": "13:00:08",
+        "ticker": "BNC",
+        "name": "Banco Nacional de Credito",
+        "price_ves": 238,
+        "change_abs_ves": -4.5,
+        "change_pct": -1.86,
+        "volume_shares": 3912269,
+        "turnover_ves": 620251414.87,
+        "turnover_usd_bcv": 671011.13,
+        "price_usd_bcv": 0.257477,
+        "price_usd_p2p": 0.217999,
+        "last_trade_time": "13:00:23",
+        "status": "live"
+      },
+      {
+        "ticker": "BPV",
+        "name": "Banco Provincial",
+        "price_ves": 3788.97,
+        "change_abs_ves": -51.03,
+        "change_pct": -1.33,
+        "volume_shares": 24122,
+        "turnover_ves": 84781182.36,
+        "turnover_usd_bcv": 91719.45,
+        "price_usd_bcv": 4.099049,
+        "price_usd_p2p": 3.470547,
+        "last_trade_time": "12:54:04",
         "status": "live"
       }
     ],
@@ -139,84 +139,98 @@
         "ticker": "ABC.A",
         "name": "Banco del Caribe (A)",
         "price_ves": 2700,
-        "change_abs_ves": -90,
-        "change_pct": -3.23,
-        "volume_shares": 808,
-        "turnover_ves": 2161303,
-        "turnover_usd_bcv": 2338.18,
+        "change_abs_ves": 0,
+        "change_pct": 0,
+        "volume_shares": 357,
+        "turnover_ves": 962594.96,
+        "turnover_usd_bcv": 1041.37,
         "price_usd_bcv": 2.920961,
-        "price_usd_p2p": 2.44645,
-        "last_trade_time": "13:00:03",
+        "price_usd_p2p": 2.473094,
+        "last_trade_time": "13:00:22",
+        "status": "live"
+      },
+      {
+        "ticker": "ARC.B",
+        "name": "Arca Inmuebles y Valores (B)",
+        "price_ves": 1300,
+        "change_abs_ves": 0,
+        "change_pct": 0,
+        "volume_shares": 8,
+        "turnover_ves": 10400,
+        "turnover_usd_bcv": 11.25,
+        "price_usd_bcv": 1.406389,
+        "price_usd_p2p": 1.190749,
+        "last_trade_time": "11:31:34",
         "status": "live"
       },
       {
         "ticker": "BNC",
         "name": "Banco Nacional de Credito",
-        "price_ves": 242.5,
-        "change_abs_ves": -0.76,
-        "change_pct": -0.31,
-        "volume_shares": 44192,
-        "turnover_ves": 10812907.28,
-        "turnover_usd_bcv": 11697.81,
-        "price_usd_bcv": 0.262346,
-        "price_usd_p2p": 0.219727,
-        "last_trade_time": "12:54:15",
+        "price_ves": 238,
+        "change_abs_ves": -4.5,
+        "change_pct": -1.86,
+        "volume_shares": 3912269,
+        "turnover_ves": 620251414.87,
+        "turnover_usd_bcv": 671011.13,
+        "price_usd_bcv": 0.257477,
+        "price_usd_p2p": 0.217999,
+        "last_trade_time": "13:00:23",
         "status": "live"
       },
       {
         "ticker": "BPV",
         "name": "Banco Provincial",
-        "price_ves": 3840,
-        "change_abs_ves": -9,
-        "change_pct": -0.23,
-        "volume_shares": 2455,
-        "turnover_ves": 9476224.56,
-        "turnover_usd_bcv": 10251.73,
-        "price_usd_bcv": 4.154255,
-        "price_usd_p2p": 3.479395,
-        "last_trade_time": "12:49:44",
+        "price_ves": 3788.97,
+        "change_abs_ves": -51.03,
+        "change_pct": -1.33,
+        "volume_shares": 24122,
+        "turnover_ves": 84781182.36,
+        "turnover_usd_bcv": 91719.45,
+        "price_usd_bcv": 4.099049,
+        "price_usd_p2p": 3.470547,
+        "last_trade_time": "12:54:04",
         "status": "live"
       },
       {
         "ticker": "BVCC",
         "name": "Bolsa de Valores de Caracas",
-        "price_ves": 948,
-        "change_abs_ves": 28,
-        "change_pct": 3.04,
-        "volume_shares": 3122,
-        "turnover_ves": 2927336.81,
-        "turnover_usd_bcv": 3166.9,
-        "price_usd_bcv": 1.025582,
-        "price_usd_p2p": 0.858976,
-        "last_trade_time": "12:50:11",
+        "price_ves": 920,
+        "change_abs_ves": -28,
+        "change_pct": -2.95,
+        "volume_shares": 57893,
+        "turnover_ves": 49979579.23,
+        "turnover_usd_bcv": 54069.77,
+        "price_usd_bcv": 0.99529,
+        "price_usd_p2p": 0.842684,
+        "last_trade_time": "12:56:56",
         "status": "live"
       },
       {
         "ticker": "BVL",
         "name": "Banco de Venezuela",
-        "price_ves": 2085,
-        "change_abs_ves": 64,
-        "change_pct": 3.17,
-        "volume_shares": 3511,
-        "turnover_ves": 6758451.26,
-        "turnover_usd_bcv": 7311.54,
-        "price_usd_bcv": 2.255631,
-        "price_usd_p2p": 1.889203,
-        "last_trade_time": "13:00:03",
+        "price_ves": 2070,
+        "change_abs_ves": -15,
+        "change_pct": -0.72,
+        "volume_shares": 1044,
+        "turnover_ves": 2120311.27,
+        "turnover_usd_bcv": 2293.83,
+        "price_usd_bcv": 2.239403,
+        "price_usd_p2p": 1.896038,
+        "last_trade_time": "12:52:26",
         "status": "live"
       },
       {
         "ticker": "CCP.B",
         "name": "Clabe Capital (B)",
         "price_ves": 698,
-        "change_abs_ves": -2.01,
-        "change_pct": -0.29,
-        "volume_shares": 3638,
-        "turnover_ves": 2541300.89,
-        "turnover_usd_bcv": 2749.27,
+        "change_abs_ves": 0,
+        "change_pct": 0,
+        "volume_shares": 676,
+        "turnover_ves": 466573.35,
+        "turnover_usd_bcv": 504.76,
         "price_usd_bcv": 0.755122,
-        "price_usd_p2p": 0.632453,
-        "last_trade_time": "12:27:25",
+        "price_usd_p2p": 0.639341,
+        "last_trade_time": "13:00:23",
         "status": "live"
       },
       {
@@ -225,26 +239,26 @@
         "price_ves": 8957.66,
         "change_abs_ves": 0,
         "change_pct": 0,
-        "volume_shares": 9,
-        "turnover_ves": 82706.3,
-        "turnover_usd_bcv": 89.47,
+        "volume_shares": 146,
+        "turnover_ves": 1315440,
+        "turnover_usd_bcv": 1423.09,
         "price_usd_bcv": 9.690731,
-        "price_usd_p2p": 8.116469,
-        "last_trade_time": "13:00:00",
-        "status": "cached"
+        "price_usd_p2p": 8.204864,
+        "last_trade_time": "12:26:56",
+        "status": "live"
       },
       {
         "ticker": "CGQ",
         "name": "Corp. Grupo Quimico",
         "price_ves": 2273,
-        "change_abs_ves": 2,
-        "change_pct": 0.09,
-        "volume_shares": 471,
-        "turnover_ves": 1079195.6,
-        "turnover_usd_bcv": 1167.51,
+        "change_abs_ves": 0,
+        "change_pct": 0,
+        "volume_shares": 70,
+        "turnover_ves": 174089.8,
+        "turnover_usd_bcv": 188.34,
         "price_usd_bcv": 2.459016,
-        "price_usd_p2p": 2.059548,
-        "last_trade_time": "12:46:21",
+        "price_usd_p2p": 2.081978,
+        "last_trade_time": "12:38:12",
         "status": "live"
       },
       {
@@ -253,26 +267,12 @@
         "price_ves": 735,
         "change_abs_ves": 0,
         "change_pct": 0,
-        "volume_shares": 79,
-        "turnover_ves": 60441.48,
-        "turnover_usd_bcv": 65.39,
+        "volume_shares": 657,
+        "turnover_ves": 487347.03,
+        "turnover_usd_bcv": 527.23,
         "price_usd_bcv": 0.79515,
-        "price_usd_p2p": 0.665978,
-        "last_trade_time": "12:40:25",
-        "status": "live"
-      },
-      {
-        "ticker": "DOM",
-        "name": "Dominguez & Cia",
-        "price_ves": 1085,
-        "change_abs_ves": 0,
-        "change_pct": 0,
-        "volume_shares": 181,
-        "turnover_ves": 210637,
-        "turnover_usd_bcv": 227.87,
-        "price_usd_bcv": 1.173793,
-        "price_usd_p2p": 0.98311,
-        "last_trade_time": "12:54:56",
+        "price_usd_p2p": 0.673231,
+        "last_trade_time": "12:38:12",
         "status": "live"
       }
     ]
@@ -281,48 +281,48 @@
     "btc": {
       "symbol": "BTCUSDT",
       "base": "BTC",
-      "price_usd": 60526.02,
-      "change_24h_pct": 2.7,
+      "price_usd": 60908.01,
+      "change_24h_pct": 0.89,
       "high_24h": 61622.38,
-      "low_24h": 57300.38,
-      "quote_volume_24h_usd": 1566714672.58,
-      "funding_rate": 0.000085,
-      "funding_rate_pct": 0.0085
+      "low_24h": 59915,
+      "quote_volume_24h_usd": 1029439944.43,
+      "funding_rate": 0.000007,
+      "funding_rate_pct": 0.0007
     },
     "eth": {
       "symbol": "ETHUSDT",
       "base": "ETH",
-      "price_usd": 1694.79,
-      "change_24h_pct": 2.89,
+      "price_usd": 1705.58,
+      "change_24h_pct": 0.84,
       "high_24h": 1730,
-      "low_24h": 1608.86,
-      "quote_volume_24h_usd": 670424375.01,
-      "funding_rate": 0.000057,
-      "funding_rate_pct": 0.0057
+      "low_24h": 1667.94,
+      "quote_volume_24h_usd": 377315906.86,
+      "funding_rate": 0.000072,
+      "funding_rate_pct": 0.0072
     },
     "sol": {
       "symbol": "SOLUSDT",
       "base": "SOL",
-      "price_usd": 70.59,
-      "change_24h_pct": 4.16,
+      "price_usd": 71.55,
+      "change_24h_pct": 1.16,
       "high_24h": 71.95,
-      "low_24h": 65.84,
-      "quote_volume_24h_usd": 205538944.36,
-      "funding_rate": 0.0001,
-      "funding_rate_pct": 0.01
+      "low_24h": 69.71,
+      "quote_volume_24h_usd": 127414967.54,
+      "funding_rate": 0.000066,
+      "funding_rate_pct": 0.0066
     },
     "paxg": {
       "symbol": "PAXGUSDT",
       "base": "PAXG",
-      "price_usd": 3554.73,
-      "change_24h_pct": 0.84,
+      "price_usd": 3568.69,
+      "change_24h_pct": -0.37,
       "high_24h": 3603.06,
-      "low_24h": 3425.17,
-      "quote_volume_24h_usd": 22807143.53,
+      "low_24h": 3547.91,
+      "quote_volume_24h_usd": 8713592.54,
       "funding_rate": null,
       "funding_rate_pct": null
     },
-    "avg_funding_rate_pct": 0.0083
+    "avg_funding_rate_pct": 0.0074
   },
   "nyse_benchmarks": {
     "us_indices": [
@@ -335,7 +335,7 @@
         "price_usd": 716.7,
         "prev_close_usd": 730.2,
         "change_pct": -1.85,
-        "volume": 72919200,
+        "volume": 73112800,
         "source": "yahoo-finance"
       },
       {
@@ -347,7 +347,7 @@
         "price_usd": 633.93,
         "prev_close_usd": 659.51,
         "change_pct": -3.88,
-        "volume": 81600300,
+        "volume": 81996700,
         "source": "yahoo-finance"
       },
       {
@@ -359,7 +359,7 @@
         "price_usd": 327.45,
         "prev_close_usd": 341.19,
         "change_pct": -4.03,
-        "volume": 17008300,
+        "volume": 17062100,
         "source": "yahoo-finance"
       }
     ],
@@ -397,7 +397,7 @@
         "price_usd": 12.36,
         "prev_close_usd": 12.08,
         "change_pct": 2.32,
-        "volume": 52305100,
+        "volume": 52433400,
         "source": "yahoo-finance"
       },
       {
@@ -415,105 +415,105 @@
     ]
   },
   "cross_market_metrics": {
-    "venezuela_fx_spread_pct": 19.4,
-    "btc_price_ves_bcv": 55947432.38,
-    "btc_price_ves_p2p": 66798936.71,
+    "venezuela_fx_spread_pct": 18.11,
+    "btc_price_ves_bcv": 56300526.13,
+    "btc_price_ves_p2p": 66496319.92,
     "spy_price_ves_bcv": 662484.08,
-    "btc_per_spy_ratio": 84.45,
-    "paxg_vs_gld_10x_spread_pct": 8.56
+    "btc_per_spy_ratio": 84.98,
+    "paxg_vs_gld_10x_spread_pct": 8.98
   },
   "latam_fx_spreads": [
     {
       "code": "VE",
       "currency": "VES",
       "official_usd": 924.3534,
-      "usdt_p2p_mid": 1103.64,
-      "spread_vs_official_pct": 19.4
+      "usdt_p2p_mid": 1091.75,
+      "spread_vs_official_pct": 18.11
     },
     {
       "code": "AR",
       "currency": "ARS",
-      "official_usd": 1630,
-      "usdt_p2p_mid": 1759.125,
-      "spread_vs_official_pct": 7.92
+      "official_usd": 1625,
+      "usdt_p2p_mid": 1741.195,
+      "spread_vs_official_pct": 7.15
     },
     {
       "code": "CO",
       "currency": "COP",
-      "official_usd": 3516.052,
-      "usdt_p2p_mid": 3532.995,
-      "spread_vs_official_pct": 0.48
+      "official_usd": 3604.231,
+      "usdt_p2p_mid": 3510.5,
+      "spread_vs_official_pct": -2.6
     },
     {
       "code": "BR",
       "currency": "BRL",
-      "official_usd": 5.8944,
+      "official_usd": 5.8841,
       "usdt_p2p_mid": null,
       "spread_vs_official_pct": null
     },
     {
       "code": "MX",
       "currency": "MXN",
-      "official_usd": 19.3755,
-      "usdt_p2p_mid": 19.61,
-      "spread_vs_official_pct": 1.21
+      "official_usd": 19.6407,
+      "usdt_p2p_mid": 19.75,
+      "spread_vs_official_pct": 0.56
     },
     {
       "code": "CL",
       "currency": "CLP",
-      "official_usd": 1016.2545,
-      "usdt_p2p_mid": 1040.775,
-      "spread_vs_official_pct": 2.41
+      "official_usd": 1033.1219,
+      "usdt_p2p_mid": 1042.105,
+      "spread_vs_official_pct": 0.87
     },
     {
       "code": "PE",
       "currency": "PEN",
-      "official_usd": 3.4727,
-      "usdt_p2p_mid": 3.5105,
-      "spread_vs_official_pct": 1.09
+      "official_usd": 3.481,
+      "usdt_p2p_mid": 3.5,
+      "spread_vs_official_pct": 0.55
     },
     {
       "code": "BO",
       "currency": "BOB",
-      "official_usd": 11.83,
-      "usdt_p2p_mid": 12.035,
-      "spread_vs_official_pct": 1.73
+      "official_usd": 11.86,
+      "usdt_p2p_mid": 12.07,
+      "spread_vs_official_pct": 1.77
     }
   ],
   "crypto_signals_highlights": [
     {
       "base": "BTC",
-      "rsi_14_1d": 27.49,
+      "rsi_14_1d": 29.12,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "ETH",
-      "rsi_14_1d": 29.55,
+      "rsi_14_1d": 30.8,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "SOL",
-      "rsi_14_1d": 31.17,
+      "rsi_14_1d": 33.61,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "BNB",
-      "rsi_14_1d": 28.04,
+      "rsi_14_1d": 29.76,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "XRP",
-      "rsi_14_1d": 35.05,
+      "rsi_14_1d": 35.56,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "ADA",
-      "rsi_14_1d": 33.38,
+      "rsi_14_1d": 36.59,
       "trend": "bearish",
       "funding_status": "unknown"
     }
@@ -524,11 +524,11 @@
       "chain": "Base",
       "project": "harvest-finance",
       "symbol": "USDC",
-      "tvl_usd": 1638384,
-      "apy_total": 25.55,
-      "apy_base": 25.55,
+      "tvl_usd": 1600992,
+      "apy_total": 25.54,
+      "apy_base": 25.54,
       "apy_reward": null,
-      "apy_mean_30d": 25.24,
+      "apy_mean_30d": 25.18,
       "il_risk": "no"
     },
     {
@@ -536,11 +536,11 @@
       "chain": "Base",
       "project": "veranta",
       "symbol": "USDC",
-      "tvl_usd": 9434187,
-      "apy_total": 21.15,
-      "apy_base": 21.15,
+      "tvl_usd": 9410851,
+      "apy_total": 21.21,
+      "apy_base": 21.21,
       "apy_reward": null,
-      "apy_mean_30d": 28.66,
+      "apy_mean_30d": 28.57,
       "il_risk": "no"
     },
     {
@@ -548,15 +548,30 @@
       "chain": "Base",
       "project": "zircuit-finance",
       "symbol": "ZVUSDC",
-      "tvl_usd": 1422921,
-      "apy_total": 14.63,
-      "apy_base": 14.63,
+      "tvl_usd": 1423245,
+      "apy_total": 13.55,
+      "apy_base": 13.55,
       "apy_reward": null,
-      "apy_mean_30d": 6.54,
+      "apy_mean_30d": 6.67,
       "il_risk": "no"
     }
   ],
   "top_predictions": [
+    {
+      "question": "Bears vs. Lions",
+      "topic": "sports",
+      "probabilities": [
+        {
+          "outcome": "Bears",
+          "probability_pct": 71.5
+        },
+        {
+          "outcome": "Lions",
+          "probability_pct": 28.5
+        }
+      ],
+      "volume_24h_usd": 4213700.57
+    },
     {
       "question": "Yokohama: Ryo Ono vs Lennon Roark Jones",
       "topic": "other",
@@ -573,6 +588,21 @@
       "volume_24h_usd": 3187776.71
     },
     {
+      "question": "Will the price of Bitcoin be between $60,000 and $62,000 on November 27?",
+      "topic": "crypto",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 58
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 42
+        }
+      ],
+      "volume_24h_usd": 2022888.08
+    },
+    {
       "question": "New NVIDIA CEO named by December 31, 2026?",
       "topic": "other",
       "probabilities": [
@@ -585,52 +615,22 @@
           "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 3149331.98
+      "volume_24h_usd": 1985717.3
     },
     {
-      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-      "topic": "macro",
-      "probabilities": [
-        {
-          "outcome": "Yes",
-          "probability_pct": 3.9
-        },
-        {
-          "outcome": "No",
-          "probability_pct": 96.1
-        }
-      ],
-      "volume_24h_usd": 1661634.1
-    },
-    {
-      "question": "Counter-Strike: Lynn Vision vs PVISION (BO3) - PGL Major Singapore Stage 1",
+      "question": "Will AFC Bournemouth win on 2026-11-26?",
       "topic": "other",
       "probabilities": [
         {
-          "outcome": "Lynn Vision",
-          "probability_pct": 3.5
-        },
-        {
-          "outcome": "PVISION",
-          "probability_pct": 96.5
-        }
-      ],
-      "volume_24h_usd": 1621318.32
-    },
-    {
-      "question": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
-      "topic": "macro",
-      "probabilities": [
-        {
           "outcome": "Yes",
-          "probability_pct": 2.05
+          "probability_pct": 99.95
         },
         {
           "outcome": "No",
-          "probability_pct": 97.95
+          "probability_pct": 0.05
         }
       ],
-      "volume_24h_usd": 1397798.66
+      "volume_24h_usd": 1037472.2
     }
   ]
 }
