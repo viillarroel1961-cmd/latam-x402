@@ -1,6 +1,6 @@
 {
   "market": "LATAM_FX_P2P",
-  "updated_at_utc": "2026-11-26T00:18:56.049Z",
+  "updated_at_utc": "2026-11-26T10:51:53.481Z",
   "sources": [
     "open.er-api.com",
     "dolarapi.com/ar",
@@ -13,12 +13,12 @@
       "code": "VE",
       "country": "Venezuela",
       "currency": "VES",
-      "official_usd": 922.5637,
-      "parallel_usd": 1107.2618,
-      "usdt_p2p_buy": 1105.945,
-      "usdt_p2p_sell": 1107,
-      "usdt_p2p_mid": 1106.4725,
-      "spread_vs_official_pct": 19.93
+      "official_usd": 924.3534,
+      "parallel_usd": 1099.7205,
+      "usdt_p2p_buy": 1102.28,
+      "usdt_p2p_sell": 1105,
+      "usdt_p2p_mid": 1103.64,
+      "spread_vs_official_pct": 19.4
     },
     {
       "code": "AR",
@@ -26,10 +26,10 @@
       "currency": "ARS",
       "official_usd": 1630,
       "parallel_usd": 1710,
-      "usdt_p2p_buy": 1763.9,
-      "usdt_p2p_sell": 1759,
-      "usdt_p2p_mid": 1761.45,
-      "spread_vs_official_pct": 8.06,
+      "usdt_p2p_buy": 1762,
+      "usdt_p2p_sell": 1756.25,
+      "usdt_p2p_mid": 1759.125,
+      "spread_vs_official_pct": 7.92,
       "mep_usd": 1688.7,
       "ccl_usd": 1767.9,
       "cripto_usd": 1762.53
@@ -40,10 +40,10 @@
       "currency": "COP",
       "official_usd": 3516.052,
       "parallel_usd": null,
-      "usdt_p2p_buy": 3537,
-      "usdt_p2p_sell": 3530,
-      "usdt_p2p_mid": 3533.5,
-      "spread_vs_official_pct": 0.5
+      "usdt_p2p_buy": 3554.46,
+      "usdt_p2p_sell": 3511.53,
+      "usdt_p2p_mid": 3532.995,
+      "spread_vs_official_pct": 0.48
     },
     {
       "code": "BR",
@@ -62,10 +62,10 @@
       "currency": "MXN",
       "official_usd": 19.3755,
       "parallel_usd": null,
-      "usdt_p2p_buy": 19.65,
-      "usdt_p2p_sell": 19.54,
-      "usdt_p2p_mid": 19.595,
-      "spread_vs_official_pct": 1.13
+      "usdt_p2p_buy": 19.69,
+      "usdt_p2p_sell": 19.53,
+      "usdt_p2p_mid": 19.61,
+      "spread_vs_official_pct": 1.21
     },
     {
       "code": "CL",
@@ -73,10 +73,10 @@
       "currency": "CLP",
       "official_usd": 1016.2545,
       "parallel_usd": null,
-      "usdt_p2p_buy": 1044.88,
-      "usdt_p2p_sell": 1042,
-      "usdt_p2p_mid": 1043.44,
-      "spread_vs_official_pct": 2.68
+      "usdt_p2p_buy": 1044.55,
+      "usdt_p2p_sell": 1037,
+      "usdt_p2p_mid": 1040.775,
+      "spread_vs_official_pct": 2.41
     },
     {
       "code": "PE",
@@ -84,8 +84,8 @@
       "currency": "PEN",
       "official_usd": 3.4727,
       "parallel_usd": null,
-      "usdt_p2p_buy": 3.515,
-      "usdt_p2p_sell": 3.506,
+      "usdt_p2p_buy": 3.521,
+      "usdt_p2p_sell": 3.5,
       "usdt_p2p_mid": 3.5105,
       "spread_vs_official_pct": 1.09
     },
@@ -95,10 +95,10 @@
       "currency": "BOB",
       "official_usd": 11.83,
       "parallel_usd": 12.05,
-      "usdt_p2p_buy": 12.04,
+      "usdt_p2p_buy": 12.05,
       "usdt_p2p_sell": 12.02,
-      "usdt_p2p_mid": 12.03,
-      "spread_vs_official_pct": 1.69
+      "usdt_p2p_mid": 12.035,
+      "spread_vs_official_pct": 1.73
     }
   ]
 }

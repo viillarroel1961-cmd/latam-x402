@@ -1,6 +1,6 @@
 {
   "market": "NYSE_US_LATAM",
-  "updated_at_utc": "2026-11-26T00:18:56.049Z",
+  "updated_at_utc": "2026-11-26T10:51:53.481Z",
   "delay_notice": "Standard delayed / end-of-day quotes (~15 min)",
   "coverage": {
     "total": 20,
@@ -16,7 +16,7 @@
       "price_usd": 716.7,
       "prev_close_usd": 730.2,
       "change_pct": -1.85,
-      "volume": 72380475,
+      "volume": 72919200,
       "source": "yahoo-finance"
     },
     {
@@ -28,7 +28,7 @@
       "price_usd": 633.93,
       "prev_close_usd": 659.51,
       "change_pct": -3.88,
-      "volume": 80638679,
+      "volume": 81600300,
       "source": "yahoo-finance"
     },
     {
@@ -40,7 +40,7 @@
       "price_usd": 501.27,
       "prev_close_usd": 501.73,
       "change_pct": -0.09,
-      "volume": 4234967,
+      "volume": 4714800,
       "source": "yahoo-finance"
     },
     {
@@ -52,7 +52,7 @@
       "price_usd": 327.45,
       "prev_close_usd": 341.19,
       "change_pct": -4.03,
-      "volume": 16905437,
+      "volume": 17008300,
       "source": "yahoo-finance"
     },
     {
@@ -64,7 +64,7 @@
       "price_usd": 139.89,
       "prev_close_usd": 136.11,
       "change_pct": 2.78,
-      "volume": 2149636,
+      "volume": 2153100,
       "source": "yahoo-finance"
     },
     {
@@ -76,7 +76,7 @@
       "price_usd": 30.03,
       "prev_close_usd": 30.24,
       "change_pct": -0.69,
-      "volume": 1849734,
+      "volume": 1849800,
       "source": "yahoo-finance"
     },
     {
@@ -88,7 +88,7 @@
       "price_usd": 355.58,
       "prev_close_usd": 352.45,
       "change_pct": 0.89,
-      "volume": 53060252,
+      "volume": 54240100,
       "source": "yahoo-finance"
     },
     {
@@ -100,7 +100,7 @@
       "price_usd": 489.93,
       "prev_close_usd": 508.29,
       "change_pct": -3.61,
-      "volume": 26095270,
+      "volume": 26733600,
       "source": "yahoo-finance"
     },
     {
@@ -112,7 +112,7 @@
       "price_usd": 149.3,
       "prev_close_usd": 150.96,
       "change_pct": -1.1,
-      "volume": 359527027,
+      "volume": 363377300,
       "source": "yahoo-finance"
     },
     {
@@ -124,7 +124,7 @@
       "price_usd": 244.43,
       "prev_close_usd": 267.74,
       "change_pct": -8.71,
-      "volume": 61713896,
+      "volume": 62276400,
       "source": "yahoo-finance"
     },
     {
@@ -136,7 +136,7 @@
       "price_usd": 273.1,
       "prev_close_usd": 282.44,
       "change_pct": -3.31,
-      "volume": 40804718,
+      "volume": 41164500,
       "source": "yahoo-finance"
     },
     {
@@ -148,7 +148,7 @@
       "price_usd": 609.89,
       "prev_close_usd": 616.38,
       "change_pct": -1.05,
-      "volume": 18558019,
+      "volume": 18599400,
       "source": "yahoo-finance"
     },
     {
@@ -160,7 +160,7 @@
       "price_usd": 380.14,
       "prev_close_usd": 383.72,
       "change_pct": -0.93,
-      "volume": 33883019,
+      "volume": 34789900,
       "source": "yahoo-finance"
     },
     {
@@ -172,7 +172,7 @@
       "price_usd": 316.74,
       "prev_close_usd": 324.11,
       "change_pct": -2.27,
-      "volume": 7626473,
+      "volume": 7635600,
       "source": "yahoo-finance"
     },
     {
@@ -184,7 +184,7 @@
       "price_usd": 1467.3,
       "prev_close_usd": 1423.11,
       "change_pct": 3.11,
-      "volume": 804492,
+      "volume": 804600,
       "source": "yahoo-finance"
     },
     {
@@ -196,7 +196,7 @@
       "price_usd": 12.36,
       "prev_close_usd": 12.08,
       "change_pct": 2.32,
-      "volume": 52045089,
+      "volume": 52305100,
       "source": "yahoo-finance"
     },
     {
@@ -208,7 +208,7 @@
       "price_usd": 16.05,
       "prev_close_usd": 16.73,
       "change_pct": -4.06,
-      "volume": 28815474,
+      "volume": 29053900,
       "source": "yahoo-finance"
     },
     {
@@ -220,7 +220,7 @@
       "price_usd": 9.81,
       "prev_close_usd": 10.04,
       "change_pct": -2.29,
-      "volume": 45533290,
+      "volume": 45608700,
       "source": "yahoo-finance"
     },
     {
@@ -232,7 +232,7 @@
       "price_usd": 13.33,
       "prev_close_usd": 14.07,
       "change_pct": -5.26,
-      "volume": 1579801,
+      "volume": 1580600,
       "source": "yahoo-finance"
     },
     {
@@ -244,7 +244,7 @@
       "price_usd": 31.45,
       "prev_close_usd": 35.1,
       "change_pct": -10.4,
-      "volume": 3483348,
+      "volume": 3484700,
       "source": "yahoo-finance"
     }
   ]
