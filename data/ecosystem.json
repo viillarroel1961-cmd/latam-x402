@@ -1,136 +1,136 @@
 {
   "ecosystem": "latam-x402",
   "version": "1.0.0",
-  "updated_at_utc": "2026-11-27T13:56:15.820Z",
+  "updated_at_utc": "2026-11-27T22:41:26.635Z",
   "fx_venezuela": {
     "date": "2026-11-27",
     "usd_bcv": 926.3592,
     "eur_bcv": 1016.8645,
-    "usd_paralelo": 1084.2532,
-    "usdt_p2p_buy": 1086.999,
-    "usdt_p2p_sell": 1087.5,
-    "usdt_p2p_mid": 1087.2495,
-    "spread_vs_bcv_pct": 17.37,
+    "usd_paralelo": 1084.5128,
+    "usdt_p2p_buy": 1092.9,
+    "usdt_p2p_sell": 1092.5,
+    "usdt_p2p_mid": 1092.7,
+    "spread_vs_bcv_pct": 17.96,
     "eur_usd_implied": 1.0977
   },
   "bvc_caracas": {
     "index": null,
     "coverage": {
       "catalog_total": 38,
-      "live_quotes": 28,
+      "live_quotes": 32,
       "priced_total": 33
     },
     "top_movers": [
       {
-        "ticker": "MTC.B",
-        "name": "Montesco Capital Global (B)",
-        "price_ves": 160.8,
-        "change_abs_ves": 26.8,
-        "change_pct": 20,
-        "volume_shares": 61,
-        "turnover_ves": 8494.4,
-        "turnover_usd_bcv": 9.17,
-        "price_usd_bcv": 0.173583,
-        "price_usd_p2p": 0.147896,
-        "last_trade_time": "09:19:11",
-        "status": "live"
-      },
-      {
-        "ticker": "ICP.B",
-        "name": "Inversiones Crecepymes (B)",
-        "price_ves": 92.25,
-        "change_abs_ves": -23.05,
-        "change_pct": -19.99,
-        "volume_shares": 235,
-        "turnover_ves": 22328.91,
-        "turnover_usd_bcv": 24.1,
-        "price_usd_bcv": 0.099583,
-        "price_usd_p2p": 0.084847,
-        "last_trade_time": "09:12:27",
+        "ticker": "BPV",
+        "name": "Banco Provincial",
+        "price_ves": 3350.5,
+        "change_abs_ves": -438.47,
+        "change_pct": -11.57,
+        "volume_shares": 5181,
+        "turnover_ves": 18131767.56,
+        "turnover_usd_bcv": 19573.15,
+        "price_usd_bcv": 3.616848,
+        "price_usd_p2p": 3.066258,
+        "last_trade_time": "12:53:21",
         "status": "live"
       },
       {
         "ticker": "EFE",
         "name": "Productos EFE",
-        "price_ves": 218.7,
-        "change_abs_ves": 28.7,
-        "change_pct": 15.11,
-        "volume_shares": 901,
-        "turnover_ves": 178851.2,
-        "turnover_usd_bcv": 193.07,
-        "price_usd_bcv": 0.236086,
-        "price_usd_p2p": 0.20115,
-        "last_trade_time": "09:54:24",
+        "price_ves": 210,
+        "change_abs_ves": 20,
+        "change_pct": 10.53,
+        "volume_shares": 2487,
+        "turnover_ves": 518787.2,
+        "turnover_usd_bcv": 560.03,
+        "price_usd_bcv": 0.226694,
+        "price_usd_p2p": 0.192184,
+        "last_trade_time": "13:00:12",
         "status": "live"
       },
       {
-        "ticker": "IVC.A",
-        "name": "Invaca Inmuebles (A)",
-        "price_ves": 1545,
-        "change_abs_ves": 145,
-        "change_pct": 10.36,
-        "volume_shares": 5,
-        "turnover_ves": 7725,
-        "turnover_usd_bcv": 8.34,
-        "price_usd_bcv": 1.66782,
-        "price_usd_p2p": 1.421017,
-        "last_trade_time": "09:13:51",
+        "ticker": "MVZ.A",
+        "name": "Mercantil Servicios (A)",
+        "price_ves": 15250,
+        "change_abs_ves": -1639,
+        "change_pct": -9.7,
+        "volume_shares": 128,
+        "turnover_ves": 2036798,
+        "turnover_usd_bcv": 2198.71,
+        "price_usd_bcv": 16.462297,
+        "price_usd_p2p": 13.956255,
+        "last_trade_time": "13:00:12",
         "status": "live"
       },
       {
-        "ticker": "IVC.B",
-        "name": "Invaca Inmuebles (B)",
-        "price_ves": 900,
-        "change_abs_ves": 80,
-        "change_pct": 9.76,
-        "volume_shares": 46,
-        "turnover_ves": 41080.04,
-        "turnover_usd_bcv": 44.35,
-        "price_usd_bcv": 0.971545,
-        "price_usd_p2p": 0.827777,
-        "last_trade_time": "09:48:53",
+        "ticker": "RST",
+        "name": "Ron Santa Teresa",
+        "price_ves": 775,
+        "change_abs_ves": -40,
+        "change_pct": -4.91,
+        "volume_shares": 4072,
+        "turnover_ves": 3238244.08,
+        "turnover_usd_bcv": 3495.67,
+        "price_usd_bcv": 0.836609,
+        "price_usd_p2p": 0.709252,
+        "last_trade_time": "12:32:41",
         "status": "live"
       },
       {
-        "ticker": "DOM",
-        "name": "Dominguez & Cia",
-        "price_ves": 1172,
-        "change_abs_ves": 87,
-        "change_pct": 8.02,
-        "volume_shares": 69,
-        "turnover_ves": 79815.1,
-        "turnover_usd_bcv": 86.16,
-        "price_usd_bcv": 1.265168,
-        "price_usd_p2p": 1.077949,
-        "last_trade_time": "09:48:52",
+        "ticker": "CCP.B",
+        "name": "Clabe Capital (B)",
+        "price_ves": 680,
+        "change_abs_ves": -18,
+        "change_pct": -2.58,
+        "volume_shares": 750,
+        "turnover_ves": 509086.08,
+        "turnover_usd_bcv": 549.56,
+        "price_usd_bcv": 0.734057,
+        "price_usd_p2p": 0.622312,
+        "last_trade_time": "12:53:21",
         "status": "live"
       },
       {
-        "ticker": "FNV",
-        "name": "Fabrica Nacional de Vidrio",
-        "price_ves": 88.95,
-        "change_abs_ves": 6.2,
-        "change_pct": 7.49,
-        "volume_shares": 871,
-        "turnover_ves": 77412.42,
-        "turnover_usd_bcv": 83.57,
-        "price_usd_bcv": 0.096021,
-        "price_usd_p2p": 0.081812,
-        "last_trade_time": "09:54:24",
+        "ticker": "PTN",
+        "name": "Protinal",
+        "price_ves": 1640,
+        "change_abs_ves": -40,
+        "change_pct": -2.38,
+        "volume_shares": 582,
+        "turnover_ves": 872543,
+        "turnover_usd_bcv": 941.91,
+        "price_usd_bcv": 1.770372,
+        "price_usd_p2p": 1.500869,
+        "last_trade_time": "12:39:42",
         "status": "live"
       },
       {
-        "ticker": "GZL",
-        "name": "Grupo Zuliano",
-        "price_ves": 1340,
-        "change_abs_ves": 90,
-        "change_pct": 7.2,
-        "volume_shares": 30,
-        "turnover_ves": 40480,
-        "turnover_usd_bcv": 43.7,
-        "price_usd_bcv": 1.446523,
-        "price_usd_p2p": 1.232468,
-        "last_trade_time": "09:48:52",
+        "ticker": "MVZ.B",
+        "name": "Mercantil Servicios (B)",
+        "price_ves": 9200,
+        "change_abs_ves": 200,
+        "change_pct": 2.22,
+        "volume_shares": 936,
+        "turnover_ves": 8556189.84,
+        "turnover_usd_bcv": 9236.36,
+        "price_usd_bcv": 9.931353,
+        "price_usd_p2p": 8.419511,
+        "last_trade_time": "13:00:12",
+        "status": "live"
+      },
+      {
+        "ticker": "BVCC",
+        "name": "Bolsa de Valores de Caracas",
+        "price_ves": 940,
+        "change_abs_ves": 20,
+        "change_pct": 2.17,
+        "volume_shares": 96205,
+        "turnover_ves": 86826596.15,
+        "turnover_usd_bcv": 93728.86,
+        "price_usd_bcv": 1.014725,
+        "price_usd_p2p": 0.860254,
+        "last_trade_time": "13:00:11",
         "status": "live"
       }
     ],
@@ -141,12 +141,12 @@
         "price_ves": 2700,
         "change_abs_ves": 0,
         "change_pct": 0,
-        "volume_shares": 10,
-        "turnover_ves": 27299.97,
-        "turnover_usd_bcv": 29.47,
+        "volume_shares": 793,
+        "turnover_ves": 2184331.24,
+        "turnover_usd_bcv": 2357.97,
         "price_usd_bcv": 2.914636,
-        "price_usd_p2p": 2.483331,
-        "last_trade_time": "09:36:55",
+        "price_usd_p2p": 2.470944,
+        "last_trade_time": "12:51:35",
         "status": "live"
       },
       {
@@ -155,54 +155,54 @@
         "price_ves": 1300,
         "change_abs_ves": 0,
         "change_pct": 0,
-        "volume_shares": 8,
-        "turnover_ves": 10400,
-        "turnover_usd_bcv": 11.23,
+        "volume_shares": 5,
+        "turnover_ves": 6500,
+        "turnover_usd_bcv": 7.02,
         "price_usd_bcv": 1.403343,
-        "price_usd_p2p": 1.195678,
-        "last_trade_time": "11:31:34",
-        "status": "cached"
+        "price_usd_p2p": 1.189714,
+        "last_trade_time": "10:25:19",
+        "status": "live"
       },
       {
         "ticker": "BNC",
         "name": "Banco Nacional de Credito",
-        "price_ves": 240,
-        "change_abs_ves": 2,
-        "change_pct": 0.84,
-        "volume_shares": 13322,
-        "turnover_ves": 3134678.27,
-        "turnover_usd_bcv": 3383.87,
-        "price_usd_bcv": 0.259079,
-        "price_usd_p2p": 0.220741,
-        "last_trade_time": "09:54:24",
+        "price_ves": 237.45,
+        "change_abs_ves": -0.55,
+        "change_pct": -0.23,
+        "volume_shares": 111107,
+        "turnover_ves": 26004615.93,
+        "turnover_usd_bcv": 28071.85,
+        "price_usd_bcv": 0.256326,
+        "price_usd_p2p": 0.217306,
+        "last_trade_time": "13:00:11",
         "status": "live"
       },
       {
         "ticker": "BPV",
         "name": "Banco Provincial",
-        "price_ves": 3787,
-        "change_abs_ves": -1.97,
-        "change_pct": -0.05,
-        "volume_shares": 560,
-        "turnover_ves": 2114452.25,
-        "turnover_usd_bcv": 2282.54,
-        "price_usd_bcv": 4.088047,
-        "price_usd_p2p": 3.483101,
-        "last_trade_time": "09:48:52",
+        "price_ves": 3350.5,
+        "change_abs_ves": -438.47,
+        "change_pct": -11.57,
+        "volume_shares": 5181,
+        "turnover_ves": 18131767.56,
+        "turnover_usd_bcv": 19573.15,
+        "price_usd_bcv": 3.616848,
+        "price_usd_p2p": 3.066258,
+        "last_trade_time": "12:53:21",
         "status": "live"
       },
       {
         "ticker": "BVCC",
         "name": "Bolsa de Valores de Caracas",
-        "price_ves": 960,
-        "change_abs_ves": 40,
-        "change_pct": 4.35,
-        "volume_shares": 293,
-        "turnover_ves": 284223,
-        "turnover_usd_bcv": 306.82,
-        "price_usd_bcv": 1.036315,
-        "price_usd_p2p": 0.882962,
-        "last_trade_time": "09:54:24",
+        "price_ves": 940,
+        "change_abs_ves": 20,
+        "change_pct": 2.17,
+        "volume_shares": 96205,
+        "turnover_ves": 86826596.15,
+        "turnover_usd_bcv": 93728.86,
+        "price_usd_bcv": 1.014725,
+        "price_usd_p2p": 0.860254,
+        "last_trade_time": "13:00:11",
         "status": "live"
       },
       {
@@ -211,26 +211,26 @@
         "price_ves": 2067.99,
         "change_abs_ves": -2.01,
         "change_pct": -0.1,
-        "volume_shares": 157,
-        "turnover_ves": 324547.97,
-        "turnover_usd_bcv": 350.35,
+        "volume_shares": 2498,
+        "turnover_ves": 4990043.26,
+        "turnover_usd_bcv": 5386.73,
         "price_usd_bcv": 2.232385,
-        "price_usd_p2p": 1.902038,
-        "last_trade_time": "09:42:27",
+        "price_usd_p2p": 1.892551,
+        "last_trade_time": "13:00:12",
         "status": "live"
       },
       {
         "ticker": "CCP.B",
         "name": "Clabe Capital (B)",
-        "price_ves": 684.98,
-        "change_abs_ves": -13.02,
-        "change_pct": -1.87,
-        "volume_shares": 242,
-        "turnover_ves": 165647.33,
-        "turnover_usd_bcv": 178.82,
-        "price_usd_bcv": 0.739432,
-        "price_usd_p2p": 0.630012,
-        "last_trade_time": "09:28:30",
+        "price_ves": 680,
+        "change_abs_ves": -18,
+        "change_pct": -2.58,
+        "volume_shares": 750,
+        "turnover_ves": 509086.08,
+        "turnover_usd_bcv": 549.56,
+        "price_usd_bcv": 0.734057,
+        "price_usd_p2p": 0.622312,
+        "last_trade_time": "12:53:21",
         "status": "live"
       },
       {
@@ -239,13 +239,13 @@
         "price_ves": 8957.66,
         "change_abs_ves": 0,
         "change_pct": 0,
-        "volume_shares": 146,
-        "turnover_ves": 1315440,
-        "turnover_usd_bcv": 1420.01,
+        "volume_shares": 5,
+        "turnover_ves": 50740,
+        "turnover_usd_bcv": 54.77,
         "price_usd_bcv": 9.669748,
-        "price_usd_p2p": 8.238827,
-        "last_trade_time": "12:26:56",
-        "status": "cached"
+        "price_usd_p2p": 8.19773,
+        "last_trade_time": "12:08:40",
+        "status": "live"
       },
       {
         "ticker": "CGQ",
@@ -253,26 +253,26 @@
         "price_ves": 2273,
         "change_abs_ves": 0,
         "change_pct": 0,
-        "volume_shares": 70,
-        "turnover_ves": 174089.8,
-        "turnover_usd_bcv": 187.93,
+        "volume_shares": 2,
+        "turnover_ves": 5102,
+        "turnover_usd_bcv": 5.51,
         "price_usd_bcv": 2.453692,
-        "price_usd_p2p": 2.090597,
-        "last_trade_time": "12:38:12",
-        "status": "cached"
+        "price_usd_p2p": 2.080168,
+        "last_trade_time": "12:19:32",
+        "status": "live"
       },
       {
         "ticker": "CRM.A",
         "name": "Corimon (A)",
-        "price_ves": 763,
-        "change_abs_ves": 28,
-        "change_pct": 3.81,
-        "volume_shares": 11,
-        "turnover_ves": 8225,
-        "turnover_usd_bcv": 8.88,
-        "price_usd_bcv": 0.823655,
-        "price_usd_p2p": 0.701771,
-        "last_trade_time": "09:49:42",
+        "price_ves": 735,
+        "change_abs_ves": 0,
+        "change_pct": 0,
+        "volume_shares": 605,
+        "turnover_ves": 456275,
+        "turnover_usd_bcv": 492.55,
+        "price_usd_bcv": 0.793429,
+        "price_usd_p2p": 0.672646,
+        "last_trade_time": "12:54:58",
         "status": "live"
       }
     ]
@@ -281,48 +281,48 @@
     "btc": {
       "symbol": "BTCUSDT",
       "base": "BTC",
-      "price_usd": 61530.43,
-      "change_24h_pct": 1.1,
+      "price_usd": 59701.01,
+      "change_24h_pct": -1.46,
       "high_24h": 62248.91,
-      "low_24h": 59915,
-      "quote_volume_24h_usd": 957367194.77,
-      "funding_rate": 0.000018,
-      "funding_rate_pct": 0.0018
+      "low_24h": 58792.37,
+      "quote_volume_24h_usd": 1256138333.24,
+      "funding_rate": 0.00004,
+      "funding_rate_pct": 0.004
     },
     "eth": {
       "symbol": "ETHUSDT",
       "base": "ETH",
-      "price_usd": 1727.55,
-      "change_24h_pct": 1.41,
+      "price_usd": 1655.68,
+      "change_24h_pct": -2.41,
       "high_24h": 1755.22,
-      "low_24h": 1667.94,
-      "quote_volume_24h_usd": 447110594,
-      "funding_rate": 0.000067,
-      "funding_rate_pct": 0.0067
+      "low_24h": 1634.03,
+      "quote_volume_24h_usd": 609298767.56,
+      "funding_rate": -0.000001,
+      "funding_rate_pct": -0.0001
     },
     "sol": {
       "symbol": "SOLUSDT",
       "base": "SOL",
-      "price_usd": 73.47,
-      "change_24h_pct": 3.22,
+      "price_usd": 71.49,
+      "change_24h_pct": 0.37,
       "high_24h": 73.93,
-      "low_24h": 69.71,
-      "quote_volume_24h_usd": 138970336.92,
-      "funding_rate": 0.000096,
-      "funding_rate_pct": 0.0096
+      "low_24h": 70.12,
+      "quote_volume_24h_usd": 188198843.84,
+      "funding_rate": 0.0001,
+      "funding_rate_pct": 0.01
     },
     "paxg": {
       "symbol": "PAXGUSDT",
       "base": "PAXG",
-      "price_usd": 3638.76,
-      "change_24h_pct": 2.08,
+      "price_usd": 3651.73,
+      "change_24h_pct": 2.45,
       "high_24h": 3673,
       "low_24h": 3552,
-      "quote_volume_24h_usd": 10295070.48,
+      "quote_volume_24h_usd": 14582109.2,
       "funding_rate": null,
       "funding_rate_pct": null
     },
-    "avg_funding_rate_pct": 0.0056
+    "avg_funding_rate_pct": 0.0053
   },
   "nyse_benchmarks": {
     "us_indices": [
@@ -332,10 +332,10 @@
         "category": "etf",
         "exchange": "NYSEArca",
         "currency": "USD",
-        "price_usd": 716.7,
-        "prev_close_usd": 730.2,
-        "change_pct": -1.85,
-        "volume": 73112800,
+        "price_usd": 728.32,
+        "prev_close_usd": 715.87,
+        "change_pct": 1.74,
+        "volume": 40442229,
         "source": "yahoo-finance"
       },
       {
@@ -344,10 +344,10 @@
         "category": "etf",
         "exchange": "NasdaqGM",
         "currency": "USD",
-        "price_usd": 633.93,
-        "prev_close_usd": 659.51,
-        "change_pct": -3.88,
-        "volume": 81996700,
+        "price_usd": 650.99,
+        "prev_close_usd": 645.04,
+        "change_pct": 0.92,
+        "volume": 35503690,
         "source": "yahoo-finance"
       },
       {
@@ -356,10 +356,10 @@
         "category": "etf",
         "exchange": "NYSEArca",
         "currency": "USD",
-        "price_usd": 327.45,
-        "prev_close_usd": 341.19,
-        "change_pct": -4.03,
-        "volume": 17062100,
+        "price_usd": 334.4,
+        "prev_close_usd": 335.18,
+        "change_pct": -0.23,
+        "volume": 6707565,
         "source": "yahoo-finance"
       }
     ],
@@ -370,10 +370,10 @@
         "category": "latam_etf",
         "exchange": "NYSEArca",
         "currency": "USD",
-        "price_usd": 30.03,
-        "prev_close_usd": 30.24,
-        "change_pct": -0.69,
-        "volume": 1849800,
+        "price_usd": 31.64,
+        "prev_close_usd": 29.66,
+        "change_pct": 6.68,
+        "volume": 2233725,
         "source": "yahoo-finance"
       },
       {
@@ -382,10 +382,10 @@
         "category": "latam_adr",
         "exchange": "NasdaqGS",
         "currency": "USD",
-        "price_usd": 1467.3,
-        "prev_close_usd": 1423.11,
-        "change_pct": 3.11,
-        "volume": 804600,
+        "price_usd": 1532.92,
+        "prev_close_usd": 1355.49,
+        "change_pct": 13.09,
+        "volume": 454136,
         "source": "yahoo-finance"
       },
       {
@@ -394,10 +394,10 @@
         "category": "latam_adr",
         "exchange": "NYSE",
         "currency": "USD",
-        "price_usd": 12.36,
-        "prev_close_usd": 12.08,
-        "change_pct": 2.32,
-        "volume": 52433400,
+        "price_usd": 12.91,
+        "prev_close_usd": 11.82,
+        "change_pct": 9.22,
+        "volume": 68473719,
         "source": "yahoo-finance"
       },
       {
@@ -406,43 +406,43 @@
         "category": "latam_adr",
         "exchange": "NYSE",
         "currency": "USD",
-        "price_usd": 16.05,
-        "prev_close_usd": 16.73,
-        "change_pct": -4.06,
-        "volume": 29053900,
+        "price_usd": 16.84,
+        "prev_close_usd": 16.29,
+        "change_pct": 3.38,
+        "volume": 23728725,
         "source": "yahoo-finance"
       }
     ]
   },
   "cross_market_metrics": {
-    "venezuela_fx_spread_pct": 17.37,
-    "btc_price_ves_bcv": 56999279.91,
-    "btc_price_ves_p2p": 66898929.25,
-    "spy_price_ves_bcv": 663921.64,
-    "btc_per_spy_ratio": 85.85,
-    "paxg_vs_gld_10x_spread_pct": 11.12
+    "venezuela_fx_spread_pct": 17.96,
+    "btc_price_ves_bcv": 55304579.86,
+    "btc_price_ves_p2p": 65235293.63,
+    "spy_price_ves_bcv": 674685.93,
+    "btc_per_spy_ratio": 81.97,
+    "paxg_vs_gld_10x_spread_pct": 9.2
   },
   "latam_fx_spreads": [
     {
       "code": "VE",
       "currency": "VES",
       "official_usd": 926.3592,
-      "usdt_p2p_mid": 1087.2495,
-      "spread_vs_official_pct": 17.37
+      "usdt_p2p_mid": 1092.7,
+      "spread_vs_official_pct": 17.96
     },
     {
       "code": "AR",
       "currency": "ARS",
       "official_usd": 1625,
-      "usdt_p2p_mid": 1733.8,
-      "spread_vs_official_pct": 6.7
+      "usdt_p2p_mid": 1736.2,
+      "spread_vs_official_pct": 6.84
     },
     {
       "code": "CO",
       "currency": "COP",
       "official_usd": 3577.0784,
-      "usdt_p2p_mid": 3476.5,
-      "spread_vs_official_pct": -2.81
+      "usdt_p2p_mid": 3460,
+      "spread_vs_official_pct": -3.27
     },
     {
       "code": "BR",
@@ -455,65 +455,65 @@
       "code": "MX",
       "currency": "MXN",
       "official_usd": 19.6963,
-      "usdt_p2p_mid": 19.605,
-      "spread_vs_official_pct": -0.46
+      "usdt_p2p_mid": 19.715,
+      "spread_vs_official_pct": 0.09
     },
     {
       "code": "CL",
       "currency": "CLP",
       "official_usd": 1038.9879,
-      "usdt_p2p_mid": 1037.85,
-      "spread_vs_official_pct": -0.11
+      "usdt_p2p_mid": 1039.805,
+      "spread_vs_official_pct": 0.08
     },
     {
       "code": "PE",
       "currency": "PEN",
       "official_usd": 3.4698,
-      "usdt_p2p_mid": 3.5055,
-      "spread_vs_official_pct": 1.03
+      "usdt_p2p_mid": 3.4965,
+      "spread_vs_official_pct": 0.77
     },
     {
       "code": "BO",
       "currency": "BOB",
       "official_usd": 11.85,
-      "usdt_p2p_mid": 12.05,
-      "spread_vs_official_pct": 1.69
+      "usdt_p2p_mid": 12,
+      "spread_vs_official_pct": 1.27
     }
   ],
   "crypto_signals_highlights": [
     {
       "base": "BTC",
-      "rsi_14_1d": 31.91,
+      "rsi_14_1d": 26.23,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "ETH",
-      "rsi_14_1d": 33.69,
+      "rsi_14_1d": 27.48,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "SOL",
-      "rsi_14_1d": 38.47,
+      "rsi_14_1d": 33.58,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "BNB",
-      "rsi_14_1d": 32.89,
+      "rsi_14_1d": 28.4,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "XRP",
-      "rsi_14_1d": 39.13,
+      "rsi_14_1d": 33.7,
       "trend": "bearish",
       "funding_status": "normal"
     },
     {
       "base": "ADA",
-      "rsi_14_1d": 39.06,
+      "rsi_14_1d": 33.68,
       "trend": "bearish",
       "funding_status": "unknown"
     }
@@ -524,11 +524,11 @@
       "chain": "Base",
       "project": "harvest-finance",
       "symbol": "USDC",
-      "tvl_usd": 1592386,
+      "tvl_usd": 1590009,
       "apy_total": 25.94,
       "apy_base": 25.94,
       "apy_reward": null,
-      "apy_mean_30d": 25.09,
+      "apy_mean_30d": 25.05,
       "il_risk": "no"
     },
     {
@@ -536,56 +536,29 @@
       "chain": "Base",
       "project": "veranta",
       "symbol": "USDC",
-      "tvl_usd": 9413727,
-      "apy_total": 19.99,
-      "apy_base": 19.99,
+      "tvl_usd": 9430164,
+      "apy_total": 19.95,
+      "apy_base": 19.95,
       "apy_reward": null,
-      "apy_mean_30d": 28.4,
-      "il_risk": "no"
-    },
-    {
-      "pool_id": "437a4c66-b5a7-416b-853a-565433679627",
-      "chain": "Base",
-      "project": "zircuit-finance",
-      "symbol": "ZVUSDC",
-      "tvl_usd": 1423477,
-      "apy_total": 10.46,
-      "apy_base": 10.46,
-      "apy_reward": null,
-      "apy_mean_30d": 6.78,
+      "apy_mean_30d": 28.31,
       "il_risk": "no"
     }
   ],
   "top_predictions": [
     {
-      "question": "Will the price of Bitcoin be between $60,000 and $62,000 on November 27?",
-      "topic": "crypto",
+      "question": "Broncos vs. Steelers",
+      "topic": "sports",
       "probabilities": [
         {
-          "outcome": "Yes",
-          "probability_pct": 70
+          "outcome": "Broncos",
+          "probability_pct": 0.05
         },
         {
-          "outcome": "No",
-          "probability_pct": 30
+          "outcome": "Steelers",
+          "probability_pct": 99.95
         }
       ],
-      "volume_24h_usd": 2042009.08
-    },
-    {
-      "question": "Counter-Strike: M80 vs 100 Thieves (BO3) - PGL Major Singapore Stage 1",
-      "topic": "other",
-      "probabilities": [
-        {
-          "outcome": "M80",
-          "probability_pct": 25.5
-        },
-        {
-          "outcome": "100 Thieves",
-          "probability_pct": 74.5
-        }
-      ],
-      "volume_24h_usd": 1404196.18
+      "volume_24h_usd": 5273126.83
     },
     {
       "question": "Will the Fed decrease interest rates by 25 bps after the December 2026 meeting?",
@@ -600,7 +573,7 @@
           "probability_pct": 99.75
         }
       ],
-      "volume_24h_usd": 1325793.47
+      "volume_24h_usd": 1813830.03
     },
     {
       "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
@@ -608,14 +581,14 @@
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 3.65
+          "probability_pct": 4.05
         },
         {
           "outcome": "No",
-          "probability_pct": 96.35
+          "probability_pct": 95.95
         }
       ],
-      "volume_24h_usd": 806855.38
+      "volume_24h_usd": 1192664.69
     },
     {
       "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
@@ -623,14 +596,29 @@
       "probabilities": [
         {
           "outcome": "Yes",
-          "probability_pct": 60
+          "probability_pct": 56.5
         },
         {
           "outcome": "No",
-          "probability_pct": 40
+          "probability_pct": 43.5
         }
       ],
-      "volume_24h_usd": 711354.27
+      "volume_24h_usd": 1098355.34
+    },
+    {
+      "question": "Will Thailand win Group F at the 2027 AFC Asian Cup?",
+      "topic": "other",
+      "probabilities": [
+        {
+          "outcome": "Yes",
+          "probability_pct": 0.05
+        },
+        {
+          "outcome": "No",
+          "probability_pct": 99.95
+        }
+      ],
+      "volume_24h_usd": 692091.45
     }
   ]
 }
